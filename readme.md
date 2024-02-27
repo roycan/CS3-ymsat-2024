@@ -52,9 +52,6 @@ Warning: GitHub Pages sites are publicly available on the internet, even if the 
 
     If your publishing source is a branch and folder, the entry file must be at the top level of the source folder on the source branch. For example, if your publishing source is the /docs folder on the main branch, your entry file must be located in the /docs folder on a branch called main.
 
-    If your publishing source is a GitHub Actions workflow, the artifact that you deploy must include the entry file at the top level of the artifact. Instead of adding the entry file to your repository, you may choose to have your GitHub Actions workflow generate your entry file when the workflow runs.
-
-    Configure your publishing source. For more information, see "Configuring a publishing source for your GitHub Pages site."
 
     Under your repository name, click 
 
@@ -62,29 +59,27 @@ Settings. If you cannot see the "Settings" tab, select the
 
 dropdown menu, then click Settings.
 
-Screenshot of a repository header showing the tabs. The "Settings" tab is highlighted by a dark orange outline.
+![alt text](repo-actions-settings.webp)
 
 In the "Code and automation" section of the sidebar, click
 
 Pages.
 
+
 To see your published site, under "GitHub Pages", click
 
-    Visit site. Screenshot of a confirmation message for GitHub Pages listing the site's URL. To the right of the URL, a button labeled "Visit site" is outlined in dark orange.
+![alt text](click-pages-url-to-preview.webp)
+
 
     Note: It can take up to 10 minutes for changes to your site to publish after you push the changes to GitHub. If you don't see your GitHub Pages site changes reflected in your browser after an hour, see "About Jekyll build errors for GitHub Pages sites."
 
-    Your GitHub Pages site is built and deployed with a GitHub Actions workflow. For more information, see "Viewing workflow run history".
-
-    Note: GitHub Actions is free for public repositories. Usage charges apply for private and internal repositories that go beyond the monthly allotment of free minutes. For more information, see "Usage limits, billing, and administration".
 
 Notes:
 
     If you are publishing from a branch and your site has not published automatically, make sure someone with admin permissions and a verified email address has pushed to the publishing source.
 
-    Commits pushed by a GitHub Actions workflow that uses the GITHUB_TOKEN do not trigger a GitHub Pages build.
 
-Next steps
+## Next steps
 
 You can add more pages to your site by creating more new files. Each file will be available on your site in the same directory structure as your publishing source. For example, if the publishing source for your project site is the gh-pages branch, and you create a new file called /about/contact-us.md on the gh-pages branch, the file will be available at https://<user>.github.io/<repository>/about/contact-us.html.
 
