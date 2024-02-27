@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>MAPPA Website - Gallery of Works</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <meta name="keywords" content="MAPPA, website, anime, gallery, works" />
+  <meta name="description" content="This contains the MAPPA website Gallery of Works page" />
+  <meta name="author" content="Gabriel Ethan Troy C. Guanzon, Clive Tolentino" />
+  <meta name="revised" content="24-01-2024" />
+
+  <!-- Link to the favicon and external css files -->
+  <link rel="icon" href="../images/MAPPAlogo.jpg" type="image/jpg" sizes="16x16">
+  <link href="../style.css" rel="stylesheet" type="text/css" /> 
+  <!-- Link to the font Awesome library for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+
+  <!-- The header containing the title of the website and the navigation bar with the corresponding links -->
+  <section class = "header">
+    <!-- Website title-->
+    <h1>MAPPA: The Animation Studio Behind the Hottest Anime</h1>
+    <nav>
+      <!-- Logo of the website -->
+      <a href="../index.html"> <img class="logo" src="../images/MAPPAlogo.jpg" alt="logo image"></a>
+      <!-- Navigation Links -->
+      <div class="nav-links" id="navLinks">
+        <ul>
+          <li class="zoomText"><a href="../index.html">HOME</a></li>
+          <li class="zoomText"><a href="GalleryOfWorks.html">Gallery of Works</a></li>
+          <li class="zoomText"><a href="AnimationStyle.html">Animation</a></li>
+          <li class="zoomText"><a href="References.html">REFERENCES</a></li>
+          <li class="zoomText"><a href="SignUp1.html">Sign-Up</a></li>
+          <li class="zoomText"><a href="LogIn.html">Log-In</a></li>
+        </ul>
+      </div>
+    </nav>  
+  </section>
+
+  <section class="content">
+    <article>
+      <p>MAPPA has produced or co-produced a wide range of anime works across various genres and media, from TV series and movies to web shorts and commercials</p>
+    </article>
+    <article>
+      <p>Here is a list of selected notable works that MAPPA has been involved in, with brief summaries, ratings, and links to more information. You can also see some images and videos from MAPPA's works in the slideshow below </p>
+    </article>
+
+    <!-- Filter and Sort Options for the animation works -->
+    <div id="filter">
+        <label for="filterInput">Filter:</label>
+        <input type="text" id="filterInput">
+        <label for="sortSelect">Sort By:</label>
+        <select id="sortSelect">
+            <option value="title">Title</option>
+            <option value="genre">Genre</option>
+            <option value="year">Release Year</option>
+        </select>
+    </div>
+
+    <!-- Gallery section where the images will be displayed -->
+    <div id="gallery"></div>
+    
+  </section>
+
+  <!-- The footer hover area -->
+  <div class="footer-hover-area"></div>
+  <!-- The footer in the webpage. -->
+  <footer>
+    <div>
+      <!-- List of MAPPA social media links -->
+      <li class="footerlogo"><a href="https://twitter.com/MAPPA_Info?t=FhLh5sh_S5hy8I3gdxmZYA&s=33"><i class="fa fa-twitter"></i></a></li>
+      <li class="footerlogo"><a href="https://www.instagram.com/mappastudios/?igsh=MmdqNml4NzZsZ3o4"><i class="fa fa-instagram"></i></a></li>
+      <li class="footerlogo"><a href="https://www.youtube.com/@MAPPACHANNEL"><i class="fa fa-youtube"></i></a></li>
+      <p>Copyright© 2023-2024. All rights reserved.<br>Created by Gabriel Ethan Troy C. Guanzon and Clive S. Tolentino.</p>
+    </div>
+  </footer>  
+  
+  <script src="../script/GalleryOfWorks.js"></script>
+</body>
+
+</html>

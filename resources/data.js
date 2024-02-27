@@ -99,12 +99,32 @@ function defineLinks() {
         url: "kalyetunes/index.html",
         icon: "images/kalyetunes.png"
     }
+  
   links[16]={
       title:"The Pitlane",
       desc:` "The Pitlane", an in-depth guide to the pinnacle of motorsport. Features of the website are as follows: Homepage, Basics of Formula 1, Driver Profiles of the 2023 Grid, Race Tracks for the 2023 Race Calendar, Constructors or F1 Teams for the 2023 Season, and the part by part of The Formula 1 Car. `,
       url:"pitlane/index.html",
       icon:"pitlane/pitlane.png"
   }
+  links[17]={
+      title:"The Hamilton World",
+      desc:"Welcome to Hamilton World - a website for all things about Hamilton the Musical!",
+      url:"hamilton/index.html",
+      icon:"hamilton/hamilton.png"
+  }
+  links[18]={
+      title:"Spoti Triv",
+      desc:"Our website, by Maricier Carambas and Robert Odulio, aims to entertain people who love listening to music or playing games. On our website, you will need to guess the lyrics of a song, but you won't get to know what the song is right away; you will only get to know the artist who made the song and in which it is included! There is also a score included on our website to know what is your current progress in the game.",
+      url:"spottriv/index.html",
+      icon:"spottriv/spottriv.jpg"
+  }
+  links[19]={
+      title:"The Bard",
+      desc:"An unofficial official band website for a beloved fictional band, hailing from Japan that has captured the hearts of everyone around the world, Kessoku Band from hit anime Bocchi the Rock!",
+      url:"bard/index.html",
+      icon:"bard/bard.png"
+  }
+  
     // to be used in script.js
     return links;
 }

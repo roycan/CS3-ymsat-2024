@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>MAPPA Website - Sign Up Page 1</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <meta name="keywords" content="MAPPA, website, signup" />
+  <meta name="description" content="This contains the MAPPA website Signup page 1" />
+  <meta name="author" content="Gabriel Ethan Troy C. Guanzon, Clive Tolentino" />
+  <meta name="revised" content="17-02-2024" />
+
+    <!-- Link to the favicon and external css files -->
+  <link rel="icon" href="../images/MAPPAlogo.jpg" type="image/jpg" sizes="16x16">
+  <link href="../style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+
+  <!-- The header containing the title of the website and the navigation bar with the corresponding links -->
+  <section class = "header">
+    <!-- Website title-->
+    <h1>MAPPA: The Animation Studio Behind the Hottest Anime</h1>
+    <nav>
+      <!-- Logo of the website -->
+      <a href="../index.html"> <img class="logo" src="../images/MAPPAlogo.jpg" alt="logo image"></a>
+      <!-- Navigation Links -->
+      <div class="nav-links" id="navLinks">
+        <ul>
+          <li class="zoomText"><a href="../index.html">HOME</a></li>
+          <li class="zoomText"><a href="GalleryOfWorks.html">Gallery of Works</a></li>
+          <li class="zoomText"><a href="AnimationStyle.html">Animation</a></li>
+          <li class="zoomText"><a href="References.html">REFERENCES</a></li>
+          <li class="zoomText"><a href="SignUp1.html">Sign-Up</a></li>
+          <li class="zoomText"><a href="LogIn.html">Log-In</a></li>
+        </ul>
+      </div>
+    </nav>  
+  </section>
+
+  <!-- Page 1 -->
+  <div id="page1" class="content">
+    <div class="signup_form">
+      <h1>SIGN-UP FORM</h1>
+      <h2>Create an account to unlock more features from our website! (e.g. Forums)</h2>
+      <p>* We will not use your private information on any other website. This follows the Data Privacy Act.</p>
+    </div>
+
+    <form id="form1">
+      <fieldset id="fieldset1">
+        <label for="name"><b>Name:</b></label><br>
+        <input type="text" id="name" placeholder="Enter your name" name="name" required><br>
+
+        <label for="username"><b>Preferred Username:</b></label><br>
+        <input type="text" id="username" placeholder="Enter your preferred username" name="username" required><br><br>
+
+        <label for="gender"><b>Gender:</b></label><br>
+        <input type="radio" id="male" name="gender" value="male" required>
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="female" required>
+        <label for="female">Female</label><br><br>
+
+        <label for="email"><b>Email:</b></label><br>
+        <input type="email" id="email" placeholder="Enter your Email" name="email" required><br>
+
+        <label for="password"><b>Password:</b></label><br>
+        <input type="password" id="password" placeholder="Enter your preferred password" name="passsword" required><br>
+
+        <label for="retypePassword"><b>Re-type Password:</b></label><br>
+        <input type="password" id="retypePassword" placeholder="Enter your password again" name="retypePassword" required><br>
+
+        <label for="rememberMe"><b>Remember Me!:</b></label>
+        <input type="checkbox" id="rememberMe" name="rememberMe"><br>
+
+        <input type="button" class="formButton" onclick="nextPage()" value="Next">
+
+      </fieldset>
+    </form>
+  </div>
+
+  <!-- Page 2 -->
+  <div id="page2" class="content" style="display: none;">
+    <div class="signup_form">
+      <h1>SIGN-UP FORM</h1>
+      <h2>Before we create your account, we would like to know what you like about anime, specifically anime created by MAPPA of course! Feel Free to fill out the necessary boxes below.</h2>
+    </div>
+    
+    <form id="form2">
+      <fieldset id="fieldset2">
+        <label for="favoriteWork"><b>Favorite MAPPA work:</b></label><br>
+        <textarea id="favoriteWork" placeholder="Enter your list of MAPPA anime that you really love!" name="favoriteWork"></textarea><br>
+
+        <p><b>Preferred Genres</b></p>
+        <input type="checkbox" id="action" name="action" value="action">
+        <label for="action">Action</label><br>
+        <input type="checkbox" id="drama" name="drama" value="drama">
+        <label for="drama">Drama</label><br>
+        <input type="checkbox" id="gore" name="gore" value="gore">
+        <label for="gore">Gore</label><br>
+        <input type="checkbox" id="mystery" name="mystery" value="mystery">
+        <label for="mystery">Mystery</label><br>
+        <input type="checkbox" id="sports" name="sports" value="sports">
+        <label for="sports">Sports</label><br><br>
+
+        <label for="updates"><b>Would you also like to be updated by our website on the latest releases of MAPPA studio? We would update you through email!</b></label><br>
+        <input type="radio" id="yes" name="updates" value="yes" required>
+        <label for="yes">Yes!</label>
+        <input type="radio" id="no" name="updates" value="no" required>
+        <label for="no">No!</label><br><br>
+        
+        <label for="updateType"><b>If yes, then what kind of updates would you like to have?</b></label><br>
+        <select id="updateType" name="updateType">
+          <option value="">--Please choose option--</option>
+        </select> <br>
+
+        <p>*By creating an account, you are agreeing to our Terms of Service</p>
+
+        <input type="button" class="formButton" onclick="previousPage()" value="Go Back">
+        <input type="submit" class="formButton" onsubmit="return createAccount()" value="Create an Account">
+
+      </fieldset>
+    </form>
+  </div>
+
+  <script src="../script/SignUp.js"></script>
+</body>
+
+</html>

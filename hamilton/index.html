@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <meta name="authors" content="Regina Therese Castaneda and Anela Miu Fernandez">
+  <meta name="keywords" content="HTML, CSS, JavaScript, Hamilton, Website, World, Games">
+  <meta name="description" content="This website is dedicated to the Hamilton Musical. It is composed of different games, descriptions, and facts that aim to bring fans more excitment and fun. ">
+  <title> Hamilton World </title>
+  
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link href="cssdocs/navBars.css" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Playfair Display|Trirong|Montserrat|Raleway"> <!-- include google fonts -->
+  <link rel="icon" type="image/x-icon" href="images/Home_Images/Hamilton-Logo.png">
+  <!-- include bootstrap -->
+</head>
+
+<body>
+  <div id="header">
+    <div id="navBar">
+      <div id="toggleMenu" onclick="toggleMenu('menuSelection','contentBody','outsideMenuSelection')">
+        <img src="images/Home_Images/navIcon.png" alt="feather">
+        <p>Open Menu</p>
+      </div>
+      <h1 onclick="homePage()">Hamilton World</h1>
+    </div>
+  </div>
+
+  <div id="menuSelection" class="menuOn">
+    <div>
+      <h1> Menu </h1>
+    </div>
+    <a href="">Home</a>
+    <a href="htdocs/aboutUs.html">About It</a>
+    <a href="htdocs/quizzesGames.html">Games & Quizzes</a>
+  </div>
+
+  <div id="outsideMenuSelection" class="menuOn"
+    onclick="toggleMenu('menuSelection','contentBody','outsideMenuSelection')"> </div>
+
+  <!-- Heading tags -->
+  <div id="contentBody" class="menuOn">
+    <div id="mainImagePlaceholder">
+      <p style="font-size:60px; bottom:30px;">What's your name, man?</p>
+      <p style="font-size:45px; bottom:-10px;">Alexander</p>
+      <p style="color:black; 
+        font-size:90px; bottom: -135px;
+        font-weight: bolder; 
+        font-family:'Trirong','Playfair Display','EB Garamond', 'Merriweather', 'Times New Roman',sans-serif;
+        text-align: center;
+        margin: 0px;"> HAMILTON!</p>
+    </div>
+
+    <div id="introductoryBlock"> 
+      <h1> Welcome to Hamilton World! </h1>
+      <p> We've been expecting you. This is a world where all things Hamilton come to life and live without strife! This world is composed of three different parts - this home page as a bridge between worlds, an about page to give an idea of this world, and a games and quizzes page to provide entertainment and expression. The Hamilton World hopes to encourage all to take a step back and appreciate the musical.</p>
+      <p> So, what are you waiting for? Drop everything now, and let's get started! Remember that history has its eyes on you!</p>
+    </div> 
+  
+<!-- Trailer Tags -->
+    <div id="articleRow">
+      <div class="imagePlaceholder" style="background-image: url('images/Home_Images/rise_to_the_top.webp');" onclick="redirectPage('aboutUs')">
+        <div class="inlineBorder"> </div>
+        <p> <b>History Has Its Eyes On You:</b> <br> Let's take a walk along memory lane and discover Hamilton's rise to
+          the top! </p>
+      </div>
+
+<!-- Images -->
+      <div class="imagePlaceholder" style="background-image: url('images/Home_Images/my_shot_article.jfif');" onclick="redirectPage('quizzesGames')">
+        <div class="inlineBorder"> </div>
+        <p> <b>My Shot:</b> <br> Don't throw away your shot! Come and join us play some thrilling and fun games about
+          Hamilton!</p>
+      </div>
+    </div>
+
+    <footer>
+      <h1>About Us</h1>
+      <p>&copy; Regina Therese Castaneda and Anela Miu Fernandez 2024</p>
+      <p>Meet Hamilton and his crew this year! Welcome, welcome to the world of Hamilton! Hamilton World is a website that aims to united both young and old fans of the musical Hamilton. This website aims to increase the online presence of Hamilton, allow users to read articles about Hamilton, and engage users through fun and mind boggling games on Hamilton. Once you enter this website, you would never want to leave! So, come one and all, and visit the amazing world of Hamilton! Don't throw away your shot! </p>
+      <br>
+      <p>Note: All images in this site are taken from Hamilton and are not original content.</p>
+
+      <p> References: </p> 
+      <p> <i> Hamilton study guide.</i> (n.d.). LitCharts. https://www.litcharts.com/lit/hamilton</p>
+    </footer>
+  </div>
+
+  <script defer src="script.js"></script>
+
+</body>
+
+</html>

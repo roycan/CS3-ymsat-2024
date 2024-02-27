@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Rock, Paper, Scissors, SHOOT!</title> 
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <meta name="keywords" content="game, homepage" />
+  <meta name="description" content="a rock paper scissor game"/>
+  <meta name="author" content="Sally and Tania" />
+  <meta name="revised" content="01/08/2024" />
+  <link rel="icon" href="../images/logo.png" type="image/ico" sizes="16x16"> <!-- to add a site tab icon -->
+  <link href="style.css" rel="stylesheet" type="text/css" /> <!-- to add an external css file -->
+</head>
+<body>
+  <!--Header that contains the logo, website title, and navigation menu. The website title and the navigation menu are all linked to their respective webpages-->
+  <header>
+    <img class="logo" src="images/logo.png" alt="Picture of logo"></img>
+    <h1><a href="index.html">Rock, Paper, Scissors, SHOOT!</a></h1>
+    <nav>
+      <ul class="links">
+        <li><a href=htdocs/Login.html>Login</li>
+        <li><a href=htdocs/History.html>History</a></li>|
+        <li><a href=htdocs/Weapons.html>Weapons</a></li>|
+        <li><a href=htdocs/InfiniteMatches.html> Infinite Matches</a></li>|
+        <li><a href=htdocs/FirstToThree.html> First to Three </a></li>
+      </ul>
+    </nav>
+  </header>
+  <!--Paragraph that welcomes user to the website. It has a style that centers it and gives the right and left a 10% padding.-->
+  <p style="margin: auto;padding:0px 10%;text-align:center;"> Welcome to the Rock, Paper, Scissors, SHOOT!</p><br>
+  <!--Paragraph that has a class intro, it gives an introduction and the information of the game-->
+  <p class="intro" style="margin: auto;padding:0px 10%;">
+    Rock, Paper, Scissors, SHOOT! is a website where you can have fun and play the classic game of Rock, Paper, Scissors with a computer. We offer information about the game history and the weapons you can use, and two modes of the game: Infinite Matches where you play limitless matches, and First to Three where you play until you or the computer reach 3 points. Enjoy the game of probability and luck! 
+  </p>
+  <br>
+  <!--Section that represents the History webpage. It is linked to the History webpage and has information about it.-->
+  <section>
+    <h2><a href="htdocs/History.html">History</a></h2>
+    <p>
+    If you're interested in the history of the game, go to the History page! It will tell when and where the game originated, how it popularized, and other interesting facts!
+    </p>
+  </section>
+  <br>
+  <!--Section that represents the Weapons webpage. It is linked to the Weapons webpage and has information about it.-->
+  <section>
+    <h2><a href="htdocs/Weapons.html">Weapons</a></h2>
+    <p>
+    Wanna know what weapons can you use? Go to the Weapons Page! The information about the weapons that the player may choose from can be seen in the Weapons Page! Don't miss this out! It also serves as a guide for the player.
+    </p>
+    <section class="images">
+      <img src="weapons/rock.png" alt="Picture of a rock"></img>
+      <img src="weapons/paper.png" alt="Picture of a paper"></img>
+      <img src="weapons/scissors.png" alt="Picture of a scissors"></img>
+    </section>
+    <section class="s-info">
+      <p>Rock can defeat scissors, but it can be defeated by paper.</p>
+      <p>Paper can defeat rock, but it can be defeated by scissors.</p>
+      <p>Scissors can defeat paper, but it can be defeated by rock.</p>
+    </section>
+  </section><br>
+  <!--Section that has a class of first that represents the Infinite Matches webpage. It is linked to the Infinite Matches webpage and has information about it. It is assigned to the class first so it can be styled in CSS-->
+  <section class="first">
+    <h2><a href="htdocs/InfiniteMatches.html">Infinite Matches</a></h2>
+    <p>
+    Never-ending fun! Go to the Infinite Matches page! You can play as many matches as you want and as many as you can. This game mode provides infinitely many matches, so you can play as long as you want!
+    </p>
+  </section>
+  <!--Section that has a class of second that represents the First to Three webpage. It is linked to the First to Three webpage and has information about it. It is assigned to the class first so it can be styled in CSS-->
+  <section class="second">
+    <h2><a href="htdocs/FirstToThree.html">First to Three</a></h2>
+    <p>
+     Just want a quick match? Go to the First to Three page! The match in this game mode will end if you or the opponent already gained three (3) points - which explains the game mode's name. So if you want to play a quick match, go to the First to Three and you will surely enjoy!
+    </p>
+  </section>
+  <!--Footer section of webpage, contains copyright-->
+  <footer>
+    &copy; Dela Cruz & Lugasip - 2023 Computer Science 3 
+  </footer>
+</body>
+</html>

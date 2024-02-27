@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>First to Three Page</title> 
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <meta name="keywords" content="game" />
+  <meta name="description" content="a rock paper scissor game" />
+  <meta name="author" content="Sally and Tania" />
+  <meta name="revised" content="01/08/2024" />
+  <link rel="icon" type="image/x-icon" href="../images/logo.png"> <!-- to add a site tab icon -->
+  <link href="../firsttothree.css" rel="stylesheet" type="text/css" /> <!-- to add an external css file -->
+</head>
+<body>
+  <!--Header that contains the logo, website title, and navigation menu. The website title and the navigation menu are all linked to their respective webpages-->
+  <header>
+    <img class="logo" src="../images/logo.png" alt="Picture of logo"></img>
+    <h1><a href="../index.html">Rock, Paper, Scissors, SHOOT!</a></h1>
+    <!--Labels the webpage as First to Three page and moves it 6% to the left so it can be centered.-->
+    <h2 style="position:relative;right:-1;"> First to Three </h2>
+    <nav>
+      <ul class="links">
+        <li><a href=../htdocs/Login.html>Login</li>
+        <li><a href=../htdocs/History.html>History</a></li>|
+        <li><a href=../htdocs/Weapons.html>Weapons</a></li>|
+        <li><a href= ../htdocs/InfiniteMatches.html> Infinite Matches</a></li>|
+        <li><a href=../htdocs/FirstToThree.html> First to Three </a></li>
+      </ul>
+    </nav>
+  </header>
+    <!--Paragraph that welcomes user to First to Three mode. It has a style that centers it and gives the right and left a 10% padding.-->
+    <p style="margin: auto;padding:0px 10%;text-align:center;"> Welcome to the First to Three!</p>
+    <!--Paragraph that gives information about First to Three mode. It has a style that makes it justified and gives the right and left a 10% padding.-->
+    <p style="margin: auto;padding:0px 10%;text-align:justify;"> <br>Are you looking for a thrilling game where you want to challenge your luck? This is the right mode for you! In this game mode, you will be playing against the computer. The computer will choose a random weapon and you will choose a weapon of your choice. The match will end when either you or the AI reaches 3 points, but if you want a rematch, you can press the "Rematch" button to have another round of this mode. If enter button is clicked after a party having 3 wins, there will be an alert box to inform that the game has ended. If you press OK or enter, the game will automatically reset and present to you another rematch.
+  </p>
+  <br>
+  <!--Section that provides information on what values are accepted-->
+  <section>
+    <p>Here are the possible values to input for the game:</p>
+    <!--Section that has a class of images containing images of a rock, a paper, and scissors-->
+    <section class="images">
+      <img src="../infinite/rock.png" alt="Picture of a rock"></img>
+      <img src="../infinite/paper.png" alt="Picture of a paper"></img>
+      <img src="../infinite/scissors.png" alt="Picture of a scissors"></img>
+    </section>
+    <!--Section that has a class of s-info containing information and rules about the weapons(what they can defeat and what defeats them)--rock, paper, and scissors-->
+    <section class="s-info">
+      <p>Rock can defeat scissors, but it can be defeated by paper.</p>
+      <p>Paper can defeat rock, but it can be defeated by scissors.</p>
+      <p>Scissors can defeat paper, but it can be defeated by rock.</p>
+    </section>
+  </section>
+  <br>
+  <!--Section that has a class of first containing user's side of the game. It is assigned to the class first so it can be styled in CSS.-->
+  <section class="first">
+    <!--Paragraph that instructs user to input their weapon-->
+    <p>To start the game, please input either "R", "P", or "S" to select your weapon for the match:</p>
+    <!--Input field where user types in their weapon-->
+    <input type="text" id="letter">
+    <!--Button that triggers the game function with the paramater of the value of letter which is user's choice of weapon-->
+    <button onclick="game(letter.value)" id="enter">Enter</button><br>
+    <!--Paragraph that labels the section as user's side-->
+    <br>You: <br><br>
+    <!--Displays initial image of user's weapon which is the logo image. Has an id of user.-->
+    <img src="../infinite/initial.png" id="user" alt="Picture of a user's weapon">
+    <!--Message that displays the game's result (win, lose, or draw)-->
+    <p id="result"></p>
+    <!--Message that informs user about their stats(how many games they've played, won, lost, and had a draw)-->
+    <p id="stats">Number of Games: 0<br>Wins: 0<br>Loses: 0<br>Draw: 0</p>
+  </section>
+  <!--Section that has a class of second containing AI's side of the game. It is assigned to the class second so it can be styled in CSS.-->
+  <section class="second">
+    <!--Paragraph that labels the section as AI's side-->
+    <p>AI (computer):</p>
+    <!--Displays initial image of AI's weapon which is the logo image. Has an id of image.-->
+    <img src="../infinite/initial.png" id="image" alt="Picture of a AI's weapon"><br>
+    <!--Button with id clear that once clicked, triggers the rematch function to reset and start new match-->
+    <button onclick="rematch()" id="clear">Rematch? Press me!</button>
+  </section>
+  <!--Footer section of webpage, contains copyright-->
+  <footer>
+    &copy; Dela Cruz & Lugasip - 2023 Computer Science 3 
+  </footer>
+  <!--Connects or adds an external JS file which is script2(FTT).js-->
+  <script src="../script2(FTT).js"></script>
+</body>
+
+</html>

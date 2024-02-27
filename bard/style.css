@@ -1,0 +1,549 @@
+html {
+  height: 100%;
+  width: 100%;
+  min-width: 450px;
+}
+/* do not forget to include comments */
+
+body {
+  background-color: #333;
+  color: white;
+  margin: 0;
+  font-family: tahoma, sans-serif;
+}
+
+
+nav {
+  display: flex;
+  width: 100%;
+  background-color: #222;
+  position: fixed;
+  top: 0;
+  z-index: 2;
+}
+
+nav a:last-child {
+  margin-left: auto;
+}
+
+a {
+  display: inline-block;
+  padding: 14px 16px;
+  text-decoration: none;
+  color: white;
+  font-family: tahoma, sans-serif;
+}
+
+nav > a:not(.active) {
+  transition: 0.3s;
+  opacity: 0.6;
+}
+
+nav > a:hover:not(.active) {
+  background-color: #111;
+  opacity: 1;
+}
+
+img {
+  width: 100%;
+}
+
+.active {
+  background-color: #EEB8C4;
+}
+
+/* css for the nav bar */
+
+.container {
+  background-image: url("images/homePageImage.png");
+  height: 800px;
+  background-size: cover;
+  box-sizing: border-box;
+  padding-top: 100px;
+
+}
+
+.box {
+  background-color: #333;
+  width: 70%;
+  display: flex;
+  margin: auto;
+  padding: 10px;
+}
+
+#albumCover {
+  width: 60%;
+  padding: 20px;
+}
+
+#subtitle {
+  width: 40%;
+  padding: 25px;
+  text-align: center;
+  margin: auto;
+}
+
+#subtitle h1 {
+  font-size: 65px;
+  margin: 0;
+}
+
+#subtitle h2 {
+  font-size: 25px;
+  margin: 0;
+}
+
+@media (max-width: 950px) {
+  .box {
+    flex-direction: column-reverse;
+    width: 450px;
+  }
+  #albumCover {
+    width: 90%;
+    margin: auto;
+    padding: 20px;
+    padding-bottom: 0px;
+  }
+  #subtitle {
+    width: 90%;
+    text-align: center;
+  }
+  #subtitle h1 {
+    margin-top: 10px;
+  }
+}
+
+/* css for the box inside of a container */
+
+section h1 {
+  text-align: center;
+  font-size: 50px;
+  margin-top: 0;
+  padding-top: 30px;
+}
+
+.merch {
+  display: flex;
+  justify-content: center;
+}
+
+.merch > div {
+  width: 300px;
+  margin-left: 20px;
+  margin-right: 20px;
+  transition: 0.5s;
+  opacity: 0.8;
+}
+
+.merch > div:hover {
+  background-color: #111;
+  opacity: 1;
+}
+
+.buttonContainer1 {
+  margin: 0;
+  position: relative;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  padding: 0;
+  margin-top: 50px;
+}
+
+.storeView {
+  color: white;
+  background-color: #EEB8C4;
+  text-decoration: none;
+  padding: 20px 36px;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  margin:0 auto;
+  transition: 0.3s;
+}
+
+.storeView:hover {
+  background-color: white;
+  color: #EEB8C4;
+}
+/* css for the store section in the home page */
+
+
+.music {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 0;
+}
+
+.music > div {
+  width: 300px;
+  margin-left: 20px;
+  margin-right: 20px;
+  padding-bottom: 0;
+  transition: 0.5s;
+  opacity: 0.8;
+}
+
+.music > div:hover {
+  background-color: #111;
+  opacity: 1;
+}
+
+.music > div > a > p {
+  text-align: center;
+  margin: 0;
+  margin-top: 10px;
+}
+
+.buttonContainer2 {
+  margin: 0;
+  position: relative;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  padding: 0;
+  margin-top: 50px;
+}
+
+.musicView {
+  color: white;
+  background-color: #E6D47B;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  padding: 20px 36px;
+  transition: 0.3s;
+}
+
+.musicView:hover {
+  background-color: white;
+  color: #E6D47B;
+}
+
+.livePerformances > div {
+  display: flex;
+  justify-content: center;
+}
+
+.livePerformances > div > iframe {
+  border-style: none;
+  padding: 10px;
+  margin: 10px;
+  transition: 0.3s;
+}
+
+.livePerformances > div > iframe:hover {
+  background-color: #222;
+}
+
+.livePerformances > h1 {
+  margin-bottom: 20px;
+}
+
+/* css for the music section in the home page */
+
+/*start of css for meettheband*/
+
+.mtbSection {
+  background-image: url("images/starrybgimage.png");
+  z-index: -2;
+  padding-bottom: 25px;
+}
+
+.mtbSection > h1 {
+  margin-bottom: 15px;
+  margin-top: 50px;
+}
+
+.bandMembers {
+  display: flex;
+  justify-content: center;
+}
+
+
+.bandMembers > a {
+  width: 225px;
+  margin-top: 0;
+  padding-left: 20px;
+  padding-right: 20px;
+  transition: 0.3s;
+  opacity: 0.6;
+}
+
+.bandMembers > a:hover {
+  opacity: 1;
+}
+
+.eyes {
+  display: flex;
+  justify-content: center;
+}
+
+.eyes > img {
+  width: 225px;
+  margin-left: 20px;
+  margin-right: 20px;
+  opacity: 0.8;
+  transition: 0.3s;
+}
+
+.eyes > img:hover {
+  cursor:pointer;
+  opacity: 1;
+}
+
+.mtbcontent {
+  z-index: 2;
+  padding-bottom: 40px;
+  border-top: 1px solid white;
+  border-bottom: 1px solid white;
+}
+
+#info {
+  width: 1000px;
+  margin: auto;
+  transition: 0.3s;
+  padding: 10px;
+}
+
+.mtbband {
+  background-color: #222;
+  display: flex;
+  padding: 50px;
+  font-size: 20px;
+
+}
+
+.mtbband > img {
+  width: 400px;
+  margin-left: 50px;
+}
+
+@media (max-width: 850px) {
+  .mtbband {
+    flex-direction: column-reverse;
+    width: 450px;
+    margin: auto;
+  }
+  .mtbband > img {
+    width: 90%;
+  }
+}
+
+.photoDumpContainer {
+  max-width: 900px;
+  position: relative;
+  margin: auto;
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 5px 2px;
+  background-color: #111;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active1, .dot:hover {
+  background-color: #EEB8C4;
+}
+
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/*end of css for meettheband*/
+
+/*start of css for about us*/
+
+.aucontent {
+  margin-top: 50px;
+}
+
+.aucontent > div {
+  width: 60%;
+  margin: auto;
+  background-color: #222;
+  padding: 25px;
+  display: flex;
+  font-size: 18px;
+}
+
+.aucontent > div > div > img {
+  width: 450px;
+}
+
+.creatorcontainer {
+  padding-left: 25px;
+}
+
+@media (max-width: 1100px) {
+  .aucontent > div {
+    flex-direction: column-reverse;
+    width: 450px;
+    margin: auto;
+  }
+  .creatorcontainer {
+    margin: auto;
+    padding: 0;
+    align-content: center;
+  }
+
+  .widekita > img {
+    width: 40%;
+  }
+}
+
+.widekita {
+  width: 961px;
+  margin: auto;
+  margin-top: 25px;
+}
+
+/*end of css for about us*/
+
+/*start of css for music*/
+
+.musicContent > div {
+  justify-content: center;
+  border-bottom: 1px solid #222;
+  padding-bottom: 20px;
+}
+
+.musicContent > div > p {
+  margin-top: 0;
+  padding-top: 20px;
+}
+
+.albums {
+  background-image: url("images/backgroundalbum.png");
+}
+
+.eps {
+  background-image: url("images/backgroundep.png");
+}
+
+.singles {
+  background-image: url("images/backgroundsingle.png");
+}
+
+/*end of css for music*/
+
+/*start of css for store*/
+
+#StoreSection {
+  background-image: url("images/storeBackground.png");
+  background-size: cover;
+  background-position: center;
+}
+
+#StoreSection > h1 {
+  margin-bottom: 0;
+}
+
+.StoreStore {
+  display: flex;
+  justify-content: center;
+}
+
+.StoreStore > div {
+  width: 300px;
+  margin-left: 20px;
+  margin-right: 20px;
+  transition: 0.3s;
+}
+
+.StoreStore > div:hover {
+  background-color: #111;
+}
+
+.musicContent > div > p {
+  font-size: 30px;
+}
+
+/*end of css for store*/
+
+/*start of css for news*/
+#newsheader {
+  margin-top: 50px;
+  text-align: left;
+  padding-left: 25px;
+  margin-bottom: 25px;
+}
+
+.newsbox {
+  display: flex
+}
+
+.newscontent {
+  width: 80%;
+  margin: auto;
+}
+
+#newsproper {
+  margin-left: 5px;
+  margin-right: 5px;
+  width: 70%;
+  background-color: #EEB8C4;
+  color: black;
+  padding: 15px;
+}
+
+.newsbuttons {
+  margin-right: 5px;
+  width: 30%;
+}
+
+.newsbuttons > div {
+  padding: 20px;
+  text-align: center;
+  background-color: #222;
+  margin: 0px 0px 5px 5px; 
+}
+
+.newsbuttons > div:hover {
+  cursor: pointer;
+  background-color: #111;
+  transition: background-color 0.3s ease;
+}
+
+/*end of css for news*/

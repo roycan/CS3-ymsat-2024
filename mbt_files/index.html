@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>MBTIles</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <meta name="keywords" content="MBTI, personality type, tiles" />
+  <meta name="description" content="A webpage about the different personality types according to the Myers-Briggs Type Indicator." />
+  <meta name="author" content="<Mauryn Cruz and Marthena Juan>" />
+  <meta name="revised" content="01/24/2024" />
+  <link rel="icon" href="images/logo/MBTIles logo transparent.ico" type="image/ico" sizes="16x16">
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+</head>
+  
+<body>
+  <!-- nav bar details -->
+  <nav>
+    <a href="index.html"> 
+      <div> 
+        <img id="logo" src="images/logo/MBTIles logo.png">
+        <img id="title" src="images/logo/MBTIles.png">
+      </div>
+    </a>
+    <a id= "cogfunc" href="htdocs/CognitiveFunctions.html"> Cognitive Functions </a>
+    <a id="comp" href="htdocs/Compatibility.html"> Compatibility </a>
+  </nav>
+
+  <header>
+    <h1>MBTIs</h1>
+  </header>
+
+  <!-- image carousel for MBTIs -->
+  <section>
+    <div class="carousel">
+      <div class="carousel-view">
+       <button id="prev-btn" class="prev-btn">
+          <svg viewBox="0 0 512 512" width="20" title="chevron-circle-left">
+           <path d="M256 504C119 504 8 393 8 256S119 8 256 8s248 111 248 248-111 248-248 248zM142.1 273l135.5 135.5c9.4 9.4 24.6 9.4 33.9 0l17-17c9.4-9.4 9.4-24.6 0-33.9L226.9 256l101.6-101.6c9.4-9.4 9.4-24.6 0-33.9l-17-17c-9.4-9.4-24.6-9.4-33.9 0L142.1 239c-9.4 9.4-9.4 24.6 0 34z" />
+    </svg>
+        </button>
+        <div id="item-list" class="item-list">
+          <img id="INTJ" class="item" alt="INTJ" src="images/MBTI Pictures/INTJ.png" onclick="clickMBTIINTJ()">
+          <img id="INTP" class="item" alt="INTP" src="images/MBTI Pictures/INTP.png" onclick="clickMBTIINTP()">
+          <img id="ENTJ" class="item" alt="ENTJ" src="images/MBTI Pictures/ENTJ.png" onclick="clickMBTIENTJ()">
+          <img id="ENTP" class="item" alt="ENTP" src="images/MBTI Pictures/ENTP.png" onclick="clickMBTIENTP()">
+          <img id="INFJ" class="item" alt="INFJ" src="images/MBTI Pictures/INFJ.png" onclick="clickMBTIINFJ()">
+          <img id="INFP" class="item" alt="INFP" src="images/MBTI Pictures/INFP.png" onclick="clickMBTIINFP()">
+          <img id="ENFJ" class="item" alt="ENFJ" src="images/MBTI Pictures/ENFJ.png" onclick="clickMBTIENFJ()">
+          <img id="ENFP" class="item" alt="ENFP" src="images/MBTI Pictures/ENFP.png" onclick="clickMBTIENFP()">
+          <img id="ISTJ" class="item" alt="ISTJ" src="images/MBTI Pictures/ISTJ.png" onclick="clickMBTIISTJ()">
+          <img id="ISFJ" class="item" alt="ISFJ" src="images/MBTI Pictures/ISFJ.png" onclick="clickMBTIISFJ()">
+          <img id="ESTJ" class="item" alt="ESTJ" src="images/MBTI Pictures/ESTJ.png" onclick="clickMBTIESTJ()">
+          <img id="ESFJ" class="item" alt="ESFJ" src="images/MBTI Pictures/ESFJ.png" onclick="clickMBTIESFJ()">
+          <img id="ISTP" class="item" alt="ISTP" src="images/MBTI Pictures/ISTP.png" onclick="clickMBTIISTP()">
+          <img id="ISFP" class="item" alt="ISFP" src="images/MBTI Pictures/ISFP.png" onclick="clickMBTIISFP()">
+          <img id="ESTP" class="item" alt="ESTP" src="images/MBTI Pictures/ESTP.png" onclick="clickMBTIESTP()">
+          <img id="ESFP" class="item" alt="ESFP" src="images/MBTI Pictures/ESFP.png" onclick="clickMBTIESFP()">
+        </div>
+      <button id="next-btn" class="next-btn">
+        <svg viewBox="0 0 512 512" width="20" title="chevron-circle-right">
+          <path d="M256 8c137 0 248 111 248 248S393 504 256 504 8 393 8 256 119 8 256 8zm113.9 231L234.4 103.5c-9.4-9.4-24.6-9.4-33.9 0l-17 17c-9.4 9.4-9.4 24.6 0 33.9L285.1 256 183.5 357.6c-9.4 9.4-9.4 24.6 0 33.9l17 17c9.4 9.4 24.6 9.4 33.9 0L369.9 273c9.4-9.4 9.4-24.6 0-34z" />
+        </svg>
+      </button>
+      </div>
+    </div>
+    
+  </section>
+
+  <!-- div for the info on the MBTIS -->
+  <section>
+    <div id="MBTInfo" class="infoMBTI">
+      <img id="MBTImg">
+      <div id="MBTIdesc1"></div>
+      <div id="MBTIdesc2"></div>
+    </div>
+  </section>
+
+<!-- pop up box for sign in or register 
+  <form method="post">
+    <div class="popupbox">
+      <button type="button" id="placeMBTIs" onclick="openPopup()"><b> Sign in </b></button>
+      
+      <div class="listbox" id="popup">
+        <div id="popupheader">
+          <b> Register or Sign in </b>
+        </div>
+
+        <div id="logInfo">
+          <div id="usernameInfo">
+            <label for="username">Username:</label><br>
+            <input type="text" id="username" name="username" required>
+          </div>
+          
+          <br><br>
+
+          <div id="passWInfo">
+            <label for="password">Password:</label><br>
+            <input type="password" id="passW" name="passW" required>
+          </div>
+        </div>
+        
+        <div id="instruct">
+          Don't have an account yet? <a href="htdocs/signup.html" style="color:black;">Register here</a>
+        </div>
+        <button type="button" id="enterBtn" class="btn" onclick="enter()"> Enter </button>
+        <button type="button" id="closeBtn" class="btn" onclick="closePopup()"> Close </button>
+       </div>
+      
+    </div>
+  </form> -->
+  
+  <div>
+    <hr>
+    <h3>References:</h3>
+    <ol>
+      <li>Personality types. (n.d.). 16Personalities. https://www.16personalities.com/personality-types Robinson, M. T. (2021).</li>
+      <li>Cognitive functions - A simple explanation. https://www.careerplanner.com/8CognitiveFunctions/Cognitive-Functions-Simply-Explained.cfm</li>
+      <li>Simplified myers briggs type compatibility chart. (n.d.). https://www.dreamsaroundtheworld.com/wp-content/uploads/2017/01/Myers_Briggs_Type_Compatibility_Chart.pdf</li>
+      <br><i>Images were also from 16Personalities</i>
+    </ol>
+  </div>
+
+  <footer>
+    &copy; 2024 Mauryn Cruz & Marthena Juan
+  </footer>
+  <script src="script.js"></script>
+  
+</body>
+
+</html>

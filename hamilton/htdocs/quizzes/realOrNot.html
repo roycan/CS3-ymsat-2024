@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <meta name="authors" content="Regina Therese Castaneda and Anela Miu Fernandez">
+  <meta name="keywords" content="HTML, CSS, JavaScript, Hamilton, Website, World, Games">
+  <meta name="description" content="This website is dedicated to the Hamilton Musical. It is composed of different games, descriptions, and facts that aim to bring fans more excitment and fun. ">
+  <title> Is It Enough: Real or Fake</title>
+  <link href="/cssdocs/quiz.css" rel="stylesheet" type="text/css" />
+  <link href="/cssdocs/navBars.css" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Playfair Display|Trirong|Montserrat|Raleway">
+  <link rel="icon" type="image/x-icon" href="/images/Home_Images/Hamilton-Logo.png">
+</head>
+
+<body onload="setQuestions('questionText', 2, 10, 'result-container')">
+  <div id="header">
+    <h1>Is It Enough: Real or Fake</h1>
+    <div id="navBar">
+      <h1 onclick="returnHome('quizzesGames')">Back to Game Selection</h1>
+      <h1 onclick="homePage()">Hamilton World</h1>
+    </div>
+  </div>
+
+  <div id="contentBody">
+    <div id="quizQuestion">
+      <h3 id="questionText" onclick="calculateResults()"></h3>
+      <ul id="questionOptions">
+        <li id="option_1" onclick=" getValue('option_1'); nextQuestion('questionText', 2, 10, 'result-container');"></li>
+        <li id="option_2" onclick="getValue('option_2'); nextQuestion('questionText', 2, 10, 'result-container')"></li>
+      </ul>
+    </div>
+
+    <div id="result-container" style="display:none">
+      <h1 id="result"></h1>
+      <button onclick="reset('questionText', 2, 10, 'result-container')"> Try again? </button>
+    </div>
+
+    <!-- Below this is a more 'advanced' prototype of an idea; above is the more simple one -->
+    <!--
+    <div id="quizSection">
+      <!-- switch content through arrays -- >
+      <div id="question"> </div>
+
+      <div id="questionAnswers"> 
+
+      </div>
+
+    </div>
+    -->
+    <footer>
+      <h1>About Us</h1>
+      <p>&copy; Regina Therese Castaneda and Anela Miu Fernandez 2024</p>
+      <p>Meet Hamilton and his crew this year! Welcome, welcome to the world of Hamilton! Hamilton World is a website that aims to united both young and old fans of the musical Hamilton. This website aims to increase the online presence of Hamilton, allow users to read articles about Hamilton, and engage users through fun and mind boggling games on Hamilton. Once you enter this website, you would never want to leave! So, come one and all, and visit the amazing world of Hamilton! Don't throw away your shot! </p> 
+      
+      <br>
+      <p>Note: All images in this site are taken from Hamilton and are not original content.</p>
+      <p> References: </p> 
+      <p> <i> Hamilton study guide.</i> (n.d.). LitCharts. https://www.litcharts.com/lit/hamilton</p>
+    </footer>
+  </div>
+  <script> 
+    let quizQuestions = {
+      question_1: {
+        questionText: "The youngest Schuyler sister was Angelica Schuyler. ",
+          option_1: {
+            optionText: "Real",
+            optionValue: "incorrect"
+          },
+          option_2: {
+            optionText: "Not Real",
+            optionValue: "correct"
+          }
+      },
+      question_2: {
+        questionText: "Alexander Hamilton handled the State Department. ",
+          option_1: {
+            optionText: "Real",
+            optionValue: "incorrect"
+          },
+          option_2: {
+            optionText: "Not Real",
+            optionValue: "correct"
+          }
+      }, 
+      question_3: {
+        questionText: "George Eacker killed Philip Hamilton in a duel.",
+          option_1: {
+            optionText: "Real",
+            optionValue: "correct"
+          },
+          option_2: {
+            optionText: "Not Real",
+            optionValue: "incorrect"
+          }
+      }, 
+      question_4: {
+        questionText: "Aaron Burr was the third president of the United States.",
+          option_1: {
+            optionText: "Real",
+            optionValue: "incorrect"
+          },
+          option_2: {
+            optionText: "Not Real",
+            optionValue: "correct"
+          }
+      }, 
+
+      question_5: {
+        questionText: "James Reynolds blackmailed Hamilton because of the latter's affair with Maria Reynolds.",
+          option_1: {
+            optionText: "Real",
+            optionValue: "correct"
+          },
+          option_2: {
+            optionText: "Not Real",
+            optionValue: "incorrect"
+          }
+      }, 
+
+      question_6: {
+        questionText: "Hamilton wrote 51 of the 85 essays to defend the US constitution.",
+          option_1: {
+            optionText: "Real",
+            optionValue: "correct"
+          },
+          option_2: {
+            optionText: "Not Real",
+            optionValue: "incorrect"
+          }
+      },
+
+      question_7: {
+        questionText: "Thomas Jefferson was one of Hamilton's greatest political allies.",
+          option_1: {
+            optionText: "Real",
+            optionValue: "incorrect"
+          },
+          option_2: {
+            optionText: "Not Real",
+            optionValue: "correct"
+          }
+      },
+
+      question_8: {
+        questionText: "Hamilton's friend, John Laurens, was a spy for the British Army.",
+          option_1: {
+            optionText: "Real",
+            optionValue: "incorrect"
+          },
+          option_2: {
+            optionText: "Not Real",
+            optionValue: "correct"
+          }
+      },
+
+      question_9: {
+        questionText: "Hamilton supported Aaron Burr in the Elections of 1800. ",
+          option_1: {
+            optionText: "Real",
+            optionValue: "incorrect"
+          },
+          option_2: {
+            optionText: "Not Real",
+            optionValue: "correct"
+          }
+      },
+
+      question_10: {
+        questionText: "Aaron Burr had a daughter named Theodosia.",
+          option_1: {
+            optionText: "Real",
+            optionValue: "correct"
+          },
+          option_2: {
+            optionText: "Not Real",
+            optionValue: "incorrect"
+          }
+      }
+    }
+    let answerValues = ["correct", "incorrect"]; //possible results: edit pa
+    let resultArray = [
+      "Oh! Looks like you need to work a lot more to rise to the top!",
+      "Hey! You are getting there! Keep pushing forward like you are running out of time!",
+      "You are getting close to the top! Move more, move! Perfection is near!",
+      "Wow! You are amazing! Looks like you have got quite a perceptive view of things since you could easily tell what was real or not!"
+    ];
+    let quizAnswers = [];
+  </script>
+  <script src="/jsdocs/js_quizzes/quiz.js"></script>
+  <script src="/jsdocs/quizzesGames.js"> </script>
+  <script defer src="/script.js"></script>
+
+</body>
+
+</html>

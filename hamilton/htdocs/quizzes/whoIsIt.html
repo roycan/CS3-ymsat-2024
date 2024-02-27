@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <meta name="authors" content="Regina Therese Castaneda and Anela Miu Fernandez">
+  <meta name="keywords" content="HTML, CSS, JavaScript, Hamilton, Website, World, Games">
+  <meta name="description" content="This website is dedicated to the Hamilton Musical. It is composed of different games, descriptions, and facts that aim to bring fans more excitment and fun. ">
+  <title> Who Did It? : Hamilton Edition </title>
+  <link href="/cssdocs/quiz.css" rel="stylesheet" type="text/css" />
+  <link href="/cssdocs/navBars.css" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Playfair Display|Trirong|Montserrat|Raleway">
+  <link rel="icon" type="image/x-icon" href="/images/Home_Images/Hamilton-Logo.png">
+</head>
+
+<body onload="setQuestions('questionText', 4, 10, 'result-container')">
+  <div id="header">
+    <h1>Who Did It?: Hamilton Edition</h1>
+    <div id="navBar">
+      <h1 onclick="returnHome('quizzesGames')">Back to Game Selection</h1>
+      <h1 onclick="homePage()">Hamilton World</h1>
+    </div>
+  </div>
+
+  <div id="contentBody"> 
+    <div id="quizQuestion">
+      <h3 id="questionText" onclick="calculateResults()"></h3>
+      <ul id="questionOptions">
+        <li id="option_1" onclick=" getValue('option_1'); nextQuestion('questionText', 4, 10, 'result-container');"></li>
+        <li id="option_2" onclick="getValue('option_2'); nextQuestion('questionText', 4, 10, 'result-container')"></li>
+        <li id="option_3" onclick="getValue('option_3'); nextQuestion('questionText', 4, 10, 'result-container')"></li>
+        <li id="option_4" onclick="getValue('option_4'); nextQuestion('questionText', 4, 10, 'result-container')"></li>
+      </ul>
+    </div>
+
+    <div id="result-container" style="display:none">
+      <h1 id="result"></h1>
+      <button onclick="reset('questionText', 4, 10, 'result-container')"> Try again? </button>
+    </div>
+    
+    <footer>
+      <h1>About Us</h1>
+      <p>&copy; Regina Therese Castaneda and Anela Miu Fernandez 2024</p>
+      <p>Meet Hamilton and his crew this year! Welcome, welcome to the world of Hamilton! Hamilton World is a website that aims to united both young and old fans of the musical Hamilton. This website aims to increase the online presence of Hamilton, allow users to read articles about Hamilton, and engage users through fun and mind boggling games on Hamilton. Once you enter this website, you would never want to leave! So, come one and all, and visit the amazing world of Hamilton! Don't throw away your shot! </p> <br>
+      
+      <p>Note: All images in this site are taken from Hamilton and are not original content.</p>
+      <p> References: </p> 
+      <p> <i> Hamilton study guide.</i> (n.d.). LitCharts. https://www.litcharts.com/lit/hamilton</p>
+    </footer>
+  </div>
+  <script> 
+    let quizQuestions = {
+      question_1: {
+        questionText: "This character started an affair with Alexander Hamilton in Act 2.",
+          option_1: {
+            optionText: "Eliza Schuyler",
+            optionValue: "incorrect"
+          },
+          option_2: {
+            optionText: "John Laurens",
+            optionValue: "incorrect"
+          },
+          option_3: {
+            optionText: "Angelica Schuyler",
+            optionValue: "incorrect"
+          },
+          option_4: {
+            optionText: "Maria Reynolds",
+            optionValue: "correct"
+          }
+      },
+      question_2: {
+        questionText: "This character was the reigning monarch of Great Britain during the time of the American Revolution.",
+          option_1: {
+            optionText: "George Washington",
+            optionValue: "incorrect"
+          },
+          option_2: {
+            optionText: "Abraham Lincoln",
+            optionValue: "incorrect"
+          },
+          option_3: {
+            optionText: "King George VII",
+            optionValue: "incorrect"
+          },
+          option_4: {
+            optionText: "King George III",
+            optionValue: "correct"
+          }
+      }, 
+      question_3: {
+        questionText: "This character was the father of the three Schuyler sisters.",
+          option_1: {
+            optionText: "Philip Schuyler",
+            optionValue: "correct"
+          },
+          option_2: {
+            optionText: "George Schuyler",
+            optionValue: "incorrect"
+          },
+          option_3: {
+            optionText: "John Adams",
+            optionValue: "incorrect"
+          },
+          option_4: {
+            optionText: "Jean-Jacques Rosseau",
+            optionValue: "incorrect"
+          }
+      }, 
+      question_4: {
+        questionText: "This character was the first secretary of the treasury of the United States",
+          option_1: {
+            optionText: "Aaron Burr",
+            optionValue: "incorrect"
+          },
+          option_2: {
+            optionText: "Thomas Jefferson",
+            optionValue: "incorrect"
+          },
+          option_3: {
+            optionText: "Alexander Hamilton",
+            optionValue: "correct"
+          },
+          option_4: {
+            optionText: "George Washington",
+            optionValue: "incorrect"
+          }
+      }, 
+
+      question_5: {
+        questionText: "This character was the second president of the United States.",
+          option_1: {
+            optionText: "John Adams",
+            optionValue: "correct"
+          },
+          option_2: {
+            optionText: "George Washington",
+            optionValue: "incorrect"
+          },
+          option_3: {
+            optionText: "John Laurens",
+            optionValue: "incorrect"
+          },
+          option_4: {
+            optionText: "Joseph Adams",
+            optionValue: "incorrect"
+          }
+      }, 
+
+      question_6: {
+        questionText: "This character killed Alexander's son - Philip.",
+          option_1: {
+            optionText: "Theodosia Burr",
+            optionValue: "incorrect"
+          },
+          option_2: {
+            optionText: "George Eacker",
+            optionValue: "correct"
+          },
+          option_3: {
+            optionText: "Peggy Schuyler",
+            optionValue: "incorrect"
+          },
+          option_4: {
+            optionText: "Maria Reynolds",
+            optionValue: "incorrect"
+          }
+      },
+
+      question_7: {
+        questionText: "This character won against Aaron Burr in the Elections of 1800",
+          option_1: {
+            optionText: "Thomas Aquinas",
+            optionValue: "incorrect"
+          },
+          option_2: {
+            optionText: "Alexander Hamilton",
+            optionValue: "incorrect"
+          },
+          option_3: {
+            optionText: "Thomas Jefferson",
+            optionValue: "correct"
+          },
+          option_4: {
+            optionText: "Mark Twain",
+            optionValue: "incorrect"
+          }
+      },
+
+      question_8: {
+        questionText: "This character was the oldest Schuyler sibling. ",
+          option_1: {
+            optionText: "Angelica Schuyler",
+            optionValue: "correct"
+          },
+          option_2: {
+            optionText: "Peggy Schuyler",
+            optionValue: "incorrect"
+          },
+          option_3: {
+            optionText: "Eliza Schuyler",
+            optionValue: "incorrect"
+          },
+          option_4: {
+            optionText: "Philip Schuyler",
+            optionValue: "incorrect"
+          }
+      },
+
+      question_9: {
+        questionText: "This character blackmailed Hamilton into giving money.",
+          option_1: {
+            optionText: "Aaron Burr",
+            optionValue: "incorrect"
+          },
+          option_2: {
+            optionText: "James Reynolds",
+            optionValue: "correct"
+          },
+          option_3: {
+            optionText: "James Madison",
+            optionValue: "incorrect"
+          },
+          option_4: {
+            optionText: "Philip Schuyler",
+            optionValue: "incorrect"
+          }
+      },
+
+      question_10: {
+        questionText: "This character was a close friend of Hamilton who died after the American Revolution.",
+          option_1: {
+            optionText: "Hercules Mulligan",
+            optionValue: "incorrect"
+          },
+          option_2: {
+            optionText: "Marquise de Lafayette",
+            optionValue: "incorrect"
+          },
+          option_3: {
+            optionText: "Peggy Schuyler",
+            optionValue: "incorrect"
+          },
+          option_4: {
+            optionText: "John Laurens",
+            optionValue: "correct"
+          }
+      }
+    }
+    let answerValues = ["correct", "incorrect"]; //possible results: edit pa
+    let resultArray = [
+      "Oh! Looks like you need to work a lot more to rise to the top!",
+      "Hey! You are getting there! Keep pushing forward like you are running out of time!",
+      "You are getting close to the top! Move more, move!",
+      "Wow! You are amazing! You are on top of the world!"
+    ];
+    let quizAnswers = [];
+  </script>
+  <script src="/jsdocs/js_quizzes/quiz.js"></script>
+  <script src="/jsdocs/quizzesGames.js"> </script>
+  <script defer src="/script.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Create | MYNTH</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <meta name="author" content="Varon, C.E ; Tolentino, J.Y" />
+  <meta name="revised" content="" />
+  <link rel="icon" href="../images/Mynth-Flower.png" type="image/ico" sizes="16x16"> <!-- to add a site tab icon -->
+  <link href="../resources/creation.css" rel="stylesheet" type="text/css" /> <!-- to add an external CSS file -->
+</head>
+
+<body>
+  <header>
+    <!-- holds logo -->
+    <a href="../index.html"><img src="../images/Mynth.png" alt="MYNTH" id="MynthLogo"></img></a> <!-- image_logo -->
+  </header>
+  <nav style="text-align:center;background-color:black;">
+    <ul style="display:inline-block;text-align:left;">
+      <li><a href="/index.html">Home</a></li>
+      <li><a href="/htdocs/syntax.html">Syntax</a></li>
+      <li><a href="creation.html">+ Create</a></li>
+      <li><a href="/htdocs/login.html">Log In</a></li>
+    </ul>
+  </nav>
+  <main>
+    <aside>
+      <div class="menu" id="text">
+        <h2>Text</h2>
+        <!--Inputs your name, job, address, and email-->
+        <form id="userDetails">
+          <label for="nameInput">Name:</label>
+          <input type="text" id="nameInput" name="nameInput" oninput="updateProfile()" value="John Doe">
+          <br>
+          <label for="jobInput">Job:</label>
+          <input type="text" id="jobInput" name="jobInput" oninput="updateProfile()" value="Student">
+          <br>
+          <label for="addressInput">Address:</label>
+          <input type="text" id="addressInput" name="addressInput" oninput="updateProfile()"
+            value="Diliman,Quezon City">
+          <br>
+          <label for="emailInput">Email:</label>
+          <input type="text" id="emailInput" name="emailInput" oninput="updateProfile()" value="jd@pshs.edu.ph">
+        </form>
+      </div>
+      <div class="menu" id="elements">
+        <h2>Elements</h2>
+        <!--Change the color of your text or background color-->
+        <form>
+          <label for="textColor">Text Color (RGB): </label>
+          <input type="text" id="textColor" name="textColor" oninput="changeElements()">
+          <br>
+          <label for="textColor">Background Color (RGB): </label>
+          <input type="text" id="backgroundColor" name="backgroundColor" oninput="changeElements()">
+          <br>
+        </form>
+      </div>
+      <div class="menu" id="upload">
+        <h2>Upload</h2>
+        <!--Uploads your profile picture-->
+        <form id="uploadForm" action="/upload" method="post" enctype="multipart/form-data">
+          <input type="file" id="imageInput" name="image" accept="image/*">
+          <br>
+          <button type="button" onclick="uploadImage()">Upload Image</button>
+        </form>
+      </div>
+      <div class="menu" id="save">
+        <h2>Save</h2>
+        <!--This will download your work-->
+        <button onclick="downloadId()">Download</button>
+      </div>
+    </aside>
+    <div id="container">
+      <img src="../images/Mynth.png" alt="Profile Picture" id="profile-picture" crossorigin="anonymous">
+      <div class="user-details">
+        <h2>Name: <span id="name">John Doe</span></h2>
+        <p>Occupation: <span id="job">Student</span></p>
+        <p>Address: <span id="address"></span></p>
+        <p>Email: <span id="email"></span></p>
+      </div>
+    </div>
+  </main>
+  <footer>
+    &copy; 2023 Computer Science 3 (Website by Varon, Cassidy Emira and Tolentino, Janine Yrah)
+  </footer>
+  <script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
+  <script src="../resources/creation.js"></script>
+</body>
+
+</html>

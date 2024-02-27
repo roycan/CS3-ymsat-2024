@@ -1,0 +1,138 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #F7C8E0;
+  background-image: linear-gradient(to right, #F7C8E0 , #ed85ba);
+  font-family: 'Kalam', cursive;
+  margin: 0;
+}
+
+header {
+  background-color:#DFFFD8;
+  height:90px;
+  width:100%;
+  margin: 0;
+}
+
+#MynthLogo {
+  float: left;
+  width: 300px;
+  height: 85px;
+}
+
+nav {
+  background-color: #DFFFD8;
+  height: 50px;
+  margin-top: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  overflow: hidden;
+  background-color: black;
+  height: 100%;
+}
+
+li {
+  float: left;
+}
+
+li a, li span {
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  padding: 14px 16px;
+  color: white;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  height: 1500px;
+}
+
+section {
+  flex: 1;
+  border: 1px solid black;
+}
+
+.column {
+  float: left;
+  width: 50%;
+  padding: 10px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.middle-section{
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.about {
+  text-align: center;
+  font-size: 15px;
+}
+
+p{
+  border: 1px;
+  padding: 10px;
+  margin: 5px;
+}
+
+a:link{
+  color: #FFFFFF;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #DFFFD8;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #B4E4FF;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+a:active {
+  color: #F7C8E0;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+.form {
+  background-color: #B4E4FF;
+  width: 450px;
+  padding: 50px;
+  margin: 20px auto;
+  border: 2px solid #000000;
+  border-radius: 8px;
+}
+
+footer {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: black;
+  color: white;
+}

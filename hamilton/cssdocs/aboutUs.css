@@ -1,0 +1,204 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+* {
+  font-family: 'Montserrat', 'Raleway', 'Times New Roman', Roboto, Helvetica, sans-serif;
+  box-sizing: border-box;
+}
+
+/* Header Photo and text */
+div#introductory-block {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  margin: 0px;
+  width: 100%;
+  height: 75vh;
+
+  text-align: center;
+  overflow: hidden;
+}
+
+  /* header image */
+  div#introductory-block > .background-image {
+    position: absolute;
+  
+    height: 75vh;
+    width: 150vw;
+  }
+  div#introductory-block > .background-image > img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+  }
+
+  /* header content */
+  div#introductory-block > .content {
+    position: absolute;
+    z-index: 0;
+    color: white;
+  
+    padding: 100px;
+  }
+  div#introductory-block .content > h1 {
+    font-size: 3em;
+    line-height: 1em;
+  }
+  div#introductory-block > .content > p {
+    font-size: 1.4em;
+  }
+
+/* feature article */
+.feature-article-row {
+  position: relative;
+
+  width: 100%;
+  height: 750px;
+  margin-top: 50px;
+  padding: 50px;
+
+  background-color: #FFD166;
+}
+.feature-article-row * {
+  border-radius: 10px;
+}
+
+  /* feature image */
+  .feature-article-row > .background-image {
+    position: relative;
+    left: 10%;
+    
+    width: 50%;
+    height: calc(600px - 20%);
+    
+    border: 1px solid black;
+  }
+  .feature-article-row > .background-image > img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+  }
+  
+  /* feature label */
+  .feature-article-row > .article-label {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    
+    position: relative;
+    bottom: calc(600px - 30%);
+    left: 40%;
+    
+    width: 50%;
+    height: calc(600px - 20%);
+    padding: 20px; padding-left: 5%; padding-right: 10%;
+  
+    border: 3px solid white;
+  
+    background-color: black;
+    color: white;
+  }
+  .feature-article-row > .article-label > h1 {
+    line-height: 1.2em;
+    margin-bottom: 10px;
+  }
+  .feature-article-row > .article-label > .read-more-btn {
+    font-size: 1.3em;
+    border-radius: 10px;
+    
+    padding: 15px;
+    margin: 10px; margin-left: 0px; margin-right: 0px;
+    width: 50%;
+    
+    color: white;
+    background-color: transparent;
+    border: 1px solid white;
+
+    transition: all 500ms ease;
+  }
+  .feature-article-row > .article-label > .read-more-btn:hover {
+    cursor: pointer;
+
+    color: black;
+    background-color: white;
+    border: 1px solid white;
+
+    transition: all 500ms ease;
+  }
+
+/*article rows */
+.article-row {
+  display: grid;
+  gap: 40px;
+  grid: auto / 32% 32% 32%;
+
+  width: 90%;
+  padding: 50px; padding-top: 10px; 
+  margin-left: auto; margin-right: auto; 
+}
+.article-row > .article-block {
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  
+  transition: all 500ms ease;
+}
+.article-row > .article-block:hover {
+  box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+
+  font-size: 102%;
+  transform: scale(1.02, 1.02);
+
+  border: 1px solid rgba(0, 0, 0, 0.5);
+
+  transition: all 500ms ease;
+}
+.article-row * {
+  margin: 0px;
+}
+
+  /* article image with adjustments */
+  .article-row > .article-block > .background-image {
+    display: flex;
+    justify-content: center;
+    
+    height: 300px;
+    width: 100%;
+  
+    background-color: rgba(0, 0, 0, 0.6);
+    border: 1px solid;
+  }
+  .article-row > .article-block > .background-image > img {
+    height: 100%;
+    width:100%;
+    object-fit: cover;
+  }
+
+  /* article label */
+  .article-row > .article-block > .article-label {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    padding: 5px;
+    
+    text-align: center;
+  }
+  .article-row > .article-block > .article-label > .article-title{
+    line-height: 1.2em;
+    padding: 10px; padding-bottom: 0px;
+  }
+  .article-row > .article-block > .article-label > .article-teaser{
+    line-height: 1.5;
+    
+    display: inline-block;
+    vertical-align: middle;
+    
+    padding: 20px; padding-top: 10px;
+  }
+

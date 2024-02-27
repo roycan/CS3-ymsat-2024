@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <meta name="authors" content="Regina Therese Castaneda and Anela Miu Fernandez">
+  <meta name="keywords" content="HTML, CSS, JavaScript, Hamilton, Website, World, Games">
+  <meta name="description" content="This website is dedicated to the Hamilton Musical. It is composed of different games, descriptions, and facts that aim to bring fans more excitment and fun.">
+  <title> Act 1 </title>
+  <link href="/cssdocs/actOneAndTwo.css" rel="stylesheet" type="text/css" />
+  <link href="/cssdocs/navBars.css" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Playfair Display|Trirong|Montserrat|Raleway">
+  <link rel="icon" type="image/x-icon" href="/images/Home_Images/Hamilton-Logo.png">
+</head>
+
+<body>
+  <div id="header">
+    <div id="navBar">
+      <div id="toggleMenu" onclick="toggleMenu('menuSelection','contentBody','outsideMenuSelection')">
+        <img src="/images/Home_Images/navIcon.png" alt="feather">
+        <p>Open Menu</p>
+      </div>
+      <h1 onclick="homePage()">Hamilton World</h1>
+    </div>
+  </div>
+
+  <div id="menuSelection" class="menuOn">
+    <div>
+      <h1> Menu </h1>
+    </div>
+    <a href="/index.html">Home</a>
+    <a href="/htdocs/aboutUs.html">About It</a>
+    <a href="/htdocs/quizzesGames.html">Games & Quizzes</a> 
+  </div>
+
+  <div id="outsideMenuSelection" class="menuOn" onclick="toggleMenu('menuSelection','contentBody','outsideMenuSelection')"> </div>
+
+  <div id="contentBody" class="menuOn">
+    <div id="introductory-block">
+      <div class="background-image"> 
+        <img src="/images/quizzesGamesImageIcons/home.jpg">
+      </div>
+      <div class="content"> 
+        <h1> Act 1: Alexander Hamilton Began To Climb </h1>
+        <p> How to account for his rise to the top? Man, the man is non-stop! </p>
+      </div>
+    </div>
+    
+    <div class="contentInformation"> 
+      <p> The first act of Hamilton focuses on Hamilton’s ‘rise to the top’. This act opens up with a musical number narrating Hamilton's childhood in the Carribean. Here, his life was rife with tragedy from the moment it began. His father left him when he was only 10 years old, and his mother passed away two years later. </p>
+      <p> In hopes of a brighter future, a 19-year old Hamilton arrives in New York in 1776 and eagerly waits to meet Aaron Burr. Burr advises him to 'talk less and smile more'. In the same night, they go to a club and encounter three more characters: John Laurens, Hercules Mulligan, and Marquis Lafeyette. Hamilton disagrees with Burr's statements and believes that following that advice would make him throw away his shot -- which he WON'T do. </p>
+      <p> The scene shifts to downtown New York City where the three Schuyler sisters (Angelica, Eliza, ... AND PEGGY!) walk through Manhattan together with their realizations of how lucky they are to be alive at a pivotal time of revolution. After, King George VI, the reigning monarch of that time, gives his opinions on the supposed 'petulance' of America. </p>
+      <p> George Washington then enters the picture, lamenting America's lack of manpower. He invites Hamilton to be his 'right hand man', and Hamilton does not throw away his shot. </p>
+      
+    <!-- Image Carousel -->
+    <div class="imageCarousel">
+      <div class="carouselFade" id="fade" >
+        <img src="/images/aboutUs_Photos/satisfied.jpg" alt="Angelica">
+        <p class="captionText"> Angelica reflects about her relationship with Hamilton in 'Satisfied' </p>
+      </div>
+
+      <div class="carouselFade" id="fade">
+         <img src="/images/aboutUs_Photos/friendsPhoto.webp" alt="Four Friends">
+        <p class="captionText"> The death of John Laurens</p>
+      </div>
+
+      <div class="carouselFade" id="fade">
+        <img src="/images/aboutUs_Photos/AHamilton.jpg" alt="Hamilton">
+        <p class="captionText"> Hamilton and his ideals</p>
+      </div>
+
+      <div class="carouselFade" id="fade" >
+         <img src="/images/aboutUs_Photos/yorktownBattle.jpg" alt="Battle">
+        <p class="captionText"> The Battle of Yorktown</p>
+      </div>
+
+      <div class="carouselFade" id="fade" >
+        <img src="/images/aboutUs_Photos/washington.jpg" alt="Washington">
+        <p class="captionText"> Washington, the leader and father</p>
+      </div>
+
+      <div class="carouselFade" id="fade">
+        <img src="/images/aboutUs_Photos/Helpless.webp" alt="Marriage">
+        <p class="captionText"> Eliza and Hamilton become one</p>
+      </div>
+      
+      <a class="previousImage" onclick="nextSlides(-1)">&#10094;</a>
+      <a class="nextImage" onclick="nextSlides(1)">&#10095;</a>
+      
+      <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+        <span class="dot" onclick="currentSlide(5)"></span>
+        <span class="dot" onclick="currentSlide(6)"></span>  
+      </div>
+      
+    </div>
+
+    <p> The next scene opens up to a winter's ball hosted by Philip Schuyler. Eliza falls in love with Hamilton, and they get married in a matter of weeks. However, Angelica also loved Hamilton but never spoke up about it due to her burden as the oldest daughter and child. </p>
+      
+    <p> The war between America and Great Britain worsens, and tension is high even between troops. Duels occur. Here, Hamilton gets suspended by Washington due to Hamilton's detrimental aggression against Charles Lee. He comes home to find out that Eliza is expecting their child. Eliza encourages Hamilton that what they have is enough, and they don't need to dream big because they have each other. Hamilton listens to this for a while but then they call him again. </p>
+      
+    <p> Hamilton is called to lead a siege in Yorktown. Before this, however, Washington calls Hamilton to tell him that history has its eyes on him, so he mustn't make regrets. At this battle, they take down the British, and the world is turned upside down.  </p> 
+
+    <p> Following America's glorious victory, King George once again shows up and asks how they would even manage to rule by themselves without their colonizers. In addition, Hamilton's son, Philip, as well as Aaron Burr's daughter, Theodosia, are born and known as the future of America. Tragedy, however, also struck as Hamilton's friend - John Laurens - dies in a seemingly pointless manner. The act ends with Hamilton working non-stop to put his name in the history books while Eliza begs him to be happy with what they have.  </p>
+    </div>
+
+    <h1 style="text-align: center"> Explore More </h1>
+    <div id="moreArticles">
+      <div id="articleContainer" onclick="redirectArticle('actTwo')">
+        <div id="backgroundImage"><img src="/images/aboutUs_Photos/hamiltonAndBurr.jpg"></div>
+        <div id="articleLabel">
+          <h2>Act 2: Beware; Pride Goeth Before the Fall</h2>
+          <p> How does the story continue? How does he fall? </p>
+        </div>
+      </div>
+
+    <div id="articleContainer" onclick="redirectQuiz('whoAreYou')">
+        <div id="backgroundImage"><img src ="/images/aboutUs_Photos/hamiltonName.webp"></div>
+        <div id="articleLabel">
+          <h2> What's Your Name, Man? </h2>
+          <p> Take the shoes of the people before you! Find out in this quiz which Hamilton Character are you. </p>
+        </div>   
+      </div>
+
+      <div id="articleContainer" onclick="redirectQuiz('realOrNot')">
+        <div id="backgroundImage"><img src="/images/aboutUs_Photos/washingtonEyes.jpg"></div>
+        <div id="articleLabel">
+          <h2>History Has Its Eyes On You</h2>
+          <p> Did your eyes catch the history? Find out now in Real or Fake! </p>
+        </div> 
+      </div>
+    </div>
+    
+
+    <footer>
+      <h1>About Us</h1>
+      <p>&copy; Regina Therese Castaneda and Anela Miu Fernandez 2024</p>
+      <p>Meet Hamilton and his crew this year! Welcome, welcome to the world of Hamilton! Hamilton World is a website that aims to united both young and old fans of the musical Hamilton. This website aims to increase the online presence of Hamilton, allow users to read articles about Hamilton, and engage users through fun and mind boggling games on Hamilton. Once you enter this website, you would never want to leave! So, come one and all, and visit the amazing world of Hamilton! Don't throw away your shot! </p>
+
+      <br>
+      <p>Note: All images in this site are taken from Hamilton and are not original content.</p>
+      <p> References: </p> 
+      <p> <i> Hamilton study guide.</i> (n.d.). LitCharts. https://www.litcharts.com/lit/hamilton</p>
+    </footer>
+  </div>
+
+
+  <script src="/jsdocs/actOneAndTwo.js"></script>
+  <script src="/script.js"></script>
+  <script src="https://replit.com/public/js/replit-badge-v2.js" theme="dark" position="bottom-right"></script>
+</body>
+
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title> Spoti Triv </title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <meta name="keywords" content="music" />
+  <meta name="description" content="a website that makes the user guess the lyrics of a song" />
+  <meta name="author" content="Robert Joshua S. Odulio and Maricier Vily M. Carambas" />
+  <meta name="revised" content="January 24, 2024" />
+  <link rel="icon" href="../images/favicon.ico" type="image/ico" sizes="16x16"> <!-- to add a site tab icon -->
+  <link href="../style.css" rel="stylesheet" type="text/css" /> <!-- to add an external css file -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@600&display=swap" rel="stylesheet">
+</head>
+
+
+<body>
+
+  <header>
+    <!-- Displays the nav section of the website. -->
+    <nav>
+        <img src="../images/vinyl.png" alt="vinyl" id="vinyl">
+        <h1> Spoti Triv </h1>
+        <a href="../index.html">HOME</a>
+        <a href="Jazz.html">JAZZ</a>
+        <a href="Alternative.html">ALTERNATIVE</a>
+        <a href="Country.html">COUNTRY</a>
+        <a href="AboutUs.html">ABOUT US</a>
+    </nav>
+  </header>
+
+  <h1>Guess The Song Lyric</h1>
+  <h2>Alternative</h2>
+
+  <!-- Displays the button that executes the Start function, which starts the game. -->
+  <button id = "start" onclick = Start("alternative")> Start Quiz </button>
+
+  <!-- Displays the album cover and title-->
+  <figure>
+    <img src="../images/theride.jpg" alt="theride" height= "100" width= "100" id="ride">
+    <figcaption> 
+      <p> In the album The Ride </p>
+      <p> by Catfish and the Bottlemen </p>
+    </figcaption>
+  </figure>
+
+  <!-- Displays the timer. -->
+  <h2 id = "gameplayElements"> 
+    <div id = "scoreboard"> Score:__ </div>
+    <div id = "score"> </div>
+    <div id = "total"> </div>
+    
+    <div id = "minutes">10</div>
+    <div>:</div> 
+    <div id = "seconds">00</div> 
+  </h2>
+
+  <br>
+
+  <!-- Displays the input bar and the button that submits the input. -->
+  <input type="string" id="Input" autocomplete = "off">
+  <button onclick = Quiz(Input.value) id = "enter"> Enter </button>
+
+  <!-- Holds the created empty cells from the Javascript code -->
+  <section id = grid>
+    <table>
+      <tr id = row1> 
+      </tr>
+
+      <tr id = row2>
+      </tr>
+
+      <tr id = row3> 
+      </tr>
+
+      <tr id = row4> 
+      </tr>
+
+      <tr id = row5> 
+      </tr>
+
+    </table>
+  </section>
+
+  <script src="../script.js"></script>
+
+</body>
+
+<audio controls autoplay loop>
+  <source src = "../background music.mp3" type = "audio/mpeg">
+</audio>
+  
+</html>

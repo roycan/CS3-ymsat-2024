@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>MBTIles - Register</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <meta name="keywords" content="MBTI, personality type, tiles" />
+  <meta name="description" content="Sign-up page for the users." />
+  <meta name="author" content="<Mauryn Cruz and Marthena Juan>" />
+  <meta name="revised" content="01/24/2024" />
+  <link rel="icon" href="images/logo/MBTIles logo transparent.ico" type="image/ico" sizes="16x16">
+  <link href="../css files/signupstyle.css" rel="stylesheet" type="text/css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+</head>
+
+
+  <nav>
+    <a href="/index.html"> 
+      <div> 
+        <img id="logo" src="/images/logo/MBTIles logo.png">
+        <img id="title" src="/images/logo/MBTIles.png">
+      </div>
+    </a>
+    <a id= "cogfunc" href="CognitiveFunctions.html"> Cognitive Functions </a>
+    <a id="comp" href="Compatibility.html"> Compatibility </a>
+  </nav>
+  
+<body>
+  <div class="signupbox">
+    <h1>Register</h1><br>
+    <form>
+      <div class="input">
+        <h3>Username</h3>
+        <input type="text" id="username" placeholder="Username" required><br>
+        <h3>Password</h3>
+        <input type="password" id="password" placeholder="Password" required><br>
+        <h3>Confirm Password</h3>
+        <input type="password" id="cpassword" placeholder="Confirm Password" required><br>
+        <h3>MBTI</h3>
+        <select id="mbti" name="mbti" placeholder="MBTI" required>
+          <option value="ENFJ">ENFJ</option>
+          <option value="ENFP">ENFP</option>
+          <option value="ENTJ">ENTJ</option>
+          <option value="ENTP">ENTP</option>
+          <option value="ESFJ">ESFJ</option>
+          <option value="ESFP">ESFP</option>
+          <option value="ESTJ">ESTJ</option>
+          <option value="ESTP">ESTP</option>
+          <option value="INFJ">INFJ</option>
+          <option value="INFP">INFP</option>
+          <option value="INTJ">INTJ</option>
+          <option value="INTP">INTP</option>
+          <option value="ISFJ">ISFJ</option>
+          <option value="ISFP">ISFP</option>
+          <option value="ISTJ">ISTJ</option>
+          <option value="ISTP">ISTP</option>
+        </select>
+      </div> 
+    <button type="button" id="enterBtn" class="btn" onclick="enter()"> Enter </button>
+    <button type="button" id="closeBtn" class="btn" onclick="closePopup()"> Close </button>
+      <h5>Entered Data here: </h5>
+      <div class="data">
+        <p id="data"></p>
+      </div>
+  </div>
+  </form>
+   
+  <footer>
+    &copy; 2024 Mauryn Cruz & Marthena Juan
+  </footer>
+
+  <div>
+    <hr>
+    <h3>References:</h3>
+    <ol>
+      <li>Personality types. (n.d.). 16Personalities. https://www.16personalities.com/personality-types Robinson, M. T. (2021).</li>
+      <li>Cognitive functions - A simple explanation. https://www.careerplanner.com/8CognitiveFunctions/Cognitive-Functions-Simply-Explained.cfm</li>
+      <li>Simplified myers briggs type compatibility chart. (n.d.). https://www.dreamsaroundtheworld.com/wp-content/uploads/2017/01/Myers_Briggs_Type_Compatibility_Chart.pdf</li>
+      <br><i>Images were also from 16Personalities</i>
+    </ol>
+  </div>
+  
+  <script src="script.js"></script>
+  
+</body>
+
+</html>

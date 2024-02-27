@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <meta name="authors" content="Regina Therese Castaneda and Anela Miu Fernandez">
+  <meta name="keywords" content="HTML, CSS, JavaScript, Hamilton, Website, World, Games">
+  <meta name="description" content="This website is dedicated to the Hamilton Musical. It is composed of different games, descriptions, and facts that aim to bring fans more excitment and fun. ">
+  <title> Continue-The-Lyrics </title>
+  <link href="/cssdocs/quiz.css" rel="stylesheet" type="text/css" />
+  <link href="/cssdocs/navBars.css" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Playfair Display|Trirong|Montserrat|Raleway">
+  <link rel="icon" type="image/x-icon" href="/images/Home_Images/Hamilton-Logo.png">
+</head>
+
+<body onload="setQuestions('questionText', 4, 10, 'result-container')">
+  <div id="header">
+    <h1>Complete the Lyrics</h1>
+    <div id="navBar">
+      <h1 onclick="returnHome('quizzesGames')">Back to Game Selection</h1>
+      <h1 onclick="homePage()">Hamilton World</h1>
+    </div>
+  </div>
+  
+
+  <div id="contentBody">
+    <div id="quizQuestion">
+      <h3 id="questionText"></h3>
+      <ul id="questionOptions">
+        <li id="option_1" onclick=" getValue('option_1'); nextQuestion('questionText', 4, 10, 'result-container');"></li>
+        <li id="option_2" onclick="getValue('option_2'); nextQuestion('questionText', 4, 10, 'result-container')"></li>
+        <li id="option_3" onclick="getValue('option_3'); nextQuestion('questionText', 4, 10, 'result-container')"></li>
+        <li id="option_4" onclick="getValue('option_4'); nextQuestion('questionText', 4, 10, 'result-container')"></li>
+      </ul>
+    </div>
+
+    <div id="result-container" style="display:none">
+      <h1 id="result"></h1>
+      <button onclick="reset('questionText', 4, 10, 'result-container')"> Try again? </button>
+    </div>
+    
+    <footer>
+      <h1>About Us</h1>
+      <p>&copy; Regina Therese Castaneda and Anela Miu Fernandez 2024</p>
+      <p>Meet Hamilton and his crew this year! Welcome, welcome to the world of Hamilton! Hamilton World is a website that aims to united both young and old fans of the musical Hamilton. This website aims to increase the online presence of Hamilton, allow users to read articles about Hamilton, and engage users through fun and mind boggling games on Hamilton. Once you enter this website, you would never want to leave! So, come one and all, and visit the amazing world of Hamilton! Don't throw away your shot! </p>
+      
+      <br>
+      <p>Note: All images in this site are taken from Hamilton and are not original content.</p>
+      <p> References: </p> 
+      <p> <i> Hamilton study guide.</i> (n.d.). LitCharts. https://www.litcharts.com/lit/hamilton</p>
+    </footer>
+  </div>
+  <script>
+    let quizQuestions = {
+      question_1: {
+        questionText: "If you see him in the streets, walking by himself...",
+          option_1: {
+            optionText: "going to the cell, have mercy",
+            optionValue: "incorrect",
+          },
+          option_2: {
+            optionText: "talking to himself, have pity",
+            optionValue: "correct"
+          },
+          option_3: {
+            optionText: "look around, look around for how lucky we are to be alive right now!",
+            optionValue: "incorrect"
+          },
+          option_4: {
+            optionText: "his hair has gone gray, he passes everyday",
+            optionValue: "incorrect"
+          }
+      },
+      question_2: {
+        questionText: "And he wrote his first refrain...",
+          option_1: {
+            optionText: "a testament to his pain",
+            optionValue: "correct"
+          },
+          option_2: {
+            optionText: "a testament to his name",
+            optionValue: "incorrect"
+          },
+          option_3: {
+            optionText: "a testament to the gain",
+            optionValue: "incorrect"
+          },
+          option_4: {
+            optionText: "a menance to disdain",
+            optionValue: "incorrect"
+          }
+      }, 
+      question_3: {
+        questionText: "Let future historians wonder, how Eliza reacted when you broke her heart...",
+          option_1: {
+            optionText: "You have torn it all apart",
+            optionValue: "correct"
+          },
+          option_2: {
+            optionText: "Watching it burn",
+            optionValue: "incorrect"
+          },
+          option_3: {
+            optionText: "The world has no place in our bed",
+            optionValue: "incorrect"
+          },
+          option_4: {
+            optionText: "I'm erasing myself from the narrative",
+            optionValue: "incorrect"
+          }
+      }, 
+      question_4: {
+        questionText: "Gotta be my own man...",
+          option_1: {
+            optionText: "To blow you all away",
+            optionValue: "incorrect"
+          },
+          option_2: {
+            optionText: "Cause I'm only 19, but my mind is older.",
+            optionValue: "incorrect"
+          },
+          option_3: {
+            optionText: "Like my father, but bolder.",
+            optionValue: "correct"
+          },
+          option_4: {
+            optionText: "Don't you dare go astray",
+            optionValue: "incorrect"
+          }
+      }, 
+
+      question_5: {
+        questionText: "Why do you assume...",
+          option_1: {
+            optionText: "That no one else knows about you",
+            optionValue: "incorrect"
+          },
+          option_2: {
+            optionText: "you're the smartest in the room?",
+            optionValue: "correct"
+          },
+          option_3: {
+            optionText: "that my attitude will be my doom?",
+            optionValue: "incorrect"
+          },
+          option_4: {
+            optionText: "that you're running out of time?",
+            optionValue: "incorrect"
+          }
+      }, 
+
+      question_6: {
+        questionText: "I may not live to see our glory...",
+          option_1: {
+            optionText: "and I know that things will get gory",
+            optionValue: "incorrect"
+          },
+          option_2: {
+            optionText: "but I will gladly join the fight.",
+            optionValue: "correct"
+          },
+          option_3: {
+            optionText: "but I will raise a glass to freedom",
+            optionValue: "incorrect"
+          },
+          option_4: {
+            optionText: "but the hope gives me a story.",
+            optionValue: "incorrect"
+          }
+      },
+
+      question_7: {
+        questionText: "Why so sad?...",
+          option_1: {
+            optionText: "Remember we made an arrangement when you went away",
+            optionValue: "correct"
+          },
+          option_2: {
+            optionText: "You already took everything I once had.",
+            optionValue: "incorrect"
+          },
+          option_3: {
+            optionText: "This constant annoyance is making me mad.",
+            optionValue: "incorrect"
+          },
+          option_4: {
+            optionText: "Can't we just let time tell?",
+            optionValue: "incorrect"
+          }
+      },
+
+      question_8: {
+        questionText: "Don't let them know...",
+          option_1: {
+            optionText: "your deepest and darkest secrets.",
+            optionValue: "incorrect"
+          },
+          option_2: {
+            optionText: "your place in the whole.",
+            optionValue: "incorrect"
+          },
+          option_3: {
+            optionText: "the extent of this secrecy.",
+            optionValue: "incorrect"
+          },
+          option_4: {
+            optionText: "what you're against or what you're for.",
+            optionValue: "correct"
+          }
+      },
+
+      question_9: {
+        questionText: "The immigrant emerges with unprecedented financial power...",
+          option_1: {
+            optionText: "and here's the pièce de résistance",
+            optionValue: "incorrect"
+          },
+          option_2: {
+            optionText: "a system he can shape however he wants",
+            optionValue: "correct"
+          },
+          option_3: {
+            optionText: "the art of the trade",
+            optionValue: "incorrect"
+          },
+          option_4: {
+            optionText: "that makes everyone glower.",
+            optionValue: "incorrect"
+          }
+      },
+
+      question_10: {
+        questionText: "Is he breathing? Is he going to survive this? ...",
+          option_1: {
+            optionText: "No, stay alive!",
+            optionValue: "incorrect"
+          },
+          option_2: {
+            optionText: "Who did this, Alexander, did you know?",
+            optionValue: "correct"
+          },
+          option_3: {
+            optionText: "Save your strength and stay alive!",
+            optionValue: "incorrect"
+          },
+          option_4: {
+            optionText: "I was aiming for the sky.",
+            optionValue: "incorrect"
+          }
+      }
+    }
+    let answerValues = ["correct", "incorrect"]; //possible results: edit
+    let resultArray = [
+      "Keep on pushing. One day, you will reach the top one day! Put the pieces together!",
+      "Hey! You are getting there! Keep pushing forward like you are running out of time! The puzzle is almost halfway there!",
+      "You are getting close to the top! Move more, move! You are more than halfway there!",
+      "Wow! You are amazing! You are on top of the world! The puzzles of the lyrics are basically perfect!"
+    ];
+    let quizAnswers = [];
+  </script>
+  <script src="/jsdocs/js_quizzes/quiz.js"></script>
+  <script src="/jsdocs/quizzesGames.js"> </script>
+  <script defer src="/script.js"></script>
+
+</body>
+
+</html>

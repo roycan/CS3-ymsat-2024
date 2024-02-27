@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>MBTIles - Compatibility</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <meta name="keywords" content="compatibility, personality type, compatibility test" />
+  <meta name="description" content="A webpage that asks the user to input their MBTI type and it gives the compatibility of each MBTI type with the user's" />
+  <meta name="author" content="<Mauryn Cruz and Marthena Juan>" />
+  <meta name="revised" content="01/24/2024" />
+  <link rel="icon" href="/images/logo/MBTIles logo transparent.ico" type="image/ico" sizes="16x16">
+  <link href="../css files/compstyle.css" rel="stylesheet" type="text/css" />
+  <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- nav bar details -->
+  <nav>
+    <a href="/index.html"> 
+      <div> 
+        <img id="logo" src="/images/logo/MBTIles logo.png">
+        <img id="title" src="/images/logo/MBTIles.png">
+      </div>
+    </a>
+    <a id= "cogfunc" href="CognitiveFunctions.html"> Cognitive Functions </a>
+    <a id="comp" href="Compatibility.html"> Compatibility </a>
+  </nav>
+  
+  <header>
+    <h1>Compatibility Test</h1>
+  </header>
+
+  <div class="compatibility">
+    <img id="compVisual" src="/images/Compatibility Images/Comp Blank.png">
+    <div class="compTest">
+      <h3> Input your MBTI and see what other MBTI types you're compatible with!</h3>
+      <input id="compInput" type="text">
+      <button id="compEnter" type="submit" onclick="enterCompInput()"> Enter </button>
+      <br><br>
+      <div class="compInfoDivs">
+        <div id="compInfo1"></div><br>
+        <div id="compInfo2"></div><br>
+        <div id="compInfo3"></div><br>
+        <div id="compInfo4"></div><br>
+        <div id="compInfo5"></div><br>
+      </div>
+    </div>
+  </div>
+
+  <div id="references">
+    <hr>
+    <h3>References:</h3>
+    <ol>
+      <li>Personality types. (n.d.). 16Personalities. https://www.16personalities.com/personality-types Robinson, M. T. (2021).</li>
+      <li>Cognitive functions - A simple explanation. https://www.careerplanner.com/8CognitiveFunctions/Cognitive-Functions-Simply-Explained.cfm</li>
+      <li>Simplified myers briggs type compatibility chart. (n.d.). https://www.dreamsaroundtheworld.com/wp-content/uploads/2017/01/Myers_Briggs_Type_Compatibility_Chart.pdf</li>
+      <br><i>Images were also from 16Personalities</i>
+    </ol>
+  </div>
+
+  <footer>
+    &copy; 2024 Mauryn Cruz & Marthena Juan
+  </footer>
+  <script src="/js files/compscript.js"></script>
+</body>
+
+</html>

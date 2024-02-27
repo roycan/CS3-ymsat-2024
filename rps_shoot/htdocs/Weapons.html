@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Weapons Page</title> 
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <meta name="keywords" content="game" />
+  <meta name="description" content="a rock paper scissor game" />
+  <meta name="author" content="Sally and Tania" />
+  <meta name="revised" content="01/08/2024" />
+  <link rel="icon" href="../images/logo.png" type="image/ico" sizes="16x16"> <!-- to add a site tab icon -->
+  <link href="../weapons.css" rel="stylesheet" type="text/css" /> <!-- To add an external css file. The css file was named weapons.css. -->
+</head>
+<body>
+  <!-- Header that contains the logo, website title, and navigation menu. The website title and the navigation menu are all linked to their respective webpages.  -->
+  <header>
+    <img class="logo" src="../images/logo.png" alt="Picture of logo"></img>
+    <h1><a href="../index.html"> Rock, Paper, Scissors, SHOOT! </a></h1>
+    <!--Labels the webpage as Weapons page and moves it 7% to the left so it can be centered.-->
+    <h2 style="position:relative;right:2%;"> Weapons </h2>    <nav>
+      <ul class="links">
+        <li><a href=../htdocs/Login.html>Login</li>
+        <li><a href=../htdocs/History.html>History</a></li>|
+        <li><a href= ../htdocs/Weapons.html>Weapons</a></li>|
+        <li><a href= ../htdocs/InfiniteMatches.html> Infinite Matches</a></li>|
+        <li><a href=../htdocs/FirstToThree.html> First to Three </a></li>
+    </nav>
+  </header>
+   <!--Paragraph that welcomes user to the Weapons page. It has a style that centers the header and sets the margin in auto.-->
+    <p style="margin: auto;padding:0px 10%;text-align:center;"> Welcome to Weapons!</p>
+  <!--Paragraph that contains information about the Weapons Page. This serves as an introduction for the Weapons Page as it explains what to see in this page. The style has the margin set to auto and the text was set to justify.-->
+    <p style="margin: auto;padding:0px 10%;text-align:justify;"> <br> Welcome to the Weapons Section! Player can use three different weapons in playing 'Rock, Paper, Scissors, SHOOT!'. You can choose to play Rock, Paper, and Scissors as your weapon. These three weapons may lead you to a win or a lose. This page provides information about the weapons that can be used in the game such as when will you win when you use this specific weapon and when you will lose. This section will serve as a guide for the player. </P>
+  <!-- Section with the class "weapon-section" which includes the information about the first weapon that can be played in the game - the Rock.-->
+  <section class="weapon-section">
+     <div> 
+       <!-- Image for the first weapon which is the rock. The image for the rock is set to rock.png under the weapons folder. It has a height set to 110px and width to 140px.-->
+      <img src="../weapons/rock.png" alt="Rock" style="height: 110px; width: 140px;">
+    </div>
+    <!-- Header for the first weapon - The Rock. It has a padding 20px.-->
+    <header>
+    <h2 style="text-align: center; padding: 20px;"> Rock </h2>
+    </header>
+    <hr>
+    <!-- Paragraph containing the information about the first weapon which is the rock. It explains when does the rock win or lose. -->
+    <p style="margin:auto; padding: 30px;"> 
+      The first weapon that you can choose is Rock. The hand sign that represents Rock is a fist or a closed hand. Rock is used to defeat Scissor. So if the opponent chooses Scissors and you choose Rock, you will win. But be careful since Paper can defeat Rock. So if the opponent chooses Paper and if you choose Rock, then you will lose. If both the opponent and the player plays Rock, no one will get a point.
+    </p>
+  </section>
+  <!-- Section with the class "weapon-section" which includes the information about the second weapon that can be played in the game - the Paper.-->
+  <section class="weapon-section">
+    <div> 
+      <!-- Image for the second weapon which is the paper. The image for the paper is set to paper.png under the weapons folder. It has a height set to 110px and width to 150px.-->
+      <img src="../weapons/paper.png" alt="Paper" style="height: 110px; width: 150px;">
+    </div>
+    <!-- Header for the second weapon - The Paper. It has a padding of 30px.-->
+    <header>
+      <h2 style="text-align: center; padding: 30px;"> Paper </h2>
+    </header>
+     <hr>
+    <!-- Paragraph containing the information about the second weapon which is the paper. It explains when does the paper win or lose. -->
+    <p style="margin:auto; padding: 30px;">
+      The second weapon that you can choose is Paper. The hand sign that represents Paper is an open hand. Paper is used to defeat Rock. So if the opponent chooses Rock and you choose Paper, you will win. But be careful since Scissors can defeat Paper. So if the opponent chooses Scissors and if you choose Paper, then you will lose. If both the opponent and the player plays Paper, no one will get a point.
+    </p>
+  </section>
+  <!-- Section with the class "weapon-section" which includes the information about the third weapon that can be played in the game - the Scissors.-->
+  <section class="weapon-section">
+    <div> 
+      <!-- Image for the third weapon which is the scissors. The image for the scissors is set to scissors.png under the weapons folder. It has a height set to 110px and width to 150px.-->
+      <img src="../weapons/scissors.png" alt="Scissors" style="height: 110px; width: 150px;">
+    </div>
+    <!-- Header for the third weapon - The Scissors. It has a padding of 30px.-->
+    <header>
+      <h2 style="text-align: center; padding: 30px;"> Scissors </h2>
+    </header>
+     <hr>
+    <!-- Paragraph containing the information about the third weapon which is the scissors. It explains when does the scissors win or lose. -->
+    <p style="margin:auto; padding: 30px;">
+      The third weapon that you can choose is Scissors. The hand sign that represents Scissors is a peace sign.  Scissor is used to defeat Paper. So if the opponent chooses Paper and you choose Scissors, you will win. But be careful since Rock can defeat Scissors. So if the opponent chooses Rock and if you choose Scissors, then you will lose. If both the opponent and the player plays Scissors, no one will get a point.
+    </p>
+  </section>
+  <!-- Footer section of the webpage, contains copyright. -->
+  <footer>
+    &copy; Dela Cruz & Lugasip - 2023 Computer Science 3 
+  </footer>
+  <!--Connects or adds an external JS file which is script.js-->
+  <script src="script.js"></script>
+</body>
+
+</html>

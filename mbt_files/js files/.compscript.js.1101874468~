@@ -1,0 +1,22 @@
+function enterCompInput() {
+  visualComp = document.getElementById("compVisual");
+  inputComp = document.getElementById("compInput").value;
+  infoComp1 = document.getElementById("compInfo1");
+  infoComp2 = document.getElementById("compInfo2");
+  infoComp3 = document.getElementById("compInfo3");
+  infoComp4 = document.getElementById("compInfo4");
+  infoComp5 = document.getElementById("compInfo5");
+  
+  console.log(inputComp);
+  visualComp.style.display = "none";
+  
+  if (inputComp == 'INTJ') {
+    visualComp.src = "../images/MBTI Pictures/INTJ.png";
+    infoComp1.innerHTML = "<b>Perfect<b><br>ENFP & ENTP"
+  }
+
+  visualComp.style.top = "150px"
+  visualComp.style.height = "400px";
+
+  visua
+}

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Log In | MYNTH</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <meta name="author" content="Varon, C.E ; Tolentino, J.Y" />
+  <meta name="revised" content="" />
+  <link rel="icon" href="../images/Mynth-Flower.png" type="image/ico" sizes="16x16"> <!-- to add a site tab icon -->
+  <link href="../resources/login.css" rel="stylesheet" type="text/css" /> <!-- to add an external css file -->
+</head>
+
+<body>
+  <header>
+    <!-- holds logo -->
+    <a href="../index.html"><img src="../images/Mynth.png" alt="MYNTH" id="MynthLogo"></img></a> <!-- image_logo -->
+  </header>
+  <nav style="background-color:black;text-align: center;">
+    <ul style="display:inline-block;">
+      <li><a href="/htdocs/syntax.html">Syntax</a></li>
+      <li><a href="/htdocs/creation.html">+ Create</a></li>
+    </ul>
+  </nav>
+  <div class="form">
+    <form id='loginForm' action="#" method="post">
+      <label for="usernameInput">Username:</label>
+      <input type="text" id="usernameInput" name="usernameInput" required>
+      <br><br>
+
+      <label for="passwordInput">Password:</label>
+      <input type="text" id="passwordInput" name="passwordInput" required>
+      <br><br>
+
+      <label for="rememberMe">Remember Me</label>
+      <input type="checkbox" checked="checked" name="rememberMe">
+
+      <p id="buttons">
+        <button type="submit" onclick='dispData()'> Submit </button>
+        <button type="reset"> Clear </button>
+      </p>
+
+      <p>Not a Member yet? <a href="signup.html" style="color: #000000; text-decoration: underline"> Sign up now!</a></p>
+
+    </form>
+  </div>
+  <script>
+    document.getElementById('loginForm').addEventListener('submit', function(event) {
+        event.preventDefault();
+
+        var username = document.getElementById('usernameInput').value;
+        var password = document.getElementById('passwordInput').value;
+
+        var user = JSON.parse(localStorage.getItem(username));
+
+        if (user && user.password === password) {
+            alert('Login successful!');
+        } else {
+            alert('Invalid username or password.');
+        }
+    });
+  </script>
+  <footer>
+    &copy; 2023 Computer Science 3 (Website by Varon, Cassidy Emira and Tolentino, Janine Yrah)
+  </footer>
+  <script src="../resources/login.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,94 @@
+/*Sets background color to the entire webpage*/
+html {
+  height: 100%;
+  width: 100%;
+  background-color: rgb(225, 201, 178);
+}
+/*Removes text decoration to all elements*/
+*{
+  text-decoration: none;
+}
+/*Styles the header which is where the logo, website title, and navigation menu are located. Basically to align elements horizontally and vertically, as well as centers them.*/
+header{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+/*Styles the logo class which is the logo image. Sets width and height to 5%, and adds padding of 20px.*/
+.logo{
+  width: 5%;
+  height: 5%;
+  padding: 20px;
+}
+/*Styles the h1 selector, removes margin on right.*/
+h1{
+  margin-right: auto;
+}
+/*Styles the link class and li elements(its child) to create a navigation menu. Makes them be beside each other, moves 10px down, and adds padding of 20px.*/
+.links li{
+  display: inline;
+  top: 10px;
+  padding: 20px;
+}
+/*Styles the links, makes the text color black*/
+a:link, a:visited{
+  color: black;
+}
+/*Styles the links for when the links are hovered over, gives a white border and background color, sets the color of text to rgb(174, 97, 19)*/
+.links li:hover, a:hover{
+  border: 1px solid white;
+  background-color: white;
+  color: rgb(174, 97, 19);
+}
+/*Styles the footer, positions it at the bottom right of the website/viewport and makes sure that it's fixed even when user scrolls*/
+footer{
+  right: 0;
+  bottom: 0;
+  position: fixed;
+}
+/*Styles all sections, makes background color white and adds padding of 10px to the top and bottom and 20px padding to left and right*/
+section{
+  background-color: white;
+  padding: 10px 20px;
+}
+/*Styles the images class, basically ensures that the images spread horizontally with equal spacing between each one. Sets width to 75%, height to 125px, and centers it.*/
+.images {
+  display: flex;
+  justify-content: space-between;
+  width: 75%;
+  height: 125px;
+  margin:auto;
+}
+/*Styles the s-info class, basically ensures that the paragraphs spread horizontally with equal spacing between each one. Sets width to 90%, centers text, and add padding of 60px to left.*/
+.s-info{
+  justify-content: space-between;
+  display: inline-flex;
+  width: 90%;
+  text-align: center;
+  padding: 0px 0px 0px 60px;
+}
+/*Styles the element with ID enter. Sets width to 50px, height to 15px, font size to 6px, and font weight to bold. Also removes padding to left.*/
+#enter{
+  width: 50px;
+  height: 15px;
+  font-size: 6px;
+  font-weight: bold;
+  margin-left: auto;
+}
+/*Styles the first class, sets width to 45%*/
+.first{
+  width: 45%
+}
+/*Styles the second class, sets width to 45%, sets position as relative, moves it 50% to the right and 520px to the top*/
+.second{
+  width: 45%;
+  position: relative;
+  right: -50%;
+  bottom: 520px;
+}
+/*Styles the elements with IDs image and user. Sets height to 300px.*/
+#image,#user{
+  height: 300px;
+}
+
+

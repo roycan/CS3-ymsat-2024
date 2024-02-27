@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>MAPPA Website - Animation Style</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <meta name="keywords" content="MAPPA, website, anime, animation, style" />
+  <meta name="description" content="This contains the MAPPA Animation Style page" />
+  <meta name="author" content="Gabriel Ethan Troy C. Guanzon, Clive Tolentino" />
+  <meta name="revised" content="24-01-2024" />
+
+  <!-- Link to the favicon and external css files -->
+  <link rel="icon" href="../images/MAPPAlogo.jpg" type="image/jpg" sizes="16x16">
+  <link href="../style.css" rel="stylesheet" type="text/css" /> 
+  <!-- Link to the font Awesome library for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+
+  <!-- The header containing the title of the website and the navigation bar with the corresponding links -->
+  <section class = "header">
+    <!-- Website title-->
+    <h1>MAPPA: The Animation Studio Behind the Hottest Anime</h1>
+    <nav>
+      <!-- Logo of the website -->
+      <a href="../index.html"> <img class="logo" src="../images/MAPPAlogo.jpg" alt="logo image"></a>
+      <!-- Navigation Links -->
+      <div class="nav-links" id="navLinks">
+        <ul>
+          <li class="zoomText"><a href="../index.html">HOME</a></li>
+          <li class="zoomText"><a href="GalleryOfWorks.html">Gallery of Works</a></li>
+          <li class="zoomText"><a href="AnimationStyle.html">Animation</a></li>
+          <li class="zoomText"><a href="References.html">REFERENCES</a></li>
+          <li class="zoomText"><a href="SignUp1.html">Sign-Up</a></li>
+          <li class="zoomText"><a href="LogIn.html">Log-In</a></li>
+        </ul>
+      </div>
+    </nav>  
+  </section>
+
+  <section class="content">
+    <article>
+      <p>In this section, we are glad to showcase the hard work and skills that MAPPA has given to us through all these years. Starting with how they draw!</p>
+    </article>
+    <div class="container">
+      <div>
+        <p class="paragraph-box">They first draw, like in many animation studios, drawings called Sakuga. These drawings are filled with fluidity, direction, and expression, captivating us with the anime that we watch. Take a look!</p>
+        <p class="paragraph-box">A sakura animation drawn by MAPPA animators in Jujutsu Kaisen Season 1 Episode 17!</p>
+      </div>
+      <div class="video">
+        <iframe width="600px" height="350px" src="https://www.youtube.com/embed/Qa0U194FHPo?autoplay=1&mute=1&loop=1&playlist=Qa0U194FHPo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="video">
+        <figure>
+          <iframe width="400px" height="350px" src="https://www.youtube.com/embed/XosvkKK1HCc?autoplay=1&mute=1&loop=1&playlist=XosvkKK1HCc" title="JUJUTSU KAISEN BEHIND THE SCENE [SAKUGA/GENGA]" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <figcaption>Jujutsu Kaisen Behind the Scene [Sakuga/Genga]</figcaption>
+        </figure>
+      </div>
+      <div>
+        <p class="paragraph-box">Jujutsu Kaisen is one of the most popular new generations of anime. It has a great story and action, and with MAPPA animating it, it is no surprise it is loved by many.<br><br>Sakuga drawing is not only in one episode but in every one of them. It is the building block of animating anime.</p>
+      </div>
+    </div>
+
+    <article class="articleCenter">
+      <p>Let's go to CGI!</p>
+    </article>
+
+    <div class="container">
+      <div class="video">
+        <figure>
+          <iframe width="750px" height="350px" src="https://www.youtube.com/embed/H_LBI949QWY?autoplay=1&mute=1&loop=1&playlist=H_LBI949QWY" title="Let&#39;s Talk About MAPPA&#39;s CGI Throughout The Years" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <figcaption>Let's Talk About MAPPA's CGI Throughout The Years</figcaption>
+        </figure>
+      </div>
+    </div>
+
+    <div class="container">
+      <div>
+        <p class="paragraph-box">CGI or Computer-Generated Imagery is also used by MAPPA in most of their shows. One great example is Attack on Titan Season 4 Final Parts, where there are many titans that are in CGI. This is to help the animators in animating the anime!</p>
+      </div>
+      <div>
+        <p class="paragraph-box">CGI can be a hit or a miss, but MAPPA delivers most of its CGI. One good example is the titans themselves. Although they feel out of place, it still fits!</p>
+      </div>
+    </div>
+
+    <div class="container">
+      <div>
+        <p class="paragraph-box width40">For it to be fun for you guys, we created an interactive drawing board where you can draw like how MAPPA animators draw!</p>
+      </div>
+    </div>
+
+    <canvas id="myCanvas" width="900" height="500"></canvas>
+    <button id="clearButton">Clear</button>
+
+    <div class="toolbar">
+      <button id="pencilTool">Pencil</button>
+      <button id="brushTool">Brush</button>
+      <button id="eraserTool">Eraser</button>
+      <input type="color" id="colorPicker" />
+      <select id="brushSize">
+        <option value="1">1px</option>
+        <option value="3">3px</option>
+        <option value="5">5px</option>
+      </select>
+
+      <select id="canvasBackground">
+        <option value="">blank</option>
+        <option value="1">dororo</option>
+        <option value="2">eren</option>
+        <option value="3">gojo</option>
+        <option value="4">thorfinn</option>
+      </select>
+
+    </div>
+
+    <div class="color-palette">
+      <div class="color-swatch" style="background-color: black"> </div>
+      <div class="color-swatch" style="background-color: red"> </div>
+      <div class="color-swatch" style="background-color: green"> </div>
+      <div class="color-swatch" style="background-color: blue"> </div>
+    </div>
+     
+  </section>
+
+  <!-- The footer hover area -->
+  <div class="footer-hover-area"></div>
+  <!-- The footer in the webpage. -->
+  <footer>
+    <div>
+      <!-- List of MAPPA social media links -->
+      <li class="footerlogo"><a href="https://twitter.com/MAPPA_Info?t=FhLh5sh_S5hy8I3gdxmZYA&s=33"><i class="fa fa-twitter"></i></a></li>
+      <li class="footerlogo"><a href="https://www.instagram.com/mappastudios/?igsh=MmdqNml4NzZsZ3o4"><i class="fa fa-instagram"></i></a></li>
+      <li class="footerlogo"><a href="https://www.youtube.com/@MAPPACHANNEL"><i class="fa fa-youtube"></i></a></li>
+      <p>Copyright© 2023-2024. All rights reserved.<br>Created by Gabriel Ethan Troy C. Guanzon and Clive S. Tolentino.</p>
+    </div>
+  </footer>  
+
+  <script src="../script/AnimationStyle.js"></script>
+
+</body>
+  
+</html>

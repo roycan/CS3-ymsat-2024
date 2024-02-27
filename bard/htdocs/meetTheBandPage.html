@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Unofficial Kessoku Band Website</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <meta name="keywords" content="Band Memebers, Bocchi, Kessoku Band" />
+  <meta name="description" content="the description of each member of the band" />
+  <meta name="author" content="Paul Nathan Santiago, Heidrique Kristof Sumogba" />
+  <meta name="revised" content="24/01/2024" />
+  <link rel="icon" href="../images/kessokuBandLogo.png" type="image/ico" sizes="16x16"> <!-- to add a site tab icon -->
+  <link href="../style.css" rel="stylesheet" type="text/css" /> <!-- to add an external css file -->
+</head>
+<body>
+  
+  <nav>
+    <a href="newsPage.html">News</a>
+    <a href="storePage.html">Store</a>
+    <a href="musicPage.html">Music</a>
+    <a class="active" href="meetTheBandPage.html">Meet the Band</a>
+    <a href="aboutUsPage.html">About</a>
+    <a href="../index.html">結束バンド</a>
+  </nav>
+  <!-- nav bar -->
+  
+  <section class="mtbSection">
+    <h1>Meet the Band!</h1>
+    <div class="bandMembers">
+      <a><img src="../images/Kkita.png"></a>
+      <a><img src="../images/Kryo.png"></a>
+      <a><img src="../images/Kbocchi.png"></a>
+      <a><img src="../images/Knijika.png"></a>
+    </div>
+  </section>
+
+  <section class="mtbcontent">
+    <h1>See Through the Eyes of a Kessoku Band Member</h1>
+    <div class="eyes">
+      <img onclick="infoKita()"
+        src="../images/Kkitaeyes.png">
+      <img onclick="infoRyo()"
+        src="../images/Kryoeyes.png">
+      <img onclick="infoBocchi()"
+        src="../images/Kbocchieyes.png">
+      <img onclick="infoNijika()"
+        src="../images/Knijikaeyes.png">
+      
+    </div>
+    <div id="info"></div>
+  </section>
+  <!-- description about each band member -->
+
+  <section class="mtbband">
+    <div>Kessoku Band is a rising band that originates from Shimokitazawa. It consists of four members: Hitori "Bocchi" Gotoh, Ikuyo Kita, Ryo Yamada and Nijika Ijichi. The band started off with the latter 3 being the only members, but Ikuyo Kita left because she didn't feel like a good guitarist. However, the band was able to find Hitori Gotoh, a skilled guitarist, and in her first perfomance, due to her crippling anxiety, played inside of a box. Ikuyo Kita was soon accepted back as Bocchi's apprentice. The band would seek to garner more recognition to chase their dreams of stardom, resulting in their first performance in Starry as 4 members, despite starting off weak in this performance, they managed to clutch it up and end strong. Their latest gig was in Bocchi's school festival wherein despite being met with troubles halfway their performance, they were able to push through with their superior musical skill and creative thinking, being able to garner a lot of fans as a result. </div>
+    <img src="../images/kessokuBandLogo.png">
+  </section>
+  <!-- description about the band -->
+
+  <section>
+
+    <h1>Photo Dump!!!</h1>
+
+    <div class="photoDumpContainer">
+      <div class="photoDump fade">
+        <img src="../images/photodump1.png" style="width:900px">
+      </div>
+
+      <div class="photoDump fade">
+        <img src="../images/photodump2.png" style="width:900px">
+      </div>
+
+      <div class="photoDump fade">
+        <img src="../images/photodump3.png" style="width:900px">
+      </div>
+
+      <div class="photoDump fade">
+        <img src="../images/photodump4.png" style="width:900px">
+      </div>
+      
+      <div class="photoDump fade">
+        <img src="../images/photodump5.png" style="width:900px">
+      </div>
+      
+      <div class="photoDump fade">
+        <img src="../images/photodump6.png" style="width:900px">
+      </div>
+      <!-- photos for the photo dump -->
+
+      <a class="prev" onclick="plusDump(-1)">&#10094;</a>
+      <a class="next" onclick="plusDump(1)">&#10095;</a>
+      <!-- arrows for the photo dump -->
+
+      <div style="text-align:center">
+        <span class="dot" onclick="currentPhoto(1)"></span>
+        <span class="dot" onclick="currentPhoto(2)"></span>
+        <span class="dot" onclick="currentPhoto(3)"></span>
+        <span class="dot" onclick="currentPhoto(4)"></span>
+        <span class="dot" onclick="currentPhoto(5)"></span>
+        <span class="dot" onclick="currentPhoto(6)"></span>
+      </div>
+      <!-- dots for the photo dump -->
+    
+    </div>
+
+  </section>
+  
+  <footer>
+    &copy; 2023 Computer Science 3; Paul Santiago and Heid Sumogba; All sources from the Bocchi the Rock! Anime
+  </footer>
+  <script src="../script.js"></script>
+  <script src="../photodumpScript.js"></script>
+</body>
+
+</html>

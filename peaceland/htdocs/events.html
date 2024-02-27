@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>PLB | Events</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <meta name="keywords" content="Russian Revolution, JS, CSS, HTML, CompSci 3" />
+  <meta name="description" content="Our CS3 project for the Second Quarter" />
+  <meta name="author" content="Clarice Ilonah D. Chavez, Reugene Dwane S. Lopez" />
+  <meta name="revised" content="1/24/2024" />
+  <link rel="icon" href="/images/bread.svg" type="image/ico" sizes="16x16">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <link href="/style.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+</head>
+
+<body id="bodyWithMargin">
+  <div id="homeImage" class="bg-image d-flex">
+    <div id="blackOverlay" class="w-100 h-100 d-flex align-items-center justify-content-center">
+      <div id="homeText align-items-center justify-content-center">
+        <h1 class="text-white text-center">Timeline of Events</h1>
+        <h3 class="text-white text-center">The Russian Revolution</h3>
+      </div>
+    </div>
+  </div>
+  <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+    <div class="collapse navbar-collapse" id="navbar">
+      <div class="navbar-nav">
+        <a class="nav-item nav-link" href="/">Home</a>
+        <a class="nav-item nav-link" href="figures_concepts.html">Figures and Concepts</a>
+        <a class="nav-item nav-link active" href="events.html">Timeline of Events</a>
+        <a class="nav-item nav-link" href="civil_war.html">The Civil War</a>
+        <a class="nav-item nav-link" href="quiz.html">Quiz Yourself</a>
+        <a class="nav-item nav-link" href="further_sources.html">Further Sources</a>
+      </div>
+    </div>
+  </nav>
+
+  <div id="belowNavbar">
+    <!--Collapsible sidebar for extra information-->
+    <div id="eventInfo" class="collapsible">
+      <a href="javascript:void(0)" class="exit" onclick="infoDisappear()">&times;</a>
+      <h4 id="eventInfoHead"></h4>
+      <p id="eventInfoPar"></p><br><br>
+      <p class="caption" id="eventImgCaption"></p>
+    </div>
+
+    <!--Event images: Each image has a container because of the overlay effect when the user hovers over the image. And, when the image is clicked, the sidebar opens.--->
+    <div id="besideCollapse">
+      <div id="images">
+        <div onclick="toggleNav(1)" class="imgContainer">
+          <img src="/images/events/eventOne.png" class="eventImage">
+          <div class="eventDate"><div class="eventText">July 28, 1914</div></div>
+        </div>
+
+        <div onclick="toggleNav(2)" class="imgContainer">
+          <img src="/images/events/eventTwo.png" class="eventImage">
+          <div class="eventDate"><div class="eventText">August 1915</div></div>
+        </div>
+
+        <div onclick="toggleNav(3)" class="imgContainer">
+          <img src="/images/events/eventThree.png" class="eventImage">
+          <div class="eventDate"><div class="eventText">June/July 1916</div></div>
+        </div>
+
+        <div onclick="toggleNav(4)" class="imgContainer">
+          <img src="/images/events/eventFour.png" class="eventImage">
+          <div class="eventDate"><div class="eventText">February 23, 1917</div></div>
+        </div>
+
+        <div onclick="toggleNav(5)" class="imgContainer">
+          <img src="/images/events/eventFive.png" class="eventImage">
+          <div class="eventDate"><div class="eventText">April 3, 1917</div></div>
+        </div>
+
+        <div onclick="toggleNav(6)" class="imgContainer">
+          <img src="/images/events/eventSix.png" class="eventImage">
+          <div class="eventDate"><div class="eventText">June 1917</div></div>
+        </div>
+
+        <div onclick="toggleNav(7)" class="imgContainer">
+          <img src="/images/events/eventSeven.png" class="eventImage">
+          <div class="eventDate"><div class="eventText">August 1917</div></div>
+        </div>
+
+        <div onclick="toggleNav(8)" class="imgContainer">
+          <img src="/images/events/eventEight.png" class="eventImage">
+          <div class="eventDate"><div class="eventText">October 25, 1917</div></div>
+        </div>
+
+        <div onclick="toggleNav(9)" class="imgContainer">
+          <img src="/images/events/eventNine.png" class="eventImage">
+          <div class="eventDate"><div class="eventText">March 3, 1918 </div></div>
+        </div>
+
+        <div onclick="toggleNav(10)" class="imgContainer">
+          <img src="/images/events/eventTen.png" class="eventImage">
+          <div class="eventDate"><div class="eventText">March 1917 - February 1921</div></div>
+        </div>
+
+        <div onclick="toggleNav(11)" class="imgContainer">
+          <img src="/images/events/eventEleven.png" class="eventImage">
+          <div class="eventDate"><div class="eventText">November 1918 - March 1919</div></div>
+        </div>
+
+        <div onclick="toggleNav(12)" class="imgContainer">
+          <img src="/images/events/eventTwelve.png" class="eventImage">
+          <div class="eventDate"><div class="eventText">February 1919 - March 1921</div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--Volume button and footer-->
+  <div onclick="change()" id="volume"></div>
+  <audio id="shosty" controls>
+     <source src="/other/shosty.mp3" type="audio/mpeg">
+   </audio>
+  <footer class="text-center text-lg-start bg-body-tertiary text-muted">
+      <div class="align-items-center text-center p-4">
+        © 2024 Copyright: Chavez, Lopez
+        <div class="references">Assassination of Archduke Ferdinand. (n.d.). History Just Got Interesting. https://historyjustgotinteresting.com/wp-content/uploads/2021/09/the-assassination-of-franz-ferdinand.jpg <br> Salute. (n.d.). Alpha History. https://alphahistory.com/worldwar1/wp-content/uploads/2012/06/salute-200x200.jpg <br> Brusilov’s WW1 breakthrough on the eastern front. (n.d.). Warfare History Network. https://warfarehistorynetwork.com/article/brusilovs-wwi-breakthrough-on-the-eastern-front/ <br> February revolution. (n.d.). Smithsonian Magazine. https://th-thumbnailer.cdn-si-edu.com/9g183Tlz2JhDI6D3aX-4vKcOyqA=/1000x750/filters:no_upscale()/https://tf-cmsv2-smithsonianmag-media.s3.amazonaws.com/filer/83/90/83905669-ed8d-423d-b987-6f70987f7490/tdih-march08-hd.jpg <br> Lenin arrives in Petrograd. (n.d.). HISTORYMAPS. https://i.pinimg.com/600x/c1/5a/0f/c15a0f77af7f4f51a6c56d6e75f12208.jpg <br> Encyclopædia Britannica. (n.d.). Aleksandr Kerensky. https://www.britannica.com/topic/Russian-Provisional-Government#/media/1/480716/110334 <br> Kornilov July 1917. (n.d.). Alpha History. https://alphahistory.com/russianrevolution/wp-content/uploads/2018/08/kornilovjuly1917.jpg <br> Winter Palace. (n.d.). WordPress. https://vugradhistory.files.wordpress.com/2017/11/winterpalace1.jpg <br> Encyclopædia Britannica. (n.d.-b). treaties of Brest-Litovsk. https://www.britannica.com/event/treaties-of-Brest-Litovsk#/media/1/78908/145162 <br> Ukrainian brigade. (1921). Wikipedia. https://en.m.wikipedia.org/wiki/File:Ukrainian-brigade-1919.jpg <br> Soviet propaganda. (n.d.). The Collector. https://cdn.thecollector.com/wp-content/uploads/2023/12/polish-soviet-propaganda-poster-poland-and-ukraine.jpg?width=1400&quality=55 <br> Battle of Warsaw. (n.d.). Warsaw Institute. https://warsawinstitute.org/wp-content/uploads/2020/08/Poland-Battle-of-Warsaw-war-Soviets-1920-768x422.jpg <br> The Editors of Encyclopaedia Britannica. (2023, October 30). Russian Revolution | Definition, Causes, Summary, History, & Facts. Encyclopedia Britannica. https://www.britannica.com/event/Russian-Revolution </div>
+      </div>
+  </footer>
+  
+  <script src="/eventsScript.js"></script>
+
+</body>
+</html>

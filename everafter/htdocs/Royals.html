@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>A Look Through the Storybook</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <meta name="author" content="Nicoleen Bantog, Leign Villa"/>
+  <meta name="revised" content="" />
+  <link rel="icon" href="../images/logo.png" type="image/ico" sizes="16x16"> <!-- to add a site tab icon -->
+  <link href="../style.css" rel="stylesheet" type="text/css" /> <!-- to add an external css file -->
+</head>
+<body>
+  <!-- do not forget to give your comments -->
+  <header>
+    <!-- Navigation Bar-->
+    <nav>
+      <div id="bar">
+        <p id="title"> A Look Through the Storybook: Ever After High</p>
+        <a href="../index.html">Home</a>
+        <div class="dropdown">
+          <button class="dropbtn">Characters</button>
+          <div class="dropdown-content">
+            <a href="../htdocs/Royals.html">Royals</a>
+            <a href="../htdocs/Rebels.html">Rebels</a>
+          </div>
+        </div>
+        <a href="../htdocs/Story.html">Story</a>
+      </div>
+    </nav>
+  </header>
+  <section>
+    <!-- The images for the slides-->
+    <div class="container">
+
+      <div class="mySlides">
+          <img src="../images/royals/royals_page1.png" style="width:95%">
+      </div>
+
+      <div class="mySlides">
+          <img src="../images/royals/royals_page2.png" style="width:95%">
+      </div>
+
+      <div class="mySlides">
+          <img src="../images/royals/royals_page3.png" style="width:95%">
+      </div>
+
+      <div class="mySlides">
+          <img src="../images/royals/royals_page4.png" style="width:95%">
+      </div>
+
+      <div class="mySlides">
+          <img src="../images/royals/royals_page5.png" style="width:95%">
+      </div>
+
+      <!-- Next and Prev buttons -->
+      <a class="prev" onclick="slides(-1)">&#10094;</a>
+      <a class="next" onclick="slides(1)">&#10095;</a>
+
+      <!-- Captions for the icons -->
+      <div class="caption-container-royal">
+        <p id="caption"></p>
+      </div>
+
+      <!-- Thumbnail images -->
+      <div class="row">
+        <div class="column">
+          <img class="demo cursor" src="../images/royals/apple_icon.png" style="width:100%" onclick="slideimg(1)" alt="Apple White">
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="../images/royals/briar_icon.png" style="width:100%" onclick="slideimg(2)" alt="Briar Beauty">
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="../images/royals/ashlynn_icon.png" style="width:100%" onclick="slideimg(3)" alt="Ashlyn Ella">
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="../images/royals/dexter_icon.png" style="width:100%" onclick="slideimg(4)" alt="Dexter Charming">
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="../images/royals/daring_icon.png" style="width:100%" onclick="slideimg(5)" alt="Daring Charming">
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer>
+    &copy; 2024 Bantog, Villa
+  </footer>
+  <script src="../script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,565 @@
+html {
+  height: 100%;
+  width: 100%;
+  /* sets the values of margin and padding on every HTML we have */
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  /* values for the initial margin and padding */
+  margin: 0;
+  padding: 0;
+  /* the font used in the text in every page */
+  font-family: Arial, Helvetica, sans-serif;
+  /* the body takes up the whole width and height available to it */
+  height: 100vh;
+  width: 100vw;
+  /* background-image showing Jujutsu Kaisen with lower opacity */
+  background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url('images/background.jpg');
+  background-position: center top;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  /* the background-image is still showing even with a scroll bar */
+  position: relative;
+  overflow-x: hidden;
+  z-index: 0;
+}
+
+/* the header used in every webpages */
+.header {
+  color: white;
+  /* the minimum height of the header, giving a limit when the user is on a different device */
+  min-height: 1vh;
+  width: 100%;
+  background-color: rgba(10,10,10,0.65);
+  position: fixed;
+  top: 0;
+  left: 0;
+  /* the header is on the front of every element */
+  z-index: 1000;
+  overflow: hidden;
+  padding-top: 20px;
+}
+
+/* other properties of header that makes it in the center */
+.header h1 {
+  font-size: 35px;
+  text-align: center;
+  margin: 0;
+}
+
+/* the navigation bar (both the logo and the links), this gives space between items by line 55 */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* the MAPPA logo on the left */
+.logo {
+  width: 75px;
+  /* it starts of the bottom left corner of the header, lines 63-65 moves it to be at the center */
+  position: relative;
+  top: -30px;
+  left: 50px;
+  /* a scale to make the logo appear bigger */
+  scale: 1.5;
+}
+
+/* the navigation bar links itself */
+.nav-links{
+  flex: 1;
+  text-align: right;
+}
+
+/* the listed links */
+.nav-links ul li {
+  /* no signs of listing (e.g. dashes) */
+  list-style: none;
+  /* the links are to be in a horizontal display */
+  display: inline-block;
+  position: relative;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links ul li a{
+  text-decoration: none;
+  /* sets the size of text to 3.0 viewheight */
+  font-size: 3.0vh;
+}
+
+/* makes an animation at the top of the box when the mouse is to hover it */
+.nav-links ul li::after{
+  /* no content, we made it into a line */
+  content: '';
+  /* the width of the line before hovering it */
+  width: 0%;
+  height: 2px;
+  background: white;
+  display: block;
+  margin: auto;
+  /* the number of seconds the line is to animate */
+  transition: 0.3s;
+}
+
+/* the animation after the mouse is hovering it */
+.nav-links ul li:hover::after{
+  /* the width of the line after hovering it, width being equal to the width of the bar */
+  width: 100%;
+}
+
+/* all navigation bar's position of each webpages */
+nav a {
+  /* the navigation bar links are in the left-side */
+  float: left;
+  color: white;
+  /* sets the margins and paddings of the navigation bar */
+  margin: 5px;
+  padding:  5px 16px;
+  padding-top: 6px;
+  display: block;
+  transition: background-color 0.3s;
+  /* makes the text inside the boxes in the bar centered */
+  text-align: center;
+}
+
+
+nav a:hover {
+  /* makes the text appear bigger when hovering at the navigation bar */
+  transform: scale(1.2);
+}
+
+/* the appearance of our content on all the webpages we have */
+.content {
+  padding: 150px 20px 20px;
+}
+
+/* the properties of the articles of our content */
+article {
+  /* color of the text is white */
+  color: white;
+  /* a background-color with low opacity */
+  background-color: rgba(0,0,0,0.4);
+  /* the properties of the borders of the text */
+  border: 5px solid red;
+  box-shadow: 3px 5px 3px 1px #7e563e;
+  padding: 10px;
+  /* the minimum height of these texts */
+  min-height: 1vh;
+  left: 0;
+  margin: 10px;
+  margin-bottom: 20px;
+}
+
+/* the width of the articles in the HOME webpage */
+.article1 {
+  width: 29%;
+}
+
+/* changes the background color of the border to black when hovered */
+article:hover {
+  background-color: black;
+}
+
+/* the paragraph inside the first article in HOME webpage */
+article p {
+  margin: 5px;
+  text-align: center;
+  font-size: 27px;
+}
+
+/* makes most articles in the HOME webpage float on the left  */
+.floatleft {
+  float: left;
+}
+
+/* the class that contains the iframes in HOME webpage */
+.video-container {
+  /* the display of iframes are flexible */
+  display: flex;
+  /* makess the videos display in rows */
+  flex-direction: row;
+  /* there's a space in-between videos */
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 30px;
+  padding: 0 20px;
+}
+
+.iframe1 {
+  /* all videos are of the same length due to the .video container */
+  flex: 1;
+  position: relative;
+}
+
+figcaption {
+  color: white
+}
+/* the properties of the gallery in the Gallery of Works webpage */
+#gallery {
+    /* displays the posters in grids */
+    display: grid;
+    /* the posters are the fill the 200px size min or 1fr size max of the grids */
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    /* the gap between each grid */
+    gap: 10px;
+    /* padding of the grids to the posters and texts */
+    padding: 10px;
+    color: white;
+}
+
+/* the properties of the text and border of the grids */
+.work {
+    /* border of each grid */
+    border: 5px solid red;
+    box-shadow: 3px 5px 3px 1px #7e563e;
+    /* background-color of each grid with low opacity */
+    background-color: rgba(0,0,0,0.4);
+    padding: 10px;
+    text-align: center;
+}
+
+.work img {
+    max-width: 100%;
+    height: auto; 
+}
+
+/* hovering makes the grid become bigger and have the background color be black */
+.work:hover {
+  transform: scale(1.1);
+  background-color: black;
+}
+
+/* properties of the content in each grid, includes the posters and the necessary details of that anime */
+.thumbnail {
+  max-width: 200px;
+  height: auto;
+}
+
+/* sets the color of the text link at the end of the grid */
+.white {
+  color: white;
+}
+
+/* the properties of filter in the Gallery of Works webpage */
+#filter {
+    margin: 20px; 
+    font-size: 20px;
+    color: white;
+    padding: 10px;
+}
+
+#filterInput {
+  width: 200px;
+}
+/* sets the font-size of text in the Sort By menu and the input in the Filter */
+#filterInput, #sortSelect {
+    font-size: 20px;
+    margin-left: 20px;
+}
+
+/* positions the paragraphs and videos in the Animation webpage */
+.container {
+  clear: both;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* the properties of each boxes of paragraphs in the Animation webpage */
+.paragraph-box {
+  color: white;
+  font-size: 20px;
+  /* background-color with low opacity */
+  background-color: rgba(0,0,0,0.4);
+  border: 2px solid red;
+  box-shadow: 3px 5px 3px 1px #7e563e;
+  padding: 20px;
+  /* a minimum height of 1 viewheight, sets a minimum limit when the user have different devices */
+  min-height: 1vh;
+  left: 0;
+  margin: 50px;
+  width: 75%;
+  }
+
+/* changes the background color of the border to black when hovered */
+.paragraph-box:hover {
+  background-color: black;
+}
+
+
+
+/* properties of the last paragraph-box in the Animation webpage*/
+.width40{
+  /* the width is 40% of the webpage */
+  width: 40%;
+  margin: 20px auto 20px auto;
+}
+
+/* the general positions of the videos in the Animation webpage */
+.video {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 45%;
+  height: auto;
+  margin: 0 75px;
+}
+
+/* properties of the paragraph-box regarding CGI in the Animation webpage */
+.articleCenter {
+  margin: 10px auto 20px auto;
+  width: 30%;
+}
+
+/* properties of the interactive drawing in the Animation webpage using canvas */
+canvas {
+  display: block;
+  margin: 3px auto;
+  padding: 6px;
+  border: 2px solid grey;
+  /* background properties of the canvas */
+  /* the background-image is supposedly just an outline image so that users can draw an outline of the image */
+  /* sets the width and the height of the canvas */
+  width: 900px;
+  height: 500px;
+  /* box-shadow for some effects around the canvas */
+  box-shadow: 5px 5px 5px #808080;
+}
+
+
+/* the position of the clear button */
+#clearButton {
+  display: block;
+  margin: 5px auto;
+}
+
+/* the spaces around the text and the box of each buttons */
+.toolbar button, #clearButton, #saveButton, select {
+  padding: 5px;
+  font-size: 18px;
+}
+
+/* position of the toolbar of the canvas */
+.toolbar {
+  margin-bottom: 12px;
+  display: flex;
+  justify-content: center;
+}
+
+/* the properties of the buttons inside the toolbar (pencil, brush, and eraser) */
+.toolbar button, select {
+  padding: 5px;
+  margin-right: 7px;
+  background: grey;
+  color: white;
+  border: none;
+  /* this directs what button is the user pressing */
+  cursor: pointer;
+}
+
+/* the position of the color-palette boxes */
+.color-palette {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 12px;
+}
+
+/* the size of the box and the borders of the color-swatch  */
+.color-palette .color-swatch {
+  width: 32px;
+  height: 32px;
+  border: 3px solid grey;
+  /* this directs what button is the user pressing */
+  cursor: pointer;
+  margin-right: 6px;
+}
+
+/* used to change the font size of the listed links in the References webpage */
+.list {
+  font-size: 25px;
+  text-indent: 10px;
+}
+
+/* properties of the footer on each webpages */
+footer {
+  position: fixed;
+  bottom: -90px;
+  left: 0;
+  height: 90px;
+  width: 100%;
+  /* it is in front of everything, like the header */
+  z-index: 1000;
+  color: white;
+  /* the color of the entire background of the footer */
+  background-color: black;
+  background-size: cover;
+  background-attachment: fixed;
+  /* the time and the location of the transition of the footer */
+  transition: bottom 0.5s;
+}
+
+/* the transition will happen when the footer is hovered */
+footer:hover {
+  bottom: 0;
+}
+
+/* the position of the logo of the MAPPA links in the footer */
+.footerlogo {
+  position: relative;
+  color: white;
+  /* the top corresponds to the logos going down from the top by 1.5 viewheight */
+  top: 1.5vh;
+  /* the left corresponds to the logos going right from the left by 50 viewwidth */
+  left: 50vw;
+  list-style: none;
+}
+
+/* the spaces between each listed logo by 0.5 viewwidth */
+footer li {
+  float: left;
+  padding: 0.5vw;
+}
+
+/* the properties of the paragraph containing the creators of the website and copyright */
+footer p {
+  /* sets the position of the paragraph*/
+  position: relative;
+  display: block;
+  /* color of the text, with the text not having any other decoration */
+  color: #ffffff;
+  text-decoration: none;
+  /* the font-size is as big as 2 viewheight */
+  font-size: 2vh;
+  margin: auto;
+  /* the paragraph would start 6.8 viewheight from the top of the footer */
+  top: 6.8vh;
+  text-align: center;
+}
+
+/* makes the footer be able to appear when hovered */
+.footer-hover-area {
+  position: fixed;
+  /* starts from 0 then will transition */
+  bottom: 0;
+  height: 30px;
+  width: 100%;
+}
+
+.footer-hover-area:hover + footer {
+  bottom: 0;
+}
+
+.signup_form {
+  color: white;
+  text-align: center;
+}
+form {
+  font-size: 15px;
+  margin-bottom: 1em;
+}
+
+#fieldset1 {
+  width: 500px;
+  padding: 20px;
+  background-color: white;
+  margin: 0 auto;
+  margin-top: 50px;
+  border-radius: 10px;
+}
+
+#fieldset2 {
+  width: 800px;
+  padding: 20px;
+  background-color: white;
+  margin: 0 auto;
+  margin-top: 50px;
+  border-radius: 10px;
+}
+
+input[type="text"], input[type="email"], input[type="password"], textarea {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 10px 0;
+  display: inline-block;
+  border: 1px solid gray;
+  box-sizing: border-box;
+}
+
+.formButton {
+    background-color: green;
+    color: white ;
+    font-style: bold;
+    font-size: 20px;
+    padding: 15px 20px;
+    margin: 10px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+.formButton:hover {
+    opacity: 0.6;
+}
+
+.containing {
+  padding: 15px;
+}
+
+.modal {
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  padding-top: 100px;
+}
+
+.modal-content {
+  background-color: white;
+  margin: 5% auto 15% auto;
+  border: 5px solid grey;
+  width: 80%
+}
+
+hr {
+  border: 1px solid white;
+  margin-bottom: 25px;
+}
+
+.logInButton {
+    background-color: #04AA6D;
+    color: white ;
+    font-style: bold;
+    font-size: 20px;
+    padding: 15px 20px;
+    margin: 10px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+.logInButton:hover {
+    opacity: 0.6;
+}
+
+h1 {
+  text-align: center;
+}
+
+form h2, p {
+  text-align: center;
+  font-style: italic;
+}
+
+.acc {
+  background-color: white;
+  margin: 5% auto 15% auto;
+  border: 5px solid grey;
+  width: 80%
+}

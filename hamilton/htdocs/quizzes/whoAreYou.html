@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <meta name="authors" content="Regina Therese Castaneda and Anela Miu Fernandez">
+  <meta name="keywords" content="HTML, CSS, JavaScript, Hamilton, Website, World, Games">
+  <meta name="description" content="This website is dedicated to the Hamilton Musical. It is composed of different games, descriptions, and facts that aim to bring fans more excitment and fun. ">
+  <title> Which Hamilton Character Are You? </title>
+  <link href="/cssdocs/quiz.css" rel="stylesheet" type="text/css" />
+  <link href="/cssdocs/navBars.css" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Playfair Display|Trirong|Montserrat|Raleway">
+  <link rel="icon" type="image/x-icon" href="/images/Home_Images/Hamilton-Logo.png">
+</head>
+
+<body onload="setQuestions('questionText', 4, 10, 'result-container')">
+  <div id="header">
+    <h1>Which Hamilton Character are You?</h1>
+    <div id="navBar">
+      <h1 onclick="returnHome('quizzesGames')">Back to Game Selection</h1>
+      <h1 onclick="homePage()">Hamilton World</h1>
+    </div>
+  </div>
+
+  <div id="contentBody">
+    <div id="quizQuestion">
+      <h3 id="questionText"></h3>
+      <ul id="questionOptions">
+        <li id="option_1" onclick=" getValue('option_1'); nextQuestion('questionText', 4, 10, 'result-container');"></li>
+        <li id="option_2" onclick="getValue('option_2'); nextQuestion('questionText', 4, 10, 'result-container')"></li>
+        <li id="option_3" onclick="getValue('option_3'); nextQuestion('questionText', 4, 10, 'result-container')"></li>
+        <li id="option_4" onclick="getValue('option_4'); nextQuestion('questionText', 4, 10, 'result-container')"></li>
+      </ul>
+    </div>
+
+    <div id="result-container" style="display:none">
+      <h1 id="result"></h1>
+      <button onclick="reset('questionText', 4, 10, 'result-container')"> Try Again? </button>
+    </div>
+    
+    <footer>
+      <h1>About Us</h1>
+      <p>&copy; Regina Therese Castaneda and Anela Miu Fernandez 2024</p>
+      <p>Meet Hamilton and his crew this year! Welcome, welcome to the world of Hamilton! Hamilton World is a website that aims to united both young and old fans of the musical Hamilton. This website aims to increase the online presence of Hamilton, allow users to read articles about Hamilton, and engage users through fun and mind boggling games on Hamilton. Once you enter this website, you would never want to leave! So, come one and all, and visit the amazing world of Hamilton! Don't throw away your shot! </p> 
+      
+      <br>
+      <p>Note: All images in this site are taken from Hamilton and are not original content.</p>
+      <p> References: </p> 
+      <p> <i> Hamilton study guide.</i> (n.d.). LitCharts. https://www.litcharts.com/lit/hamilton</p>
+    </footer>
+  </div>
+  <script> 
+    let quizQuestions = {
+      question_1: {
+        questionText: "You have to pick your right hand man. Who is it going to be?",
+          option_1: {
+            optionText: "Me! Who else? No one should be trusted.",
+            optionValue: "Burr"
+          },
+          option_2: {
+            optionText: "My partner. I'll be happy as long as we're together. We will always be in this together.",
+            optionValue: "Eliza"
+          },
+          option_3: {
+            optionText: "My secretary. They know exactly what goes on in work, and they can be depended on.",
+            optionValue: "Washington"
+          },
+          option_4: {
+            optionText: " My friends. They support me in this journey and allow me to rise up.",
+            optionValue: "Hamilton"
+          }
+      },
+      question_2: {
+        questionText: "You and your colleagues have a long essay assignment to do. What are you going to do?",
+          option_1: {
+            optionText: "Write most of it! Writing is fun and easy to do.",
+            optionValue: "Hamilton"
+          },
+          option_2: {
+            optionText: "Write what is needed but with caution. Never reveal too much in your writing.",
+            optionValue: "Burr"
+          },
+          option_3: {
+            optionText: "The writing of these essays is a duty I must meet for the betterment of all. Let me do what I must do!",
+            optionValue: "Washington"
+          },
+          option_4: {
+            optionText: "Do what is asked of me to do. The important thing is that I meet my duty and that we work as a team.",
+            optionValue: "Eliza"
+          }
+      }, 
+      question_3: {
+        questionText: "You lost the chance to do something you really wanted to do. What will you do?",
+          option_1: {
+            optionText: "Ponder over my mistakes. Why did this happen to me? What did I do to deserve this?",
+            optionValue: "Burr"
+          },
+          option_2: {
+            optionText: "Keep on going. If I stay stagnant, nothing will happen, and things might even become worse. I must keep trying.",
+            optionValue: "Hamilton"
+          },
+          option_3: {
+            optionText: "Acceptance. In this situation, the most important thing is that I tried, and family, above all, is the best thing in life.",
+            optionValue: "Eliza"
+          },
+          option_4: {
+            optionText: "Failure is a part of life. I can't stop because people need me.",
+            optionValue: "Washington"
+          }
+      }, 
+      question_4: {
+        questionText: "You need to write about your dreams in life. What are you going to write about? ",
+          option_1: {
+            optionText: "Impact. I want my actions to make a contribution that will be remembered years from now.",
+            optionValue: "Hamilton"
+          },
+          option_2: {
+            optionText: "Power. I want to hold power that will bring me honor and influence.",
+            optionValue: "Burr"
+          },
+          option_3: {
+            optionText: "Happiness. I want to be happy with the people I care about most.",
+            optionValue: "Eliza"
+          },
+          option_4: {
+            optionText: "Good Leadership. I want to be able to manage a group of people with success. I want the people I work with to be happy and better.",
+            optionValue: "Washington"
+          }
+      }, 
+
+      question_5: {
+        questionText: "You can only pick one of the 4 below. What will you pick?",
+          option_1: {
+            optionText: "Family",
+            optionValue: "Eliza"
+          },
+          option_2: {
+            optionText: "Society",
+            optionValue: "Washington"
+          },
+          option_3: {
+            optionText: "Myself",
+            optionValue: "Burr"
+          },
+          option_4: {
+            optionText: "History",
+            optionValue: "Hamilton"
+          }
+      }, 
+
+      question_6: {
+        questionText: "You are faced with an extremely frustrating situation. How do you deal with it?",
+          option_1: {
+            optionText: "Stay calm and naviagte the situation. Try to negotiate terms and resolve it immediately.",
+            optionValue: "Washington"
+          },
+          option_2: {
+            optionText: "Stay calm and think about priorities. Know that this probably won't matter in a few moments time and relax.",
+            optionValue: "Eliza"
+          },
+          option_3: {
+            optionText: "Get angry immediately. Speak one's mind with no fear.",
+            optionValue: "Hamilton"
+          },
+          option_4: {
+            optionText: "Let anger flow only inside. Let no one see one's true feelings.",
+            optionValue: "Burr"
+          }
+      },
+
+      question_7: {
+        questionText: "You can pick any animal to bring home. Which will you pick?",
+          option_1: {
+            optionText: "Wolf",
+            optionValue: "Burr"
+          },
+          option_2: {
+            optionText: "Lion",
+            optionValue: "Washington"
+          },
+          option_3: {
+            optionText: "Donkey",
+            optionValue: "Hamilton"
+          },
+          option_4: {
+            optionText: "Dog",
+            optionValue: "Eliza"
+          }
+      },
+
+      question_8: {
+        questionText: "You get to go on your ideal vacation. Where will it be?",
+          option_1: {
+            optionText: "A beach together with one's loved ones",
+            optionValue: "Eliza"
+          },
+          option_2: {
+            optionText: "A place to discuss one's opinions on the issues of society.",
+            optionValue: "Hamilton"
+          },
+          option_3: {
+            optionText: "A quiet place where one can be in solitude.",
+            optionValue: "Burr"
+          },
+          option_4: {
+            optionText: "A place where one can assist the people in need.",
+            optionValue: "Washington"
+          }
+      },
+
+      question_9: {
+        questionText: "You have to pick one Hamilton song to listen to for the rest of your life. Which will you pick?",
+          option_1: {
+            optionText: "My Shot",
+            optionValue: "Hamilton"
+          },
+          option_2: {
+            optionText: "That Would Be Enough",
+            optionValue: "Eliza"
+          },
+          option_3: {
+            optionText: "Aaron Burr, Sir",
+            optionValue: "Burr"
+          },
+          option_4: {
+            optionText: "One Last Time",
+            optionValue: "Washington"
+          }
+      },
+
+      question_10: {
+        questionText: "You get to pick your favorite Hamilton character. Who is it going to be?",
+          option_1: {
+            optionText: "George Washington",
+            optionValue: "Washington"
+          },
+          option_2: {
+            optionText: "Alexander Hamilton",
+            optionValue: "Hamilton"
+          },
+          option_3: {
+            optionText: "Aaron Burr",
+            optionValue: "Burr"
+          },
+          option_4: {
+            optionText: "Eliza Hamilton",
+            optionValue: "Eliza"
+          }
+      },
+      
+      question_11: {
+        questionText: "You are so cool. What do you do about it?",
+          option_1: {
+            optionText: "Gloat",
+            optionValue: "Hamilton"
+          },
+          option_2:{
+            optionText: "As expected",
+            optionValue: "Burr"
+          },
+         option_3:{
+           optionText: "ijbol",
+           optionValue: " Washington"
+         },
+        option_4: {
+          optionText: "Cool!",
+          optionValue: "Eliza"
+        }
+      }
+
+    /* question_10: {
+        questionText: "You get to pick your favorite Hamilton character. Who is it going to be?",
+          option_1: {
+            optionText: "George Washington",
+            optionValue: "Washington"
+          },
+          option_2: {
+            optionText: "Alexander Hamilton",
+            optionValue: "Hamilton"
+          },
+          option_3: {
+            optionText: "Aaron Burr",
+            optionValue: "Burr"
+          },
+          option_4: {
+            optionText: "Eliza Hamilton",
+            optionValue: "Eliza"
+          }
+      } */
+    } 
+    let answerValues = ["Burr", "Eliza", "Washington", "Hamilton"]; //possible results: edit pa
+
+    let resultPictures = [];
+    let resultArray = [
+      "You are Aaron Burr! You are an ambitious yet calculated person. You want to make sure that you always back the right side, so you are careful about each step. You have big dreams for yourself, and you want to make sure that each step counts and does not go to waste. You want more!",
+      "You are Eliza Hamilton! Power and glory on the outside are nothing to you. Here, the most important thing is family. Anything can happen and you would not care, as long as you are with your family safe and sound. You are satisfied and pefectly content with the company of your family. You are loyal and content!",
+      "You are George Washington! You are a strong leader who brings out the best in everyone. You care about the welfare of others before yourself, and you want to make sure that everyone is well regardless of how you feel about the issue. You are selfless and pure!",
+      "You are Alexander Hamilton! You are an ambitious man who will do anything to get what you want. You continue to work day in and day out to achieve your goals and make an impact to society. To you, there are always more opportunities that must be taken in order to reach the potential. You are unstoppable!"
+    ];
+    let quizAnswers = [];
+    
+  </script>
+  <script src="/jsdocs/js_quizzes/whoAreYou.js"></script>
+  <script src="/jsdocs/quizzesGames.js"> </script>
+  <script defer src="/script.js"></script>
+
+</body>
+
+</html>

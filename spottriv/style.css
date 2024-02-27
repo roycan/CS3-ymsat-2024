@@ -1,0 +1,198 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  background: #FEF3E2;
+  font-family: Frunchy;
+  margin: 0px;
+}
+
+/*NAV BAR STYLE*/
+
+nav {
+  background-color: #FA8128;
+  overflow: hidden;
+  float: center;
+  display: block;
+}
+
+nav h1 {
+  color: #FEF3E2;
+  display: inline-block;
+  position: relative;
+  top: -15px;
+  font-size: 50px;
+  margin: 10px 100px;
+}
+
+nav a {
+  color: #FEF3E2;
+  text-decoration: none;
+  position: relative;
+  top: -15px;
+  padding: 10px 25px;
+  font-size: 20px;
+  border-radius: 5%;
+}
+
+nav a:hover {
+  background-color: #FEF3E2;
+  color: #FA8128;
+  text-decoration: none;
+}
+
+#vinyl {
+  height: 80px;
+  width: 75px;
+  position: relative;
+  top: 10px;
+  left: 15px;
+}
+
+/*INSTRUCTIONS STYLE*/
+
+body>h1 {
+  color: #FA4032;
+  margin: 20px;
+  font-weight: normal;
+  font-size: 30px;
+}
+
+body>h2 {
+  color: #FA4032;
+  margin: 20px;
+  font-weight: normal;
+  font-size: 25px;
+}
+
+li {
+  color: #ffffff;
+  margin: 35px;
+  font-size: 20px;
+}
+
+/*JAZZ STYLE*/
+
+h2>div {
+  display: inline;
+}
+
+/*GAME INTERFACE STYLE*/
+button {
+  margin: 10px;
+  border-radius: 30px;
+  border: none;
+  background-color: #FA8128;
+  color: #ffffff;
+  font-family: Frunchy;
+  font-size: 200%;
+  padding: 0.75% 3%;
+  box-shadow: 0px 5px grey;
+}
+
+button:active {
+  transform: translateY(3px);
+  box-shadow: 0px 3px #6b6b6b;
+}
+
+td {
+  border: 1px black solid;
+  text-align: center;
+  padding: 10px;
+}
+
+#gameplayElements {
+  float: right;
+}
+
+#total {
+  position: relative;
+  margin-right: 20px;
+}
+
+#Input,
+#enter,
+footer,
+section {
+  position: relative;
+  left: 15px;
+}
+
+#bewitched,
+#fearless {
+  float: right;
+  position: relative;
+  top: -150px;
+}
+
+#ride {
+  float: right;
+  position: relative;
+  top: -150px;
+}
+
+#grid {
+  overflow: auto;
+  width: 95%;
+  position: relative;
+  left: 2.5%;
+}
+
+/*FOOTER STYLE*/
+
+footer {
+  color: #FA4032;
+
+}
+
+section>h2 {
+  color: #FA4032;
+
+}
+
+figcaption {
+  position: relative;
+  top: -145px;
+  right: 5px;
+  text-align: right;
+  color: #FA4032;
+}
+
+/*
+section > h2, footer {
+  position: relative;
+  bottom: 0%;
+  left: 0%;
+}*/
+
+/*ABOUT US*/
+.coll {
+  background-color: #FA8128;
+  color: white;
+  padding: 15px;
+  border-radius: 2px;
+  text-align: left;
+  outline: none;
+  font-size: 20px;
+  display: inline-block;
+  border: none;
+  font-family: Frunchy;
+}
+
+.active,
+.coll:hover {
+  background-color: #FA8128;
+}
+
+.info {
+  padding: 0 10px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  background-color: #eca979;
+  color: white;
+  margin: 8px;
+  font-family: Frunchy;
+}

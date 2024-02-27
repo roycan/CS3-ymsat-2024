@@ -1,0 +1,243 @@
+/*Color Palette: https://colorpalettes.net/color-palette-1167/*/
+
+
+/* ----GENERAL WEBSITE - font, colors, audio---- */
+@font-face {
+  font-family: Byron;
+  src: url('other/Byron Mark II.ttf');
+}
+
+html {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  font-family: "Montserrat";
+  background-color: #cebba7;
+}
+
+p {
+  text-align: justify;
+}
+
+nav {
+  background-color: #4d020c;
+}
+
+p a {
+  color: #4d020c;
+}
+
+footer div {
+  background-color: #a88863;
+  color: white;
+}
+
+#volume {
+  /* for the volume button in the lower right corner */
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  background: url('images/index/volume-mute-fill.svg') no-repeat;
+  background-size: contain;
+  width: 60px;
+  height: 60px;
+}
+
+audio {
+  display: none;
+}
+
+.references {
+  font-size: 10px;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+
+
+/* ----index.html - images, mainly---- */
+#homeImage {
+  font-family: "Byron";
+  background-image: url("images/index/octmanifesto.jpeg");
+  display: flex;
+  height: 30vh;
+}
+
+#blackOverlay {
+  /* semi-transparent black overlay on top of image above */
+  background: rgba(0, 0, 0, 0.5);
+}
+
+#dwane,
+#clarice {
+  height: 200px;
+  width: 200px;
+}
+
+
+/* ----figures_concepts.html : There's some code below that's not in use right now, but may be used in the future. Mainly for positioning text and images---- */
+
+.imageLeft img {
+  position: relative;
+  float: left;
+  right: -15%;
+}
+
+.imageLeft div {
+  position: relative;
+  top: 10px;
+  right: -20%;
+  height: 400px;
+  width: 950px;
+}
+
+.imageRight img {
+  position: relative;
+  float: right;
+  right: 15%;
+}
+
+.imageRight div {
+  position: relative;
+  top: 10px;
+  right: -37.5%;
+  height: 250px;
+  width: 400px;
+}
+
+.noImage {
+  position: relative;
+  right: -15%;
+  width: 60%;
+}
+
+/* image captions */
+
+.caption {
+  font-size: 14px;
+  font-style: italic;
+  position: relative;
+}
+
+#nickCaption {
+  left: -33%;
+  top: 2%;
+}
+
+#leninCaption {
+  left: -33%;
+  top: 20%;
+}
+
+#trotskyCaption {
+  left: -33%;
+  top: 20%;
+}
+
+/* ----events.html ----*/
+
+#bodyWithMargin {
+  /* to keep the footer at the bottom despite the floating images */
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+#belowNavbar {
+  width: 100%;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.collapsible {
+  /* sidebar initial position */
+  height: 100%;
+  display: block;
+  position: absolute;
+  width: 0;
+  left: 0;
+  background-color: #af2924;
+  color: white;
+  overflow-x: hidden;
+
+  padding-top: 60px;
+
+  transition: 0.5s;
+}
+
+.collapsible p,
+h4 {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.collapsible p {
+  text-align: justify;
+}
+
+.collapsible .exit {
+  /* sidebar exit button */
+  position: absolute;
+  top: 0;
+  right: 5px;
+  font-size: 50px;
+  margin-left: 60px;
+
+  color: white;
+  opacity: 0.75;
+  text-decoration: none;
+}
+
+.collapsible .exit:hover {
+  opacity: 1;
+}
+
+
+/* fade overlay for event images */
+#images {
+  width: 75%;
+  margin: auto;
+}
+
+.imgContainer img {
+  float: left;
+  height: 250px;
+  width: 250px;
+}
+
+.imgContainer {
+  float: left;
+}
+
+.eventDate {
+  background: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  width: 250px;
+  height: 250px;
+  transition: opacity 0.5s;
+
+  position: absolute;
+  box-sizing: border-box;
+}
+
+.imgContainer:hover .eventDate {
+  opacity: 1;
+  cursor: pointer;
+}
+
+.eventText {
+  color: white;
+  font-size: 15px;
+  text-align: center;
+  position: relative;
+  top: 45%;
+}
+
+/* quiz */ 
+button {
+  background-color: #4d020c;
+  border-radius: 10px;
+  border: 1px solid transparent;
+  color: white;
+}

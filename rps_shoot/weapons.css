@@ -1,0 +1,76 @@
+/*Sets background color to the entire webpage*/
+html {
+  height: 100%;
+  width: 100%;
+  background-color: rgb(225, 201, 178);
+}
+/*Removes text decoration to all elements*/
+*{
+  text-decoration: none;
+}
+/*Styles the header which is where the logo, website title, and navigation menu are located. Basically to align elements horizontally and vertically, as well as centers them.*/
+header{
+  display: flex;
+  align-items: center;
+}
+/*Styles the logo class which is the logo image. Sets width and height to 5%, and adds padding of 20px.*/
+.logo{
+  width: 5%;
+  height: 5%;
+  padding: 20px;
+}
+/*Styles the h1 selector, removes margin on right.*/
+h1{
+  margin-right: auto;
+}
+/*Styles the link class and li elements(its child) to create a navigation menu. Makes them be beside each other, moves 10px down, and adds padding of 20px.*/
+.links li{
+  display: inline;
+  top: 10px;
+  padding: 20px;
+}
+/*Styles the links, makes the text color black*/
+a:link, a:visited{
+  color: black;
+}
+/*Styles the links for when the links are hovered over, gives a white border and background color, sets the color of text to rgb(174, 97, 19)*/
+.links li:hover, a:hover{
+  border: 1px solid white;
+  background-color: white;
+  color: rgb(174, 97, 19);
+}
+/*Styles the footer, positions it at the bottom right of the website/viewport and makes sure that it's fixed even when user scrolls*/
+footer{
+  right: 0;
+  bottom: 0;
+  position: fixed;
+}
+/*Styles all sections, removes margin of right*/
+section{
+  margin-right: auto;
+}
+/*Styles the sections when they are hovered over, adds a border of white and sets background color to beige*/
+section:hover{
+  border:1px solid white;
+  background-color:beige;
+}
+/*Styles the intro class when they are hovered over, adds a border of white and sets background color to white*/
+.intro:hover{
+  border: 1px solid white;
+  background-color: white;
+}
+/*Styles the weapon-section class, basically ensures that it is spread with equal spacing. Sets margin to 30px, and background color to peachpuff.*/
+.weapon-section {
+  display: flex;
+  justify-content: space-between;
+  margin: 30px;
+  background-color: peachpuff;
+}
+/*Styles the left class and right class. Sets its flex-basis property to 9%.*/
+.left,
+.right {
+  flex-basis: 9%;
+}
+
+
+

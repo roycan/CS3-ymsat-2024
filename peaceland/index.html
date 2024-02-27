@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>PLB | Home</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <meta name="keywords" content="Russian Revolution, JS, CSS, HTML, CompSci 3" />
+  <meta name="description" content="Our CS3 project for the Second Quarter" />
+  <meta name="author" content="Clarice Ilonah D. Chavez, Reugene Dwane S. Lopez" />
+  <meta name="revised" content="1/24/2024" />
+  <link rel="icon" href="images/bread.svg" type="image/ico" sizes="16x16">
+
+  <!--We used Bootstrap for this.-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+  <link href="style.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+</head>
+  
+<body>
+   <!--For the heading image and title-->
+  <div id="homeImage" class="bg-image d-flex">
+    <div id="blackOverlay" class="w-100 h-100 d-flex align-items-center justify-content-center"> <!--Semitransparent black overlay-->
+      <div id="homeText align-items-center justify-content-center">
+        <h1 class="text-white text-center">Peace, Land, Bread</h1>
+        <h3 class="text-white text-center">The Russian Revolution</h3>
+      </div>
+    </div>
+  </div>
+
+  <!--For the navbar -->
+  <nav class="navbar navbar-expand-sm navbar-dark sticky-top">
+    <div class="collapse navbar-collapse" id="navbar">
+      <div class="navbar-nav">
+        <a class="nav-item nav-link active" href="/">Home</a>
+        <a class="nav-item nav-link" href="./htdocs/figures_concepts.html">Figures and Concepts</a>
+        <a class="nav-item nav-link" href="./htdocs/events.html">Timeline of Events</a>
+        <a class="nav-item nav-link" href="./htdocs/civil_war.html">The Civil War</a>
+        <a class="nav-item nav-link" href="./htdocs/quiz.html">Quiz Yourself</a>
+        <a class="nav-item nav-link" href="./htdocs/further_sources.html">Further Sources</a>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container mx-auto align-items-center justify-content-center">
+    <br> <h4>By the 20th century, Russia was falling behind. </h4> <p>As other European nations began industrialization and the gradual transition from feudalism and absolute monarchy to capitalism and democracy began, the Tsar, Nicholas II stubbornly held on to all the influence in the empire, massively contributing to the stagnation of the empire’s power. The fruits of this antiquated and obsolescent style of rule reared their ugly head when Russia found itself humiliated by Japan in 1905, and later by the German-led Central Powers in WW1. These wars put a strain on the already disillusioned and disgruntled people, and resentment towards Nicholas and his so-called divine right grew even more. They had already tried to revolt - after their defeat at the hands of the Japanese, they forced the Tsar himself to cede some power to a parliament called the Duma - but eventually, they realized that if any progress was to be made in running the country, a new system would be implemented. <br><br>
+
+    It was also around this time that Germany, sensing the possibility to knock Russia out of the war by taking advantage of their instability, sent a radical Russian expatriate to St. Petersburg, who brought with him the ideas that would bring in the change Russians so badly wanted. The man’s name? Vladimir Ilyich Ulyanov, better known as Vladimir Lenin...<br>
+
+    <br> <i>This website provides a comprehensive yet easily understandable overview of the Russian Revolutions of 1905 and 1917. You can find all sorts of info here -- from the political theories formed to a nifty timeline of the Russian Civil War. Enjoy! You can check the links above, or you can <a href="/htdocs/figures_concepts.html">get started here.</a></i> <br><br><br>
+</p>
+  </div>
+
+  <!--Onscreen speaker button which toggles audio on and off-->
+  <div onclick="change()" id="volume"></div>
+  <audio id="shosty" controls>
+     <source src="other/shosty.mp3" type="audio/mpeg">
+   </audio>
+
+  <!--Footer with info about authors-->
+  <footer class="text-center text-lg-start bg-body-tertiary text-muted">
+    <div>
+      <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+        <div class="d-none d-md-block">
+          <span>Meet the Authors:</span>
+        </div>
+      </section>
+      <section class="">
+        <div class="container text-center text-md-start mt-5">
+          <div class="row mt-3">
+            <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+              <h6 class="text-uppercase fw-bold">Clarice Chavez</h6>
+              <img id="clarice" src="images/index/chavez.png">
+            </div>
+            <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+              <br><p>Clarice Chavez is an actual casual history enjoyer. That's why she focused more on the coding part of this project.</p>
+            </div>
+            <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+              <h6 class="text-uppercase fw-bold">Dwane Lopez</h6>
+              <img id="dwane" src="images/index/lopez.png">
+            </div>
+            <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+              <br><p>Dwane Lopez calls himself a "casual history enjoyer," when he, in fact, won second place at the 2023 International History Bee Asian Chapter, and is part of Pisay's gold-winning team of the International History Bowl Asian Chapter, Varsity Division. </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div class="align-items-center text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+        © 2024 Copyright: Chavez, Lopez
+        <div class="references">Ilya, R. (n.d.). Demonstration on October 17, 1905. Obelisk Art History. https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR213lfb8-5vBNaF0T8s-IvAgvrHPvyk_6P4Y8f7SHhJetOaN-hzDEXpSraFwCtg6wEMYo&usqp=CAU <br> Stack Overflow - where developers learn, share, & build careers. (n.d.). Stack Overflow. https://stackoverflow.com/ <br> W3Schools online web tutorials. (n.d.). https://www.w3schools.com/</div>
+      </div>
+    </div>
+  </footer>
+  
+  <script src="indexScript.js"></script>
+  
+</body>
+</html>

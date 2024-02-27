@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Login Page</title> 
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <meta name="keywords" content="game" />
+  <meta name="description" content="a rock paper scissor game" />
+  <meta name="author" content="Sally and Tania" />
+  <meta name="revised" content="01/08/2024" />
+  <link rel="icon" href="../images/logo.png" type="image/ico" sizes="16x16"> <!-- to add a site tab icon -->
+  <link href="../login.css" rel="stylesheet" type="text/css" /> <!-- to add an external css file -->
+</head>
+<body>
+  <!--Header that contains the logo, website title, and navigation menu. The website title and the navigation menu are all linked to their respective webpages-->
+  <header>
+    <img class="logo" src="../images/logo.png"></img>
+    <h1><a href="../index.html"> Rock, Paper, Scissors, SHOOT! </a></h1>
+    <!--Labels the webpage as Login Page and moves it 7% to the left so it can be centered.-->
+    <h2 style="position:relative;left:-5%;"> Login </h2>
+    <nav>
+      <ul class="links">
+        <li><a href=../htdocs/Login.html>Login</li>
+        <li><a href=../htdocs/History.html>History</a></li>|
+        <li><a href= ../htdocs/Weapons.html>Weapons</a></li>|
+        <li><a href= ../htdocs/InfiniteMatches.html> Infinite Matches</a></li>|
+        <li><a href=../htdocs/FirstToThree.html> First to Three </a></li>
+    </nav>
+  </header>
+    <!--Paragraph that welcomes user. It has a style that centers it and gives the right and left a 10% padding.-->
+    <p style="margin:auto;padding:0px;text-align:center;"> Welcome!</p>
+    <form>
+      <h3 style="position: relative; left: 9.5%">Login here:</h3>
+      <label for="firstName">First name:</label><br>
+      <input type="text" id="firstName" name="firstName"><br><br>
+      <label for="lastName">Last name:</label><br>
+      <input type="text" id="lastName" name="lastName"><br><br>
+      <label for="nickname">Nickname:</label><br>
+      <input type="text" id="nickname" name="nickname"><br><br>
+      <label for="username">Preferred username:</label><br>
+      <input type="text" id="username" name="username"><br><br>
+      <label for="password">Password:</label><br>
+      <input type="password" id="password" name="password"><br><br>
+      <label for="email">Email:</label><br>
+      <input type="email" id="email" name="email"><br><br>
+      <label for="sex">Sex:</label><br>
+      <input type="radio" id="male" name="sex" value="male">
+      <label for="male">Male</label><br>
+      <input type="radio" id="female" name="sex" value="female">
+      <label for="female">Female</label><br>
+      <input type="radio" id="na" name="sex" value="Prefers not to say">
+      <label for="na">Prefers not to say</label><br>
+    </form>
+  <!--Footer section of webpage, contains copyright-->
+  <footer>
+    &copy; Dela Cruz & Lugasip - 2023 Computer Science 3 
+  </footer>
+  <!--Connects or adds an external JS file which is script.js-->
+  <script src="../scriptlogin.js"></script>
+</body>
+</html>

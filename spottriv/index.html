@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title> Spoti Triv </title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <meta name="keywords" content="music" />
+  <meta name="description" content="a website that makes the user guess the lyrics of a song" />
+  <meta name="author" content="Robert Joshua S. Odulio and Maricier Vily M. Carambas" />
+  <meta name="revised" content="January 24, 2024" />
+  <link rel="icon" href="images/favicon.ico" type="image/ico" sizes="16x16"> <!-- to add a site tab icon -->
+  <link href="style.css" rel="stylesheet" type="text/css" /> <!-- to add an external css file -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@600;700&display=swap" rel="stylesheet">
+</head>
+  
+<body>
+  <!-- do not forget to give your comments -->
+  <header>
+    <!-- Displays the nav section of the website. -->
+    <nav>
+        <img src="images/vinyl.png" alt="vinyl" id="vinyl">
+        <h1> Spoti Triv </h1>
+        <a href="index.html">HOME</a>
+        <a href="htdocs/Jazz.html">JAZZ</a>
+        <a href="htdocs/Alternative.html">ALTERNATIVE</a>
+        <a href="htdocs/Country.html">COUNTRY</a>
+        <a href="htdocs/AboutUs.html">ABOUT US</a>
+    </nav>
+  </header>
+
+
+
+  
+
+  <h1> Guess The Song Lyric </h1>
+  <button class="coll">Mechanics</button>
+  <!-- Displays the game instructions. -->
+  <div class="info">
+    <ol>
+      <li> Click ‘Play Start’ </li>
+      <li> Start guessing the lyrics of the song </li>
+      <li> Words should be in lowercase and no comma (e.g. ‘dont’) </li>
+      <li> Take note of the timer </li>
+      <!-- To be added feature --> <li> Use your 3 lives wisely </li>
+      <li> Enjoy! </li>
+    </ol>
+  </div>
+
+  <!-- Displays the game instructions. -->
+  <script src="script.js"></script>
+
+</body>
+
+<audio controls autoplay loop>
+  <source src = "background music.mp3" type = "audio/mpeg">
+</audio>
+
+</html>

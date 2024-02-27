@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>MAPPA Website - Log In</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <meta name="keywords" content="MAPPA, website, signup" />
+  <meta name="description" content="This contains the MAPPA website Log-In Form" />
+  <meta name="author" content="Gabriel Ethan Troy C. Guanzon, Clive Tolentino" />
+  <meta name="revised" content="20-02-2024" />
+
+    <!-- Link to the favicon and external css files -->
+  <link rel="icon" href="../images/MAPPAlogo.jpg" type="image/jpg" sizes="16x16">
+  <link href="../style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+
+  <!-- The header containing the title of the website and the navigation bar with the corresponding links -->
+  <section class = "header">
+    <!-- Website title-->
+    <h1>MAPPA: The Animation Studio Behind the Hottest Anime</h1>
+    <nav>
+      <!-- Logo of the website -->
+      <a href="../index.html"> <img class="logo" src="../images/MAPPAlogo.jpg" alt="logo image"></a>
+      <!-- Navigation Links -->
+      <div class="nav-links" id="navLinks">
+        <ul>
+          <li class="zoomText"><a href="../index.html">HOME</a></li>
+          <li class="zoomText"><a href="GalleryOfWorks.html">Gallery of Works</a></li>
+          <li class="zoomText"><a href="AnimationStyle.html">Animation</a></li>
+          <li class="zoomText"><a href="References.html">REFERENCES</a></li>
+          <li class="zoomText"><a href="SignUp1.html">Sign-Up</a></li>
+          <li class="zoomText"><a href="LogIn.html">Log-In</a></li>
+        </ul>
+      </div>
+    </nav>  
+  </section>
+
+  <!-- Log-In Form -->
+  <div id="login" class="modal">
+    <form class="modal-content">
+      <div class="containing">
+        <h1>Log-In Form</h1>
+        <h2>Log-In into your account and get to try the features of this MAPPA website again!</h2>
+        <p>*We will not use your private information on any other website. This follows the Data Privacy Act.</p>
+        <hr>
+        <label for="username"> <b>Username:</b></label>
+        <input type="text" id="logInUser" placeholder="Enter your Username" name="name" required>
+        <br>
+
+        <h1> OR </h1>
+
+        <label for="email"><b>Email:</b></label><br>
+        <input type="email" id="logInEmail" placeholder="Enter your Email" name="email" required><br>
+
+        <label for="password"><b>Password:</b></label><br>
+        <input type="password" id="logInPass" placeholder="Enter your preferred password" name="password" required><br>
+
+        <label for="retypePassword"><b>Re-type Password:</b></label><br>
+        <input type="password" id="logInRetypePass" placeholder="Enter your password again" name="retypePassword" required><br>
+
+        <label for="rememberMe"><b>Remember Me!:</b></label>
+        <input type="checkbox" id="logInRememberMe" name="rememberMe"><br>
+
+        <p>*By creating an account, you are agreeing to our Terms of Service</p>  
+        
+        <input type="submit" class="logInButton" onsubmit="return logInVerify()" value="Log-In!">
+        <div id="verifyingOfAccount"> </div>
+      </div>
+    </form>
+  </div>
+
+  <!-- The footer hover area -->
+  <div class="footer-hover-area"></div>
+  <!-- The footer in the webpage. -->
+  <footer>
+    <div>
+      <!-- List of MAPPA social media links -->
+      <li class="footerlogo"><a href="https://twitter.com/MAPPA_Info?t=FhLh5sh_S5hy8I3gdxmZYA&s=33"><i class="fa fa-twitter"></i></a></li>
+      <li class="footerlogo"><a href="https://www.instagram.com/mappastudios/?igsh=MmdqNml4NzZsZ3o4"><i class="fa fa-instagram"></i></a></li>
+      <li class="footerlogo"><a href="https://www.youtube.com/@MAPPACHANNEL"><i class="fa fa-youtube"></i></a></li>
+      <p>Copyright© 2023-2024. All rights reserved.<br>Created by Gabriel Ethan Troy C. Guanzon and Clive S. Tolentino.</p>
+    </div>
+  </footer>
+
+  <script src="../script/LogIn.js"></script>
+</body>
+
+</html>

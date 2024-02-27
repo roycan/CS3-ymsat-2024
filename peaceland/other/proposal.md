@@ -1,0 +1,56 @@
+# Peace, Land, Bread
+The title comes from a popularized slogan during the revolution -- it stood for the rights of the majority of the Russian population at the time, who were then struggling from harsh conditions from hunger to extreme debt.
+
+## Description
+This website will be an engaging beginner's guide to the events that happened during the Russian Revolution which occurred from 1917 to 1923, as well as important concepts that were spread during the time. We chose this topic because of our shared interest in world history, and how we wish to share that interest with others.
+
+Javascript will be implemented in this website via several interactive buttons and an image map. Music in line with the theme would be played in the background of the website automatically, although there would be a button allowing the user to mute it. The website would overall involve a lot of functions -- including ones where the user not only receives an output, but has to input some information themself (themselves). 
+
+## Outline and features
+The website will include the following pages and features:
+- An extended splash screen (skippable) showing the events which occured on Bloody Sunday, 1905, which was one of the main causes of the revolution -- this is to serve as a precursor or hook for the website, with the help of JS and CSS
+- A home page which introduces the Russian Revolution and gives an overview of what can be found in the website
+- A page explaining the key figures in the revolution, as well as what ideals they believed in
+- A page which contains a primary timeline of events that occured during that period: Each of those events, when clicked, opens a sidebar explaining that specific event (implementing both JS and CSS features).
+- A page containing a map which depicts the final event, the Russian Civil War, in an interactive manner, likely using the image map feature of JavaScript
+- A page wherein the player can test their own knowledge of the Russian Revolution (like a mini-quiz of some sort), by inputting their answers and those answers being evaluated by the website as either correct or wrong
+- Each page has a website navigation wherein all pages can be accessed.
+- #### The mini-quiz page will implement the use of forms. The player will answer all questions on the form first (mostly text input), then click a button (submit form) to prompt checking of answers, where feedback will be given immediately. This would also implement saving information on the client's side, as the website would ideally save the user's score (an integer) in local storage, so that when the user opens the website again, their most recent score is maintained and displayed on the screen. To do this, we will use the Web Storage API to be able to work with local storage, setItem(), and getItem().
+- #### Another implementation of forms would be "User Preferences" -- an accessible section which can be opened from any page -- wherein the user can input their preferred website color scheme and audio volume (basically CSS), and save these preferences. The primary forms element used here would likely be radio and dropdown selection. This would also implement local storage. (Apart from audiovisual preferences, playing around with the settings may also reveal a hidden page ;) )
+- #### A page with further resources (websites, videos, books etc.) on said topic if the user is interested in learning more details about the topic.
+- #### LAYOUT IMPROVEMENTS: Make the website more responsive, so that the formatting doesn't mess up too much when the page is zoomed in (the navbar also disappears). And, possibly, make the home page more "grand" and inviting, not too similar to the other, normal pages. Generally, make the website more eye-catching possibly using elements like carousels and image maps.
+  
+## Website Layout/Wireframe
+
+For the home page:
+![image](/images/Proposal/home.png)
+
+For the timeline page:
+![image](/images/Proposal/timeline.png)
+
+For the quiz page (number of questions can be subject to change):
+![image](/images/Proposal/quiz_yourself.png)
+
+For further reading page:
+![image](/images/Proposal/further_reading.png)
+
+## Objectives
+The objectives of the website are:
+- Provide an easy, digestible, rundown of the Russian Revolution
+- Explain and display basic details, concepts, and people
+- Connect the said concepts and events of 1917 to those of today.
+
+## Target Audience
+The target audience for the website includes:
+- New learners of history who might want a more streamlined way to read such information
+- Teachers who may use it as a supplementary material with discussions
+- Students looking for a quick reviewer/rehash in the topic.
+
+## Development Approach
+We will develop this website using:
+- HTML, CSS, and JavaScript as its foundation
+- Either w3.css or Bootstrap for frameworking
+- Replit for collaboration between the two authors/programmers
+
+#### Source: Outline in md filetype initially generated by Replit AI
+#### Historical Source: The Editors of Encyclopaedia Britannica. (2023, October 30). Russian Revolution | Definition, Causes, Summary, History, & Facts. Encyclopedia Britannica. https://www.britannica.com/event/Russian-Revolution 

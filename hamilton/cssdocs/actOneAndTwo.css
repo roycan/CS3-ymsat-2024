@@ -1,0 +1,257 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+
+* {
+  font-family: 'Montserrat', 'Raleway', 'Times New Roman', Roboto, Helvetica, sans-serif;
+  box-sizing: border-box;
+}
+
+/* Header Photo and text */
+div#introductory-block {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  margin: 0px;
+  width: 100%;
+  height: 75vh;
+
+  text-align: center;
+  overflow: hidden;
+}
+
+  /* header image */
+  div#introductory-block > .background-image {
+    position: absolute;
+  
+    height: 75vh;
+    width: 150vw;
+  }
+  div#introductory-block > .background-image > img {
+    object-fit: cover;
+  
+    width: 100%;
+    height: 100%;
+  }
+
+
+  /* header content */
+  div#introductory-block > .content {
+    position: absolute;
+    z-index: 0;
+    color: white;
+
+    padding: 100px;
+  }
+  div#introductory-block .content > h1 {
+    font-size: 3em;
+    line-height: 1em;
+  }
+  div#introductory-block > .content > p {
+    font-size: 1.4em;
+  }
+
+/*Content Information Text */
+div.contentInformation > p{
+  margin: 35px; margin-left: 100px; margin-right: 100px;
+  padding: 10px;
+  
+  text-align: justify;
+  position: relative; 
+  
+  font-size: 20px; 
+}
+
+/*Image Carousel settings */
+.imageCarousel{
+  position: relative;
+  margin: auto;
+  width: 750px; 
+  height: auto; 
+}
+
+.carouselFade > img{
+  width: 750px;
+  height: 360px;
+  
+  object-fit: cover;
+  margin: auto; 
+  
+  border-radius: 40px; 
+}
+
+.carouselFade{
+  display: none; 
+}
+
+.previousImage, .nextImage{
+  cursor: pointer;
+  position: absolute;
+  
+  top: 50%;
+  width: auto;
+  
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.nextImage, .previousImage {
+  
+  color: white;
+}
+
+.nextImage {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  bottom: 50%;
+}
+
+.previousImage {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  bottom: 50%;
+}
+
+.nextImage{
+  right: 0;
+  border-radius: 50%;
+}
+
+.nextImage:hover, .previousImage:hover{
+  opacity: 0.55;
+}
+
+.captionText{
+  color: white; 
+  font-size: 15px;
+  
+  padding: 8px 12px;
+  position: absolute;
+  
+  bottom: 1.5em; 
+  text-align: center;
+}
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.dot.active, .dot:hover {
+  background-color: #717171;
+}
+
+/*Creates fade effect to transition to next slide */
+#fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+/*Article teaser settings */
+#moreArticles {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+
+  margin-bottom: 25px;
+}
+
+#moreArticles > #articleContainer{
+  border: 2px solid black; 
+  
+  width: 27%;
+  height: auto;
+}
+
+#articleContainer{
+  width: 100px;
+  margin: 20px;
+  height: 90px;
+}
+
+#backgroundImage{
+  display: flex;
+  justify-content: center;
+  
+  width: 100%;
+  height: 400px;
+  
+  object-fit: contain;
+}
+#backgroundImage > img {
+  height: 100%;
+  width:100%;
+  object-fit: cover;
+}
+
+#articleLabel {
+  padding: 10px;
+  width: 100%;
+}
+
+#moreArticles > #articleContainer > #articleLabel > p, h2{
+  text-align: center; 
+}
+
+#moreArticles > #articleContainer {
+  border: 1px solid rgba(0, 0, 0, 0.2);
+
+  transition: all 500ms ease;
+}
+
+#moreArticles > #articleContainer:hover{
+  box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+
+  font-size: 102%;
+  transform: scale(1.02, 1.02);
+
+  border: 1px solid rgba(0, 0, 0, 0.5);
+
+  transition: all 500ms ease;
+}
+
+/*image settings thatWouldBeEnough */
+div#imageSpecial > img{
+  display: flex;
+  align-items: center;
+  
+  width: 600px;
+  height: 300px;
+  margin-left: auto; margin-right: auto;
+}
+
+#imageSpecial > #contText{
+  text-align: center; 
+}
+
+
+

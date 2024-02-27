@@ -1,0 +1,312 @@
+html {
+  width: 100%;
+  height: 100vh;
+  margin: 0; 
+  padding:0;
+  box-sizing: border-box;
+  background-color: black;
+}
+
+/******** CSS code for Menu Bar ********/
+body {
+  justify-content: center;
+  font-family: sans-serif;
+  color: white;
+  padding-left: 5%;
+  box-sizing: border-box;
+}
+
+.navbar{
+  width: 85%;
+  padding: 35px 0 10px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  width: 70px; 
+  height: 70px;
+  object-fit: cover; 
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.logo:hover {
+  opacity: 0.5;  
+}
+
+.navbar ul li{
+  list-style: none;
+  display: inline-block;
+  margin: 10px 20px;
+  position: relative
+}
+
+/*Font Layout for Menu Bar*/
+.navbar ul li a{
+  font-size: 2.5vh; 
+  text-decoration: none;
+  color: white;
+  text-transform: uppercase;
+}
+
+/*Underline for Menu Bar + Hover Effect*/
+.navbar ul li::after{
+  content: '';
+  height: 3px;
+  width: 0%;
+  background: #dd2c47;
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  transition: 0.5s;
+}
+
+.navbar ul li:hover:after{
+  width: 100%;
+}
+
+/********** Content1 CSS ***********/
+.ProfDetails .Type p {
+  letter-spacing:.15em;
+}
+.ProfDetails {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 60px;
+  overflow-x: hidden;
+}
+
+.ProfDetails .content1-container {
+  overflow: hidden;
+}
+
+.ProfDetails .carousel {
+  object-fit: cover;
+  display: block;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+@media (max-width: 912px) {
+  
+  .ProfDetails {
+    grid-template-columns: 3fr;
+    grid-gap: 50px;
+  }
+}
+
+/******** Carousel css code ********/
+.carousel { 
+  margin-top: 1.5%;
+  width: 50%; 
+  height: 505px;
+  float: right;
+}
+
+.carousel img {
+  border-radius: 20px;
+  position: absolute;
+  width: 480px;
+  height: 485px;
+  object-fit: cover;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+.carousel img.active {
+  opacity: 1;
+  /* Makes the image visible*/
+}
+
+/******** Carousel arrows ********/
+.carousel i {
+  position: absolute;
+  top: 35vh;
+  color: #fff;
+  font-size: 70px;
+  cursor: pointer;
+  z-index: 1;
+  transition: 0.3s; 
+}
+
+.carousel .prev {
+  position: relative; 
+  top: 40%; 
+  left: 20px;
+}
+
+.carousel .next {
+  position: relative; 
+  float: right; 
+  top: 40%;
+  right: -60%;
+}
+
+.carousel i:hover {
+  transition: 0.5s;
+  font-size: 70px;
+  opacity: 0.5; 
+  text-shadow: -2px 0px 6px rgba(221, 44, 71, 1);
+}
+
+
+/*Positioning + Aesthetics for the Carousel indicators*/
+.carousel-indicators {
+  position: absolute;
+  top: 550px;
+  bottom: auto;
+  left: 75%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 8px;
+}
+
+.carousel-indicator {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: transparent;
+  border: 1px solid #fff;
+  cursor: pointer;
+}
+
+.carousel-indicator.active {
+  background-color: #fff;
+  border: 1px solid #fff;
+}
+
+
+/******* @media *******/
+@media (max-width: 470px) {
+  .carousel {
+    height: 150px;
+  }
+  .carousel img {
+    width: 100%;
+    max-width: 150px;
+    height: auto;
+    object-fit: cover;
+  }
+  .carousel-indicators,
+  .carousel-indicator {
+    display: none;
+  }
+}
+
+@media (max-width: 375px) {
+  .carousel {
+    height: 100px;
+  }
+  .carousel img {
+    width: 100%;
+    max-width: 150px;
+    height: auto;
+    object-fit: cover;
+  }
+  .carousel-indicators,
+  .carousel-indicator {
+    display: none;
+  }
+}
+
+
+/********** Content2 CSS ***********/
+.content2-container {
+  margin: 5% 0 10% 0;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 50px;
+  overflow-x: hidden;
+}
+
+.content2-container .iframe {
+  overflow: hidden;
+}
+
+.content2-container .awards {
+  margin-right: 6%; 
+  object-fit: cover;
+  display: block;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 15px;
+}
+
+@media (max-width: 912px) {
+  .content2-container {
+    grid-template-columns: 1fr;
+    grid-gap: 50px;
+  }
+
+}
+
+.awards ul {
+  border: 1px solid transparent;
+  font-size: 18px;
+  padding-bottom: 50px;
+}
+
+/********** Footer CSS ***********/
+footer {
+  position: absolute; 
+  left: 0; 
+  text-align: center;
+  opacity: 0.7;
+  background-color: #dd2d4a;
+  border: 1px solid #dd2d4a;
+  min-width:99.9%;
+  height: auto;
+  padding-bottom: 30px;
+  font-size: 12px;
+}
+
+footer li {
+  list-style: none;
+}
+
+/**************** typing effect *****************/ 
+h1 {
+  width: 18ch;
+  animation: typing 2s steps(18), blink .5s step-end infinite alternate;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid;
+  font-size: 2em;
+}
+
+@keyframes typing {
+  from {
+    width: 0
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent
+  }
+}
+
+/**************** Fade In Animation ****************/
+.Type h5 {
+  opacity: 0;
+  animation: fadeIn 1s ease-in both;
+}
+
+.Type h5:nth-child(1) {
+  animation-delay: 5s;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translate3d(0,-20%, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}

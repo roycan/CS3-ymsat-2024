@@ -1,0 +1,10 @@
+body {
+  background-image: url("images/index/octmanifesto.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+#blackOverlay {
+  height: 1000px;
+}

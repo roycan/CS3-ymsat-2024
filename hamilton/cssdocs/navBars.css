@@ -1,0 +1,218 @@
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #aaa;
+}
+::-webkit-scrollbar-track {
+  background-color: #ddd;
+}
+
+div {
+  overflow: hidden;
+}
+
+h1 {
+  font-family: 'Trirong','Playfair Display', Helvetica, Roboto, sans-serif;
+}
+
+#header {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index:1;
+
+  background-color: white;
+}
+
+#header > h1 {
+  text-align: center;
+}
+
+div#navBar {
+  height: 70px;
+  width:98vw;
+  
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 0px 20px;
+  
+  background-color: #222;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+  color: white;
+}
+
+/* toggle menu button */
+  div#navBar > div#toggleMenu {
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    
+    position: relative;
+    overflow: visible;
+    
+    height: 60px;
+    
+    background-color: #222;
+  
+    transition: all 500ms ease;
+  }
+  
+  div#navBar > div#toggleMenu > img {
+    height: 60px;
+    width: 60px;
+    transition: all 500ms ease;
+  }
+  div#navBar > div#toggleMenu:hover > img {
+    height: 65px;
+    width: 65px;
+
+    cursor: pointer;
+  
+    transition: all 500ms ease;
+  }
+  
+  /* tooltip */
+  div#navBar > div#toggleMenu > p {
+    display: none;
+    opacity: 0%;
+    font-size: 0.8em;
+    border-radius: 10px;
+  
+    border: 1px solid white;
+    padding: 5px;
+  
+    transition: all 500ms ease;
+  }
+  div#navBar > div#toggleMenu:hover > p {
+    display: inline-block;
+    opacity: 60%;
+  
+    transition: all 500ms ease;
+  }
+
+div#menuSelection {
+  overflow: hidden;
+  
+  position: fixed;
+  z-index:3;
+  top: 0;
+  left: 0;
+  
+  display: inline-flex;
+  flex-flow: column wrap;
+
+  height:100vh;
+  width: 20vw;
+
+  background-color: #2a2a2a;
+  border: 1px solid white; border-left: transparent; border-top: solid black;
+  color:white;
+}
+div#menuSelection > div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 35px;
+
+  width: calc(inherit - 2px);
+  height: 75px;
+
+  border-right: 2px solid black; border-bottom: 2px solid black; 
+
+  background-color: #222;
+  color: white;
+}
+
+div#menuSelection > div > svg {
+  height: 40px;
+  width: 40px;
+}
+
+div#menuSelection > a {
+  padding: 30px;
+  width: 90%;
+  margin: 0px auto;
+
+  font-size: 1.2em;
+  border-bottom: 0.25px solid rgba(255, 255, 255, 0.2);
+}
+div#menuSelection > a:last-child {
+  border-bottom: solid transparent;
+}
+
+div#outsideMenuSelection {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2;
+
+  height: 100vh;
+  width: 100vw;
+  
+  background-color: black;
+  opacity: 50%;
+}
+
+/* when menu is toggled settings */
+div#menuSelection.menuOn {
+  margin-left: 0px;
+  transition: all 500ms ease;
+}
+
+div#menuSelection.menuOff {
+  margin-left: -25vw;
+  transition: all 500ms ease;
+}
+
+div#contentBody.menuOn {
+  margin-left: 20vw;
+  width: 78vw;
+  
+  transition: all 500ms ease;
+}
+
+div#contentBody.menuOff {
+  margin-left: 0vw;
+  width: 98vw;
+  
+  transition: all 500ms ease;
+}
+
+div#outsideMenuSelection.menuOn {
+  opacity: 50%;
+  height: 100vh;
+  transition: opacity 500ms ease, height 50ms linear;
+}
+
+div#outsideMenuSelection.menuOff {
+  opacity: 0%;
+  height: 0vh;
+  transition: opacity 500ms ease, height 50ms linear;
+}
+
+/* footer */
+footer {
+  margin-top: 30px; 
+  padding: 15px;
+  width: 100%;
+
+  background-color: #111;
+  color: white;
+}
+
+/* links */
+
+a {
+  color:white;
+  text-decoration:none;
+}
+
+a:hover {
+  text-decoration:underline;
+  color:yellow;
+}
+
