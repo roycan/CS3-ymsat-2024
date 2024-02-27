@@ -11,7 +11,7 @@
     <meta name="description" content="FocusFlare is a productivity, task and time management tool to aid users in planning and accomplishing their tasks. The website has two tools, PomoPulse and TaskTracker. The PomoPulse contains a pomodoro timer that helps organize a user's time through a series of working and break cycles. The TaskTracker consists of a task planner, sorter, dashboard and calendar to organize and plan activities.
       FocusFlare aims to help students, teachers, professionals, and especially individuals suffering from disorders like ADHD and ADD. Together with our interactive user-interface, we can improve the focus, as well as, provide helpful insight on time management to our dear users. We use tools such as HTML, CSS and JavaScript to develop a website for user accessibility and usage." />
     <meta name="author" content="Eshan Samson, PJ Sichon" />
-    <meta name="revised" content="01/24/2024" />
+    <meta name="revised" content="02/20/2024" />
     <link rel="icon" type="image/png" sizes="16x16" href="images/favicon_ff.png"> <!-- To add a site tab icon -->
     <script defer src="script.js"></script>
     <!-- Start of Bootstrap Setup -->
@@ -26,7 +26,7 @@
 <!-- End of Metadata -->
 
 <!-- Start of Content -->
-  <body onload="footer()">
+  <body onload="footerIndex()">
     <!-- Start of Navigation Bar -->
     <header>
       <nav class="navbar navbar-inverse navbar-fixed-top" id="navbar">
@@ -46,13 +46,13 @@
               <li class="active"><a href="#titleCard" style="background-color: #060109"><span class="glyphicon glyphicon-home"></span>&nbsp; Home</a></li> <!-- Matches the background color of the webpage to the color of the button area when you are on that webpage -->
               <li><a href="htdocs/pomopulse.html"><span class="glyphicon glyphicon-time"></span>&nbsp; PomoPulse</a></li>
               <li><a href="htdocs/tasktracker.html"><span class="glyphicon glyphicon-list-alt"></span>&nbsp; TaskTracker</a></li>
+              <li><a href="htdocs/about-us.html"><span class="glyphicon glyphicon-star-empty"></span>&nbsp;About Us</a></li>
             </ul>
             <!-- NavBar Dropdown Bonus Pages -->
             <ul class="nav navbar-nav navbar-right">
               <li class="dropdown">
                 <a class="dropdown-toggle" data-toggle="dropdown" href="#"><span class="glyphicon glyphicon-plus"></span>&nbsp; Bonus Pages <span class="caret"></span></a>
                 <ul class="dropdown-menu">
-                  <li><a href="htdocs/about-us.html" >About Us</a></li>
                   <li><a href="htdocs/rcg.html">Random Color Generator</a></li>
                   <li><a href="htdocs/uff.html">User Feedback Form</a></li>
                 </ul>
@@ -86,9 +86,18 @@
       <!-- TaskTracker Column -->
       <div class="col-sm-6">
         <h3>TaskTracker</h3>
-        <p>[Coming Soon]</p>
+        <p><b>[Coming Soon]</b></p>
         <p>TaskTracker is the perfect fit for when you lose <i>track</i> of your activities. Maybe it's a school requirement, or a hobby, perhaps a birthday. We've got you covered. TaskTracker is a tool that helps you by organizing your activities with folders and dates. It also works as a notes-taking application and saves your Tasks. Truly maximizing organization with efficienct, user-accessibile, and responsive features.</p>
         <a href="htdocs/tasktracker.html"><button type="button">Try TaskTracker</button></a>
+      </div>
+    </section>
+    <section class="container-fluid" id="accounts">
+      <div class="row">
+        <h2 class="color-class">Sign Up or Log In</h2>
+        <div class="col-sm-8 col-sm-offset-2 text-center">
+          <h4>Feeling extra productive? Save your progress by signing up to FocusFlare!</p>
+          <a href="#"><button type="button" onclick="pageNotExist()">Sign Up</button></a>
+        </div>
       </div>
     </section>
     <!-- End of Features -->

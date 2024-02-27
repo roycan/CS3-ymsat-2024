@@ -9,7 +9,7 @@
     <meta name="keywords" content="color, productivity, time management" />
     <meta name="description" content="FocusRCG is a random color generator website that presents a user with RGB and Hex Code values. This is a bonus page" />
     <meta name="author" content="Eshan Samson, PJ Sichon" />
-    <meta name="revised" content="01/24/2024" />
+    <meta name="revised" content="02/20/2024" />
     <link rel="icon" href="/images/favicon_ff.png" type="image/png" sizes="16x16"> <!-- To add a site tab icon -->
     <script defer src="../script.js"></script>
     <!-- Start of Bootstrap Setup -->
@@ -24,7 +24,7 @@
 <!-- End of Metadata -->
 
 <!-- Start of Content -->
-  <body>
+  <body onload="footerExternal()">
     <!-- Start of Navigation Bar -->
     <header>
       <nav class="navbar navbar-inverse navbar-fixed-top" id="navbar">
@@ -44,15 +44,15 @@
               <li><a href="../index.html"><span class="glyphicon glyphicon-home"></span>&nbsp; Home</a></li>
               <li><a href="pomopulse.html"><span class="glyphicon glyphicon-time"></span>&nbsp; PomoPulse</a></li>
               <li><a href="tasktracker.html"><span class="glyphicon glyphicon-list-alt"></span>&nbsp; TaskTracker</a></li>
+              <li><a href="about-us.html"><span class="glyphicon glyphicon-star-empty"></span>&nbsp;About Us</a></li>
             </ul>
             <!-- NavBar Dropdown Bonus Pages -->
             <ul class="nav navbar-nav navbar-right">
               <li class="dropdown">
                 <a class="dropdown-toggle" data-toggle="dropdown" href="#"><span class="glyphicon glyphicon-plus"></span>&nbsp; Bonus Pages <span class="caret"></span></a>
                 <ul class="dropdown-menu">
-                  <li><a href="about-us.html">About Us</a></li>
                   <li><a href="rcg.html">Random Color Generator</a></li>
-                  <li><a href="htdocs/uff.html">User Feedback Form</a></li>
+                  <li><a href="uff.html">User Feedback Form</a></li>
                 </ul>
               </li>
             </ul>
@@ -76,29 +76,30 @@
     <br>
   
     <section class="row" id="contentRCG">
-      <!-- Start of Color Generator -->
       <div class="rcg-box">
-        <button type="button" onclick="rcg()">Generate Random Color</button><br><br>
-        <p id="rgbVal">RGB Value:</p>
-        <p id="hexVal">Hex Code:</p>
-        <p>Randomly Generated Color:</p>
-        <div id="colorDisplay"></div>
+        <div class="col-sm-8">
+          <!--Color Generator UI -->
+          <button type="button" onclick="rcg()">Generate Random Color</button><br><br>
+          <p id="rgbVal">RGB Value:</p>
+          <p id="hexVal">Hex Code:</p>
+          <p>Randomly Generated Color:</p>
+          <div id="colorDisplay"></div>
+        </div>
+        <div class="col-sm-4">
+          <!-- Generated Color Log -->
+          <h3>Generated Colors:</h3>
+          <p>When you generate a random color, its hex code will be added to this list.</p>
+          <ul id="colorLog" style="text-align: left;"></ul>
+        </div>
       </div>
-      <!-- End of Color Generator -->
     </section>
     <!-- End of Main Content -->
   
     <br>
 
     <!-- Start of Footer -->
-    <footer class="container-fluid">
-      <p>&copy; 2024 Samson & Sichon</p>
-      <!-- Links to other webpages of the project -->
-      <a href="about-us.html">About Us</a> | <a href="../index.html">Home</a> | <a href="pomopulse.html">PomoPulse</a> | <a href="tasktracker.html">TaskTracker</a>
-      <!-- Contact Hyperlinks -->
-      <p>Contact us: <a href="https://twitter.com/chessfan24">Eshan Samson</a> | <a href="https://twitter.com/pj_ballindruid
-      ">Prince Jasper Allen Sichon</a> <small>(names are clickable)</small></p>
-      <p><small>References and Appendices in Console and About Us Page</small></p>
+    <footer class="container-fluid" id="footer">
+      <p>Footer template error</p>
     </footer>
     <!-- End of Footer -->
 

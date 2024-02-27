@@ -147,15 +147,25 @@
     let g = Math.round(Math.random() * 255);
     let b = Math.round(Math.random() * 255);
 
-    // Converts the random values into hexadecimal strings
-    var red = r.toString(16);
-    var green = g.toString(16);
-    var blue = b.toString(16);
+    // Converts the random values into hexadecimal strings and checks if the r, g, and b values are less than 16, and if they are, adds a leading 0 to each corresponding color string component (red, green, blue)
+    var red, green, blue;
 
-    // Checks if the r, g, and b values are less than 16, and if they are, adds a leading 0 to each corresponding color string component (red, green, blue)
-    leadingZero(r, red);
-    leadingZero(g, green);
-    leadingZero(b, blue);
+    red = r.toString(16);
+    green = g.toString(16);
+    blue = b.toString(16);
+    
+    // Add leading zeroes to values with only one digit
+    if (r < 16) {
+      red = "0" + red;
+    }
+
+    if (g < 16) {
+      green = "0" + green;
+    }
+
+    if (b < 16) {
+      blue = "0" + blue;
+    }
 
     // Generates the hexadecimal color string
     let hexCode = "#" + red + green + blue;
@@ -165,33 +175,34 @@
     // Outputs the Hex Code of the random color
     document.getElementById("hexVal").innerHTML = "Hex Code: " + hexCode;
     // Changes the background color of the circular container to the random color
-    document.getElementById("colorDisplay").style.backgroundColor = hexCode;
+    document.getElementById("colorDisplay").style.backgroundColor = "rgb(" + r + ", " + g + ", " + b + ")";
+
+    // Add color to the log
+    document.getElementById("colorLog").innerHTML += "<li><span id=\"colorLogCol\" style=\"background-color:" + hexCode + "\">" + hexCode + "</span></li>";
   }
 
-  //Function to simplify code for adding leading zero if the hex conversion does not have a leading zero
-  function leadingZero(colNum, col) {
-    if (colNum < 16) {
-      col = "0" + col;
-    }
-  }
+  /*
+  Reference Code:
+  
+  <footer class="container-fluid" id="footer">
+    <p>&copy; 2024 Samson & Sichon</p>
+    <!-- Links to other webpages of the project -->
+    <p><a href="htdocs/about-us.html">About Us</a> | <a href="htdocs/pomopulse.html">PomoPulse</a> | <a href="htdocs/tasktracker.html">TaskTracker</a> | <a href="htdocs/rcg.html">Random Color Generator</a></p>
+    <!-- Contact Hyperlinks -->
+    <p>Contact us: <a href="https://twitter.com/chessfan24">Eshan Samson</a> | <a href="https://twitter.com/pj_ballindruid
+    ">Prince Jasper Allen Sichon</a> <small>(names are clickable)</small></p>
+    <p><small>References and Appendices in Console and About Us Page</small></p>
+  </footer>
+  */
 
-  function footer() {
-    // create footer template
+  function footerIndex() {
+    // Create footer template
     document.getElementById("footer").innerHTML = "<p>&copy; 2024 Samson & Sichon</p><p><a href=\"htdocs/about-us.html\">About Us</a> | <a href=\"htdocs/pomopulse.html\">PomoPulse</a> | <a href=\"htdocs/tasktracker.html\">TaskTracker</a> | <a href=\"htdocs/rcg.html\">Random Color Generator</a></p> <p>Contact us: <a href=\"https://twitter.com/chessfan24\">Eshan Samson</a> | <a href=\"https://twitter.com/pj_ballindruid\">Prince Jasper Allen Sichon</a> <small>(names are clickable)</small></p><p><small>References and Appendices in Console and About Us Page</small></p>";
+  }
 
-    /*
-    Reference Code:
-    
-    <footer class="container-fluid" id="footer">
-      <p>&copy; 2024 Samson & Sichon</p>
-      <!-- Links to other webpages of the project -->
-      <p><a href="htdocs/about-us.html">About Us</a> | <a href="htdocs/pomopulse.html">PomoPulse</a> | <a href="htdocs/tasktracker.html">TaskTracker</a> | <a href="htdocs/rcg.html">Random Color Generator</a></p>
-      <!-- Contact Hyperlinks -->
-      <p>Contact us: <a href="https://twitter.com/chessfan24">Eshan Samson</a> | <a href="https://twitter.com/pj_ballindruid
-      ">Prince Jasper Allen Sichon</a> <small>(names are clickable)</small></p>
-      <p><small>References and Appendices in Console and About Us Page</small></p>
-    </footer>
-    */
+  function footerExternal() {
+    // Create footer template
+    document.getElementById("footer").innerHTML = "<p>&copy; 2024 Samson & Sichon</p><p><a href=\"about-us.html\">About Us</a> | <a href=\"pomopulse.html\">PomoPulse</a> | <a href=\"tasktracker.html\">TaskTracker</a> | <a href=\"rcg.html\">Random Color Generator</a></p> <p>Contact us: <a href=\"https://twitter.com/chessfan24\">Eshan Samson</a> | <a href=\"https://twitter.com/pj_ballindruid\">Prince Jasper Allen Sichon</a> <small>(names are clickable)</small></p><p><small>References and Appendices in Console and About Us Page</small></p>";
   }
 
   function acceptFormResponse() {
@@ -201,4 +212,8 @@
 
   function noConsent() {
     document.getElementById("requiresConsent").innerHTML = "Unfortunately, we cannot get your feedback without your consent. If you would like to answer the form again, please refresh the page.";
+  }
+
+  function pageNotExist() {
+    alert("This page cannot be accessed.");
   }

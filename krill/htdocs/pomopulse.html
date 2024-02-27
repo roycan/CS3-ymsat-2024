@@ -9,7 +9,7 @@
     <meta name="keywords" content="timer, productivity, time management" />
     <meta name="description" content="PomoPulse works wonders when it comes to managing your time. Ever feel like you don't know when to take breaks or when to start working? This timer has got you secured. PomoPulse is a tool to help and guide you with its built-in pomodoro timer. This aids in organizing a your time through a series of 25-minute working and, 5-minute and 15-minute break cycles. To ensure efficiency, the timer 'dings' once a cycle is accomplished, whilst listing down accomplished cycles on an activity log. Additionally, the timer can be paused/resumed and reset by users." />
     <meta name="author" content="Eshan Samson, PJ Sichon" />
-    <meta name="revised" content="01/24/2024" />
+    <meta name="revised" content="02/20/2024" />
     <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon_pp.png"> <!-- To add a site tab icon -->
     <script defer src="../script.js"></script>
     <!-- Start of Bootstrap Setup -->
@@ -24,7 +24,7 @@
 <!-- End of Metadata -->
 
 <!-- Start of Content -->  
-  <body>
+  <body onload="footerExternal()">
     <!-- Start of Navigation Bar -->
     <header>
       <nav class="navbar navbar-inverse navbar-fixed-top" id="navbar">
@@ -44,15 +44,15 @@
               <li><a href="../index.html"><span class="glyphicon glyphicon-home"></span>&nbsp; Home</a></li>
               <li class="active"><a href="pomopulse.html" style="background-color: #060109"><span class="glyphicon glyphicon-time"></span>&nbsp; PomoPulse</a></li> <!-- Matches the background color of the webpage to the color of the button area when you are on that webpage -->
               <li><a href="tasktracker.html"><span class="glyphicon glyphicon-list-alt"></span>&nbsp; TaskTracker</a></li>
+              <li><a href="about-us.html"><span class="glyphicon glyphicon-star-empty"></span>&nbsp;About Us</a></li>
             </ul>
             <!-- NavBar Dropdown Bonus Pages -->
             <ul class="nav navbar-nav navbar-right">
               <li class="dropdown">
                 <a class="dropdown-toggle" data-toggle="dropdown" href="#"><span class="glyphicon glyphicon-plus"></span>&nbsp; Bonus Pages <span class="caret"></span></a>
                 <ul class="dropdown-menu">
-                  <li><a href="about-us.html">About Us</a></li>
                   <li><a href="rcg.html">Random Color Generator</a></li>
-                  <li><a href="htdocs/uff.html">User Feedback Form</a></li>
+                  <li><a href="uff.html">User Feedback Form</a></li>
                 </ul>
               </li>
             </ul>
@@ -129,14 +129,8 @@
     </audio> <!-- Ping audio when a cycle ends -->
 
     <!-- Start of Footer -->
-    <footer class="container-fluid">
-      <p>&copy; 2024 Samson & Sichon</p>
-      <!-- Links to other webpages of the project -->
-      <a href="about-us.html">About Us</a> | <a href="../index.html">Home</a> | <a href="tasktracker.html">TaskTracker</a> | <a href="rcg.html">Random Color Generator</a>
-      <!-- Contact Hyperlinks -->
-      <p>Contact us: <a href="https://twitter.com/chessfan24">Eshan Samson</a> | <a href="https://twitter.com/pj_ballindruid
-      ">Prince Jasper Allen Sichon</a> <small>(names are clickable)</small></p>
-      <p><small>References and Appendices in Console and About Us Page</small></p>
+    <footer class="container-fluid" id="footer">
+      <p>Footer template error</p>
     </footer>
     <!-- End of Footer -->
 

@@ -89,6 +89,11 @@ html, body, #content {
     padding: 30px 45px;
   }
 
+  .center-element {
+    text-align: center;
+    margin: 0 auto;
+  }
+
   /* Text Hyperlinks */
   a, a:hover, a:active, a:focus {
     text-decoration: none;
@@ -185,7 +190,7 @@ html, body, #content {
   }
   
   /* Features Columns */
-  #features {
+  #features, #accounts {
     padding: 60px;
     background-color: #060109;
   }
@@ -306,18 +311,24 @@ html, body, #content {
   }
   
   /* Adds a border and height to each cell */
-  #cell, #center-cell, #img1, #img2 {
+  #cell, #center-cell, #img1, #img2, #references, #appendices {
     height: 24em;
     margin: 0;
     border: 1px solid white;
   }
   
   /* Gives translucent BG color to each cell */
-  #cell, #img1, #img2 {
+  #cell, #img1, #img2, #references, #appendices, #feedbackForm {
     padding: 3em;
     background-color: black;
     opacity: 0.75;
   }
+
+  #feedbackForm {
+    border: 1px solid white;
+  }
+
+  
   
   /* Adds BG image for the center cell */
   #center-cell {
@@ -360,9 +371,35 @@ html, body, #content {
     border-radius: 50%;
   }
 
+  /* Displays color in a circular container, but for the color log */
+  #colorLogCol {
+    width: 2em;
+    height: 2em;
+    margin: 0;
+    border-radius: 1em;
+    padding: 0.75px 7.5px;
+    font-size: 1em;
+  }
+
   /* Defines margin, padding and width for RCG content (box) */
   section > div.rcg-box {
-    margin:20px auto;
-    padding:5%;
-    width:50%;
+    margin: 10% 0;
+    padding: 0;
+    width: 80%;
+  }
+
+/* User Feedback Form */
+  /* Background Image */
+  .uff_background {
+    background-image: url("/images/background_uff.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+  }
+
+  /* Footer */
+  .uff-footer {
+    width: 100%;
+    position: absolute;
+    left: 0;
   }

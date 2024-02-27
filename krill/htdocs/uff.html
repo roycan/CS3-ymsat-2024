@@ -6,10 +6,10 @@
     <title>User Feedack Form</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
-    <meta name="keywords" content="about us, productivity, time management" />
-    <meta name="description" content="FocusFlare About Us page shows the insights and goals of the project from the perspective of the webdevelopers. In here we also see the references and appendices used for creating the webpages." />
+    <meta name="keywords" content="user, feedback, productivity, time management" />
+    <meta name="description" content="FocusFlare User Feedback Form page shows the insights and comments of users on the project." />
     <meta name="author" content="Eshan Samson, PJ Sichon" />
-    <meta name="revised" content="01/24/2024" />
+    <meta name="revised" content="02/20/2024" />
     <link rel="icon" href="/images/favicon_ff.png" type="image/png" sizes="16x16"> <!-- To add a site tab icon -->
     <script defer src="../script.js"></script>
     <!-- Start of Bootstrap Setup -->
@@ -24,7 +24,7 @@
 <!-- End of Metadata -->
 
 <!-- Start of Content -->
-  <body class="color_background">
+  <body class="uff_background" onload="footerExternal()">
     <!-- Start of Navigation Bar -->
     <header>
       <nav class="navbar navbar-inverse navbar-fixed-top" id="navbar">
@@ -44,15 +44,15 @@
               <li><a href="../index.html"><span class="glyphicon glyphicon-home"></span>&nbsp; Home</a></li>
               <li><a href="pomopulse.html"><span class="glyphicon glyphicon-time"></span>&nbsp; PomoPulse</a></li>
               <li><a href="tasktracker.html"><span class="glyphicon glyphicon-list-alt"></span>&nbsp; TaskTracker</a></li>
+              <li><a href="about-us.html"><span class="glyphicon glyphicon-star-empty"></span>&nbsp;About Us</a></li>
             </ul>
             <!-- NavBar Dropdown Bonus Pages -->
             <ul class="nav navbar-nav navbar-right">
               <li class="dropdown">
                 <a class="dropdown-toggle" data-toggle="dropdown" href="#"><span class="glyphicon glyphicon-plus"></span>&nbsp; Bonus Pages <span class="caret"></span></a>
                 <ul class="dropdown-menu">
-                  <li><a href="about-us.html">About Us</a></li>
                   <li><a href="rcg.html">Random Color Generator</a></li>
-                  <li><a href="htdocs/uff.html">User Feedback Form</a></li>
+                  <li><a href="uff.html">User Feedback Form</a></li>
                 </ul>
               </li>
             </ul>
@@ -73,10 +73,11 @@
 
     <section class="container-fluid">
       <p>Questions that contain the symbol <span id="required">*</span> is required for all feedback submissions.</p><br>
-      
+
+    <section class="container-fluid">
       <form class="form-horizontal" id="feedbackForm" onsubmit="acceptFormResponse()">
         
-        <!-- consent question -->
+        <!-- Consent question -->
         <p>Do you consent with your data being recorded in this form? <span id="required">*</span></p>
         <div class="form-check">
           <label class="form-check-label" for="consent">
@@ -92,7 +93,7 @@
         <br>
 
         <div id="requiresConsent">
-          <!-- pages need improvement question -->
+          <!-- Pages that need improvement question -->
           <p>Which parts of our wesbite would you like to see future improvements on?</p>
           <div class="form-check">
             <label class="form-check-label" for="pagesToImprove">
@@ -122,7 +123,7 @@
   
           <br>
   
-          <!-- parts need improvement question -->
+          <!-- Parts that need improvement question -->
           <p>Which parts of this wesbite would you like to see improvements on?</p>
           <div class="form-check">
             <label class="form-check-label" for="partsToImprove">
@@ -153,7 +154,7 @@
   
           <br>
   
-          <!-- textarea 1 -->
+          <!-- Textarea 1 -->
           <p>Tell us more about these improvements.</p>
           <div class="form-group" style="padding: 0 30%;">
             <textarea class="form-control" rows="5" id="comment" name="detailedImprovements" placeholder="Enter feedback here..."></textarea>
@@ -161,7 +162,7 @@
   
           <br>
   
-          <!-- textarea 2 -->
+          <!-- Textarea 2 -->
           <p>What other improvements would you like to see?</p>
           <div class="form-group" style="padding: 0 30%;">
             <textarea class="form-control" rows="5" id="comment" name="otherImprovements" placeholder="Enter feedback here..."></textarea>
@@ -184,13 +185,8 @@
     <!-- End of Main Content -->
 
     <!-- Start of Footer -->
-    <footer class="container-fluid">
-      <p>&copy; 2024 Samson & Sichon</p>
-      <!-- Links to other webpages of the project -->
-      <a href="../index.html">Home</a> | <a href="pomopulse.html">PomoPulse</a> | <a href="tasktracker.html">TaskTracker</a> | <a href="rcg.html">Random Color Generator</a>
-      <!-- Contact Hyperlinks -->
-      <p>Contact us: <a href="https://twitter.com/chessfan24">Eshan Samson</a> | <a href="https://twitter.com/pj_ballindruid
-">Prince Jasper Allen Sichon</a> <small>(names are clickable)</small></p>
+    <footer class="container-fluid uff-footer" id="footer">
+      <p>Footer template error</p>
     </footer>
     <!-- End of Footer -->
 
