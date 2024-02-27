@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Prismo - Colorblind</title>
+  <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <meta name="author" content="Sebastien Thomas B. Abainza, Ma. Shanel Francesca C. Bosi" />
+  <meta name="revised" content="" />
+  <link rel="icon" href="images/pshslogo.ico" type="image/ico" sizes="16x16">
+  <link href="../cssdocs/game3.css" rel="stylesheet" type="text/css" />
+  <script src="../jsdocs/game3.js"></script>
+</head>
+
+<body id="main">
+  <div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" id="closebtn" class="navlink" onclick="closeNav()">&times;</a>
+    <b>
+      <a href="../htdocs/about.html" class="navlink">About</a>
+      <a href="../htdocs/devs.html" class="navlink">Developers</a>
+      <br><br>
+      <a href="../index.html" class="navlink">Home</a>
+    </b>
+    <a href="../htdocs/game1.html" class="navlink">Color Blend</a>
+    <a href="../htdocs/game2.html" class="navlink">Color Match</a>
+    <a href="../htdocs/game3.html" class="navlink">Colorblind</a>
+    <a href="../htdocs/game4.html" class="navlink">Color 2048</a>
+  </div>
+
+  <header class="ms">
+    <span onclick="openNav()">&#9776;</span>&nbsp;&nbsp;<!--<img id="navlogo" src="../images/logo.png"/>-->Prismo
+  </header>
+  <br><br><br><br><br>
+  <section>
+    <h2>Colorblind</h2>
+    <p>Click the odd color out</p>
+    <br><br>
+
+    <center>
+      <button onclick="start()">Start</button><h2 id="score" style="text-align:center">Score: 0</h2>
+    </center>
+    
+    <br>
+
+    <div id="circles" style="text-align:center">
+      
+    </div>
+  </section>
+
+  <div id="timer">
+    <h2>Time left:</h2>
+    <span id="time">1:00</span>
+  </div>
+
+  <footer id="foot" class="ms">
+    &copy; 2023 Computer Science 3
+  </footer>
+  
+</body>
+
+</html>

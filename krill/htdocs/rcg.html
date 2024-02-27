@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+
+<!-- Start of Metadata -->
+  <head>
+    <title>FocusRCG</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name="keywords" content="color, productivity, time management" />
+    <meta name="description" content="FocusRCG is a random color generator website that presents a user with RGB and Hex Code values. This is a bonus page" />
+    <meta name="author" content="Eshan Samson, PJ Sichon" />
+    <meta name="revised" content="01/24/2024" />
+    <link rel="icon" href="/images/favicon_ff.png" type="image/png" sizes="16x16"> <!-- To add a site tab icon -->
+    <script defer src="../script.js"></script>
+    <!-- Start of Bootstrap Setup -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <!-- End of Bootstrap Setup -->
+  
+    <link href="../style.css" rel="stylesheet" type="text/css" /> <!-- To add an external css file -->
+    <script src="../jquery-3.7.1.min.js"></script> <!-- jQuery setup -->
+  </head>
+<!-- End of Metadata -->
+
+<!-- Start of Content -->
+  <body>
+    <!-- Start of Navigation Bar -->
+    <header>
+      <nav class="navbar navbar-inverse navbar-fixed-top" id="navbar">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <!-- Produces NavBar with buttons -->
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#fullNavbar">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="../index.html" id="ff"></a>
+          </div>
+          <!-- Adds text to the buttons in the NavBar -->
+          <div class="collapse navbar-collapse" id="fullNavbar">
+            <ul class="nav navbar-nav">
+              <li><a href="../index.html"><span class="glyphicon glyphicon-home"></span>&nbsp; Home</a></li>
+              <li><a href="pomopulse.html"><span class="glyphicon glyphicon-time"></span>&nbsp; PomoPulse</a></li>
+              <li><a href="tasktracker.html"><span class="glyphicon glyphicon-list-alt"></span>&nbsp; TaskTracker</a></li>
+            </ul>
+            <!-- NavBar Dropdown Bonus Pages -->
+            <ul class="nav navbar-nav navbar-right">
+              <li class="dropdown">
+                <a class="dropdown-toggle" data-toggle="dropdown" href="#"><span class="glyphicon glyphicon-plus"></span>&nbsp; Bonus Pages <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="about-us.html">About Us</a></li>
+                  <li><a href="rcg.html">Random Color Generator</a></li>
+                  <li><a href="htdocs/uff.html">User Feedback Form</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- End of Navigation Bar -->
+  
+    <br>
+
+    <!-- Start of Main Content -->
+    <section class="container-fluid" id="title">
+      <!-- Start of Description -->
+      <h1>&nbsp;Random Color Generator</h1>
+      <p>Ever needed a random color for any reason? This page can help you find a random one out of all 16,777,216 of them!</p>
+      <p>[This is a bonus page that is included under the "Bonus Pages" dropdown in the navbar.]</p>
+      <!-- End of Description -->
+    </section>
+  
+    <br>
+  
+    <section class="row" id="contentRCG">
+      <!-- Start of Color Generator -->
+      <div class="rcg-box">
+        <button type="button" onclick="rcg()">Generate Random Color</button><br><br>
+        <p id="rgbVal">RGB Value:</p>
+        <p id="hexVal">Hex Code:</p>
+        <p>Randomly Generated Color:</p>
+        <div id="colorDisplay"></div>
+      </div>
+      <!-- End of Color Generator -->
+    </section>
+    <!-- End of Main Content -->
+  
+    <br>
+
+    <!-- Start of Footer -->
+    <footer class="container-fluid">
+      <p>&copy; 2024 Samson & Sichon</p>
+      <!-- Links to other webpages of the project -->
+      <a href="about-us.html">About Us</a> | <a href="../index.html">Home</a> | <a href="pomopulse.html">PomoPulse</a> | <a href="tasktracker.html">TaskTracker</a>
+      <!-- Contact Hyperlinks -->
+      <p>Contact us: <a href="https://twitter.com/chessfan24">Eshan Samson</a> | <a href="https://twitter.com/pj_ballindruid
+      ">Prince Jasper Allen Sichon</a> <small>(names are clickable)</small></p>
+      <p><small>References and Appendices in Console and About Us Page</small></p>
+    </footer>
+    <!-- End of Footer -->
+
+    <!-- Replit Share button -->
+    <!-- When clicked, allows user to view and edit the Replit repository or Repl -->
+    <script
+      src="https://replit.com/public/js/replit-badge-v2.js"
+      theme="dark"
+      position="bottom-right"
+    ></script>
+  </body>
+<!-- End of Content -->
+
+  <!-- References -->
+    <!-- Martabystron. (2020, December 14). Shrimp Aquarium Underwater - Free photo on Pixabay. Pixabay. https://pixabay.com/photos/shrimp-aquarium-underwater-prawns-5686804/ -->
+    <!-- Pixabay. (n.d.). Free Ping Sound Effects download - Pixabay. https://pixabay.com/sound-effects/search/ping/ -->
+    <!-- Pngtree. (n.d.). The common shrimps are red and are called orange shrimp background. https://pngtree.com/freebackground/the-common-shrimps-are-red-and-are-called-orange-shrimp_2574170.html -->
+
+  <!-- Appendices -->
+    <!-- Bootstrap -->
+    <!-- Canva -->
+    <!-- jQuery -->
+    <!-- Pixabay -->
+    <!-- Pngtree -->
+    <!-- Replit -->
+    <!-- Sprite Cow -->
+    <!-- w3schools -->
+    <!-- Wireframe.cc -->
+
+</html>

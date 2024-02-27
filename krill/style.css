@@ -1,0 +1,368 @@
+/* MAIN or GENERAL CSS Style */
+html, body, #content {
+  padding: 0;
+  margin: 0;
+  font-family: Segoe UI, Roboto, Oxygen, Ubuntu, Droid Sans, Helvetica Neue, sans-serif;
+  background-color: #000000;
+  color: white;
+  text-align: center;
+  overflow-x: hidden;
+  -ms-overflow-style: none;
+  scrollbar-width: none; /* for browsers with no support for custom scrollbars */
+
+}
+
+  /* Custom Scrollbar for Chrome, Edge (possibly), Safari and Opera */
+  ::-webkit-scrollbar {
+    width: 2px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background-color: #100d1c;
+    border-radius: 1px;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: #7a66dd;
+    border-radius: 1px;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: #3a3168;
+  }
+  
+  /* Navigation Bar */
+  nav#navbar {
+    background-color: #100d1c;
+    margin: 0;
+    height: 50px;
+  }
+  
+  .navbar-brand {
+    scale: 0.5;
+    margin: -7.5px;
+  }
+  
+    /* Dropdown Menu*/
+    .navbar-nav > li > .dropdown-menu {
+      background-color: #100d1c;
+    }
+    
+    .dropdown-menu > li a:hover {
+      background-image: none;
+      background-color: #261f41;
+    }
+    
+    .dropdown-menu > li a:active {
+      background-image: none;
+      background-color: #0a0811;
+    }
+    
+    .navbar-nav > li > .dropdown-menu a {
+      color: white;
+    }
+
+  /* Buttons */
+  button, #inputButton {
+    background-color:#19152E;
+    border: none;
+    border-radius: 24px;
+    display: inline-block;
+    color: #ffffff;
+    font-size: 1em;
+    padding: 12px 36px;
+    text-decoration: none;
+    font-family: Segoe UI, Roboto, Oxygen, Ubuntu, Droid Sans, Helvetica Neue, sans-serif;
+  }
+  
+  button:hover, #inputButton:hover {
+    background-color: #3a3168;
+  }
+  
+  button:active, #inputButton:active {
+    background-color: #100d1c;
+  }
+  
+  footer {
+    background-color: #0b0510;
+    text-align: left;
+    padding: 30px 45px;
+  }
+
+  /* Text Hyperlinks */
+  a, a:hover, a:active, a:focus {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    color: #3a3168;
+  }
+  
+  a:active {
+    color: #100d1c;
+  }
+
+  #required {
+    color: red;
+  }
+
+  /* Title Margin */
+  #title {
+    margin-top: 50px;
+  }
+
+  /* ICONS */
+    /* FocusFlare Pages */
+    #ff {
+      background: url('images/SPRITESHEET.png') no-repeat -50px -62px;
+      width: 65px;
+      height: 65px;
+    }
+    
+    #ff:hover {
+      background: url('images/SPRITESHEET.png') no-repeat -49px -152px;
+    }
+    
+    #ff:active {
+      background: url('images/SPRITESHEET.png') no-repeat -50px -241px;
+    }
+
+    /* PomoPulse Page */
+    #pp {
+      background: url('images/SPRITESHEET.png') no-repeat -148px -62px;
+      width: 65px;
+      height: 65px;
+    }
+    
+    #pp:hover {
+      background: url('images/SPRITESHEET.png') no-repeat -148px -152px;
+    }
+    
+    #pp:active {
+      background: url('images/SPRITESHEET.png') no-repeat -150px -241px;
+    }
+
+    /* TaskTracker Page */
+    #tt {
+      background: url('images/SPRITESHEET.png') no-repeat -246px -62px;
+      width: 65px;
+      height: 65px;
+    }
+    
+    #tt:hover {
+      background: url('images/SPRITESHEET.png') no-repeat -246px -152px;;
+    }
+    
+    #tt:active {
+      background: url('images/SPRITESHEET.png') no-repeat -246px -241px;
+    }
+
+
+/* HOME PAGE CSS Style */
+  /* Background Image*/
+  #titleCard {
+    background-image: url("images/background_home.jpg");
+    padding: 240px;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+  }
+
+  /* Changes the italiziced words' color into #506AD3 */
+  p > i.color-aquatic {
+    color: #506AD3;
+  }
+
+  /* Changes the h1 words' color into #6B5AEF */
+  section > h1.color-home-header {
+    color: #6B5AEF;
+  }
+  
+  /* Features Columns */
+  #features {
+    padding: 60px;
+    background-color: #060109;
+  }
+
+  /* Changes the 'Get Started' color into #3a3168 */
+  h2.color-class {
+    color: #3a3168;
+  }
+
+
+/* POMOPULSE CSS Style*/
+  /* Timer UI */
+  #timer-outside {
+    margin-left: auto;
+    margin-right: auto;
+    width: 36em;
+    height: 36em;
+    padding: 8em 2em;
+  }
+  
+  /* Display Relative Time in a Bar */
+  #timerBar {
+    width: 100%;
+    height: 5px;
+    background-color: white;
+    margin: 10px auto;
+    padding: 0;
+  }
+  
+  /* Display Remaining Time in the Relative Time Bar */
+  #timeRemaining {
+    width: 100%;
+    position: relative;
+    left: 0;
+    height: 5px;
+    background-color: #6b5aef;
+  }
+  
+  /* Hide Audio element */
+  .hide_audio {
+    visibility: hidden;
+  }
+
+  /* Add padding to Timer UI */
+  #paddington { /* so funny i definitely almost spat out the water i drank */
+    padding: 120px 30px;
+  }
+
+  span.inputBoxSpan {
+    background-color: #19152E;
+    color: white;
+    border-color: #100d1c;
+  }
+
+  input.inside-input-box-color {
+    background-color: #3a3168;
+    border-color: #100d1c;
+    color: #dbdbdb;
+  }
+
+  /* Adds a background image to PomoPulse */
+  section.pomopulse-BG {
+    background-image:url(images/background_pomopulse.jpg);
+    background-repeat:no-repeat;
+    background-attachment:fixed;
+    background-size:cover;
+  }
+
+  /* Changes the h1 words' color into #2C4D6B */
+  section > h1.color-pp-header {
+    color: #2C4D6B;
+  }
+
+
+/* TASKTRACKER */
+  /* Coming soon */
+  #tasktracker {
+    border: 1px solid white;
+  }
+
+  /* Adds a background image to TaskTracker */
+  section.tasktracker-BG {
+    background-image:url(images/background_tasktracker.png);
+    background-repeat:no-repeat;
+    background-attachment:fixed;
+    background-size:cover;
+  }
+
+  /* Changes the h1 words' color into #3A4D99 */
+  section > h1.color-tt-header {
+    color: #3A4D99;
+  }
+
+  /* Changes the icon color into #3A4D99 */
+  section > h1 > span.color-tt-span {
+    color: #3A4D99;
+  }
+
+/* ABOUT US */
+  /* Background Image */
+  .color_background {
+    background-image: url("/images/background_about_us.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+  }
+  
+  /* Centers About Us Hexagon */
+  #about-us {
+    text-align: center;
+    padding: 10%;
+  }
+  
+  /* Defines relative height of each row in the hexagon */
+  #about-us-row {
+    height: 33.3%;
+    margin: 0
+  }
+  
+  /* Adds a border and height to each cell */
+  #cell, #center-cell, #img1, #img2 {
+    height: 24em;
+    margin: 0;
+    border: 1px solid white;
+  }
+  
+  /* Gives translucent BG color to each cell */
+  #cell, #img1, #img2 {
+    padding: 3em;
+    background-color: black;
+    opacity: 0.75;
+  }
+  
+  /* Adds BG image for the center cell */
+  #center-cell {
+    padding: 0;
+    background-image: url('images/center-image.png');
+    background-size: 100%;
+    background-repeat: no-repeat;
+  }
+
+  /* Adds Eshan Meme */
+  #img1 {
+    padding: 0;
+    background-image: url('images/eshan_about_us.gif');
+    background-size: 170%;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  /* Adds PJ Meme */
+  #img2 {
+    padding: 0;
+    background-image: url('images/pj_about_us.gif');
+    background-size: 170%;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+/* FocusRCG */
+  /* Adds padding to content */
+  #contentRCG {
+    padding: 50px;
+  }
+  
+  /* Displays color in a circular container */
+  #colorDisplay {
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+    background-color: white;
+    border-radius: 50%;
+  }
+
+  /* Defines margin, padding and width for RCG content (box) */
+  section > div.rcg-box {
+    margin:20px auto;
+    padding:5%;
+    width:50%;
+  }

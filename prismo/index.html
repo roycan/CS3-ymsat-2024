@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Prismo</title>
+  <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <meta name="author" content="Sebastien Thomas B. Abainza, Ma. Shanel Francesca C. Bosi" />
+  <meta name="revised" content="" />
+  <link rel="icon" href="images/pshslogo.ico" type="image/ico" sizes="16x16">
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Calistoga&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <script src="script.js"></script>
+</head>
+
+<body id="main">
+  <div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" id="closebtn" class="navlink" onclick="closeNav()">&times;</a>
+    <b>
+      <a href="../htdocs/about.html" class="navlink">About</a>
+      <a href="../htdocs/devs.html" class="navlink">Developers</a>
+      <br><br>
+      <a href="../index.html" class="navlink">Home</a>
+    </b>
+    <a href="../htdocs/game1.html" class="navlink">Color Blend</a>
+    <a href="../htdocs/game2.html" class="navlink">Color Match</a>
+    <a href="../htdocs/game3.html" class="navlink">Colorblind</a>
+    <a href="../htdocs/game4.html" class="navlink">Color 2048</a>
+  </div>
+  
+  <header class="ms">
+    <span onclick="openNav()">&#9776;</span>&nbsp;&nbsp;<!--<img id="navlogo" src="../images/logo.png"/> placeholder for logo-->Prismo
+  </header>
+  <br><br><br><br>
+
+  <div>
+    <center>
+      <a  href="htdocs/game1.html"><img src="images/Thumbnail1.PNG" id="thumb1"></a>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <a  href="htdocs/game2.html"><img src="images/Thumbnail2.PNG" id="thumb2"></a>
+      <br><br><br>
+      <a  href="htdocs/game3.html"><img src="images/Thumbnail3.PNG" id="thumb3"></a>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <a  href="htdocs/game4.html"><img src="images/Thumbnail4.PNG" id="thumb4"></a>
+    </center>
+  </div>
+
+  <a  href="htdocs/game1.html"><div id="frost1" class="frost"></div></a>
+  <a  href="htdocs/game2.html"><div id="frost2" class="frost"></div></a>
+  <a  href="htdocs/game3.html"><div id="frost3" class="frost"></div></a>
+  <a  href="htdocs/game4.html"><div id="frost4" class="frost"></div></a>
+
+  <div id="g1" class="tile"><h1>Color Blending</h1></div>
+  <div id="g2" class="tile"><h1>Color Match</h1></div>
+  <div id="g3" class="tile"><h1>Colorblind</h1></div>
+  <div id="g4" class="tile"><h1>Color 2048</h1></div>
+
+  <footer class="ms">
+    &copy; 2023 Computer Science 3
+  </footer>
+</body>
+
+</html>

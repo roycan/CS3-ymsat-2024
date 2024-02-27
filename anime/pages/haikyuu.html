@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Wikianime</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name="keywords" content="" />
+    <meta name="description" content="Wikianime" />
+    <meta name="author" content="<Corpuz, D'Asis, Siscar>" />
+    <meta name="revised" content="" />
+    <link rel="icon" href="../images/favicon.jpg" type="image/ico" sizes="16x16">
+  </head>
+
+  <style>
+    /*designing*/
+    html {
+      font-family: Trebuchet MS;
+    }
+    p {
+      font-family: Trebuchet MS;
+    }
+    ul {
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      background-color: #FAC898;
+    }
+    /*page formats:*/
+
+    
+    .text {
+      width: 50%;
+      left: 1%;
+      position: absolute;
+      top: 25%;
+      margin-left: 20px;
+    }
+
+    .image {
+      margin: 20px 10px;
+      float:right;
+      top:0;
+      width: 30%
+    }
+    
+    .anime-page {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between; 
+      align-items: stretch;
+      align-content: flex-start;
+    }
+    .anime-page-section {
+      height: 300px;
+    }
+
+    .anime-page-toc {
+      width: 20%;
+      padding-left: 5%;
+      padding-right: 5%;
+      background-color: #FF7518;
+      color:	#8B4000;
+    }
+
+    .anime-page-toc ul {
+      padding: 0;
+      list-style-position: inside;
+    }
+
+    .anime-page-toc a {
+      text-decoration: none;
+      color: #8B4000;
+    }
+
+    .anime-page-toc a:hover {
+      text-decoration: underline;
+      color: 	#FAD5A5;
+    }
+
+    .anime-page-img {
+      width: 70%;
+      background-size: cover;
+    }
+
+    video {
+      padding: 3px;
+      margin-left: auto;
+      margin-right: auto;
+      display: inline-block;
+    }
+    /*navigation bar*/
+    nav {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        overflow: hidden;
+        background-color: #333;
+    }
+    nav ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+    }
+    
+    nav a {
+        display: block;
+        color: #f2f2f2;
+        text-align: center;
+        padding: 14px 20px;
+        text-decoration: none;
+    }
+    nav a:hover {
+        background-color: white;
+        color: black;
+    }
+    nav a.logo {
+      float: left;
+      font-size: 24px;
+    }
+    nav a.next {
+      float: right;
+    }
+
+    /*content & toggle list*/
+    content {
+      display: block;
+      margin: 70px 20px;
+      color: #CC5500;
+    }
+    .season {
+      cursor: pointer;
+      color: #F2D2BD;
+      font-size: 22px;
+      border:none;
+      outline: none;
+      background-color: #28282B;
+      width: 100%;
+      text-align: left;
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+    .description {
+      padding-left: 3%;
+      padding-right: 3%;
+      overflow: hidden;
+      display:none;
+      background-color: #FFE5B4;
+      font-family: Trebuchet MS;
+      position:relative;
+    }
+
+    .active, .season:hover {
+      background-color: 	#4CBB17;
+    }
+
+    #clip {
+      text-align: center;
+    }
+    
+    
+  </style>
+  
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a class="logo" href="../index.html">🏠WikiAnime</a></li>
+          <li><a class="next" href="kakegurui.html">Next Anime →</a></li>
+        </ul>
+      </nav>
+    </header>
+    
+    <content>
+      <h1>Haikyuu</h1>
+      <div class="anime-page">
+        <div class="anime-page-section anime-page-toc">
+          <h2>Table of Contents</h2>
+          <ul>
+            <li><a href="#summary">Summary</a></li>
+            <li><a href="#characters">Important Characters</a></li>
+            <li><a href="#bghistory">Background History</a></li>
+            <li><a href="#quotes">Quotes</a></li>
+            <li><a href="#clip">Notable Clip</a></li>
+          </ul>
+        </div>
+
+        <div class="anime-page-section anime-page-img" style="background-image:url('../images/Webpage Images/haikyu_homepage.jpg');">
+        </div>
+      </div>
+      <h2 id="summary">Summary</h2>
+        <button type="button" class="season">Season 1</button>
+        <div class="description">
+          <p> &emsp; After watching a volleyball game on TV, Hinata Shōyō, despite being short, dreamed of becoming a great volleyball player and the next “Little Giant”. He was able to play one match in middle school, but he and his inexperienced team from Yukigaoka Middle School were utterly defeated by the “King of The Court”, the setter Kageyama Tobio, from the powerhouse school, Kitagawa Daiichi Middle School. Hinata, in tears, then vowed to defeat Kageyama one day. <br>
+          &emsp; Hinata entered Karasuno High School because this was where the original Little Giant played. Hinata joined the volleyball team, but to his surprise, Kageyama also entered Karasuno and is now his teammate. The two fought constantly (to the point of almost being kicked out), but they worked together to become a powerful duo. Throughout Season 1, other characters are also introduced, such as the stingy first-years Tsukishima Kei and Yamaguchi Tadashi, the noisy (but powerful) Tanaka Ryuunosuke and Nishinoya Yuu, the dependable third-years Sugawara Koushi, Sawamura Daichi, and Azumane Asahi, and the other (not-as-loud) second-years Ennoshita Chikara, Narita Kazuhiko, and Kinoshita Hisashi. The Karasuno team also plays with other teams such as Nekoma, Karasuno’s supposed rivals, and Aoba Johsai, a strong, powerhouse school where some of Kageyama’s old schoolmates are.</p>
+        </div>
+        <button type="button" class="season">Season 2</button>
+        <div class="description">
+          <p>&emsp; After suffering defeat from the match with Aoba Johsai, Karasuno decides to get better and stronger by joining a summer training camp with other strong high schools like Fukurodani, Shinzen, and Ubugawa. Karasuno also practiced with their rival school, Nekoma. Here, Kageyama and Hinata improved their duo attack (though with some fighting and hardships). Many other players also developed their volleyball skills— Tsukishima learned blocking tips from Bokuto Kōtarō and Akaashi Keiji, Yamaguchi learned how to do a jump float serve from Shimada, etc. Karasuno also learned different volleyball techniques and tricks. After training, Karasuno enters the Miyagi Prefectural Qualifiers for the Spring tournament. After defeating all teams (including Aoba Johsai), Karasuno advances to the finals to defeat Shiratorizawa, the strongest volleyball school in Miyagi Prefecture.</p>
+        </div>
+        <button type="button" class="season">Season 3</button>
+        <div class="description">
+          <p>&emsp; In the span of 10 episodes, Karasuno plays against Shiratorizawa and its monstrous players. They need to defeat Shiratorizawa star hitter, Ushijima Wakatoshi (who Hinata and Kageyama met when they spied on Shiratorizawa). Besides him, Karasuno had to defeat the monster blocker, Tendo Satoru. Among others, Tanaka’s sister and Tsukishima’s brother watch the event. Many eventful things happened— Nishinoya was able to receive Ushijima’s powerful spike in three tries, Tsukishima had blocked Ushijima’s spike (and had his fingers injured after a while), Hinata and Kageyama were able to get past Shiratorizawa’s blockers, and more. After a tiring, 5-set match, Karasuno unexpectedly wins and advances to the Spring National Tournament to be held in Tokyo.</p>
+        </div>
+        <button type="button" class="season">Season 4 (Part I)</button>
+        <div class="description">
+          <p>&emsp; After defeating Shiratorizawa, Karasuno continues to train for Nationals. However, some players practiced at other places— Kageyama joined the All-Japan Youth Camp with other skilled players in Japan (Sakusa Kiyoomi, Miya twins, Hoshiumi Korai, etc.), and Tsukishima joined the Shiratorizawa First-Year Training Camp with Shiratorizawa’s Goshiki Tsutomu and Date Kou’s Koganegawa Kanji. Jealous and power-hungry, Hinata sneaks into Tsukishima’s training camp (even if he didn’t get an invite). Shiratorizawa’s coach doesn’t let him train and makes Hinata be a ball boy, and Hinata suffers the consequences. However, through observing, he still grew and learned many things from the training camp. He was still able to join some training sessions at the end thanks to Tsukishima. <br>
+            &emsp; Meanwhile, Kageyama enjoys his training in Tokyo with other strong players, but has a hard time with Miya Atsumu, a setter from Inarizaki High School since Miya called him a “Goody Two-Shoes”. When the three players came back, they all changed for the better. Kageyama also started teaching Hinata how to jump higher since Kageyama was inspired by Hoshiumi’s jumps. Afterwards, Karasuno travels to Tokyo to compete in Nationals. After settling down, Hinata encounters a problem— he forgot his volleyball shoes. This causes Kiyoko Shimizu (Karasuno’s manager) to remember her track-and-run days while getting Hinata’s shoes. Thus, the competition begins. Karasuno’s first match is with Tsubakihara High School. Karasuno wins and survives the first day. On the second day, Karasuno competes against Inarizaki High School, which Miya Atsumu plays for.
+</p>
+        </div>
+        <button type="button" class="season">Season 4 (Part II)</button>
+        <div class="description">
+          <p>&emsp; Karasuno shocks Inarizaki with Hinata and Kageyama’s quick set. Though temporarily fazed, Inarizaki continues being a strong opponent to Karasuno. Both the Miya twins are almost as talented as Kageyama (they were even able to copy Hinata & Kageyama’s quick attack), and Suna Rintarou’s blocks have a very wide range. Aran Ojiro’s spikes are also strong. Nevertheless, Karasuno emerged victorious— Hinata made his first proper receive, Tanaka overcame his doubts, etc. After winning the game against Inarizaki, Karasuno will then play against Nekoma, marking the first official “Battle of The Garbage Dump”.</p>
+        </div>
+
+
+      <h2 id="characters">Important Characters</h2>
+      
+      <button type="button" class="season">Karasuno</button>
+      <div class="description">
+        <h4>First-Years:</h4>
+        <ul> 
+          <li>Hinata Shoyo - the short & energetic main character of Haikyu!!</li>
+          <li>Kageyama Tobio - Hinata's setter</li>
+          <li>Tsukishima Kei - stingy & tall middle blocker</li>
+          <li>Yamaguchi Tadashi - Tsukishima's best friend; jump float pinch server</li>
+        </ul>
+        <h4>Second-Years:</h4>
+        <ul>
+          <li>Nishinoya Yuu - Karasuno's loud libero</li>
+          <li>Tanaka Ryuunosuke - Noya's good friend; loud senior who likes Karasuno's manager</li>
+        </ul>
+        <h4>Third-Years</h4>
+        <ul> 
+          <li>Sawamura Daichi - team captain</li>
+          <li>Sugawara Koushi - smart and caring senior & vice-captain; comparable to a mother</li>
+          <li>Asahi Azumane - Karasuno's ace who is a friendly giant</li>
+        </ul>
+        <h4>Others:</h4>
+        <ul>
+          <li>Shimizu Kiyoko - Karasuno's beautiful manager who used to be a track and field team member</li>
+          <li>Yachi Hitoka - Karasuno's junior manager who is artsy and sometimes anxious</li>
+          <li>Ukai Keishin - grandson of Ikkei Ukai, Karasuno's famous old coach; current coach of Karasuno</li>
+          <li>Takeda Ittetsu - supportive faculty adviser and head coach</li>
+        </ul>
+        
+      </div>
+
+      <button type="button" class="season">Aoba Johsai (a.k.a. Seijoh)</button>
+      <div class="description">
+        <h4>First-Years:</h4>
+        <ul> 
+          <li>Kunimi Akira - Kageyama's old teammate; was invited to Shiratorizawa's training camp</li>
+          <li>Kindaichi - also Kageyama's old teammate and was also invited to Shiratorizawa's training camp; "Turnip Head"</li>
+        </ul>
+        <h4>Second-Years:</h4>
+        <ul>
+          <li>Yahaba Shigeru - pinch server and setter</li>
+          <li>Watari Shinji - Seijoh's bald libero</li>
+          <li>Kyotani Kentaro - scary spiker who admires Iwaizumi</li>
+        </ul>
+        <h4>Third-Years</h4>
+        <ul> 
+          <li>Oikawa Tooru - "Great King"; Kageyama's old senpai whom he fears; Seijoh's team captain</li>
+          <li>Iwaizumi Hajime - Oikawa's best friend and Seijoh's ace</li>
+          <li>Matsukawa Issei - middle blocker; his blocks scared Hinata</li>
+          <li>Hanamaki Takahiro - pink-haired wing spiker</li>
+        </ul>
+      </div>
+
+      <button type="button" class="season">Nekoma</button>
+      <div class="description">
+        <h4>First-Years:</h4>
+        <ul> 
+          <li>Haiba Lev - tall, half-Russian middle blocker; beginner at volleyball; friends w/ Hinata and mentored by Kuroo </li>
+          <li>Inuoka Sou - Hinata's friend; middle blocker</li>
+          <li>Shibayama Yuki - Nekoma's shortest player; libero</li>
+          <li>Tamahiko Teshiro - pinch server</li>
+        </ul>
+        <h4>Second-Years:</h4>
+        <ul>
+          <li>Kozume Kenma - Hinata's good friend; Nekoma's cunning and gamer setter</li>
+          <li>Yamamoto Taketora - Nekoma's Tanaka; passionate & energetic spiker</li>
+          <li>Fukunaga Shohei - Nekoma's comedian spiker</li>
+        </ul>
+        <h4>Third-Years</h4>
+        <ul> 
+          <li>Kuroo Tetsuroo - Nekoma's captain; best friends w/ Kenma; taught Lev, Tsukishima, and Hinata how to block</li>
+          <li>Kai Nobuyuki - Nekoma's vice-captain and wing spiker</li>
+          <li>Yaku Morisuke - hardworking & caring libero who likes to lightheartedly clash w/ his juniors</li>
+        </ul>
+      </div>
+
+      <button type="button" class="season">Shiratorizawa</button>
+      <div class="description">
+        <h4>First-Years:</h4>
+        <ul> 
+          <li>Goshiki Tsutomu - invited to Shiratorizawa's training camp; ambitious and passionate wing spiker w/ straight bangs</li>
+          <li>Shibata Yu</li>
+          <li>Akakura Kai</li>
+        </ul>
+        <h4>Second-Years:</h4>
+        <ul>
+          <li>Shirabu Kenjiro - Shiratorizawa's easily-annoyed setter; admires Ushijima; dislikes Goshiki</li>
+          <li>Kawanishi Taichi</li>
+          <li>Yunohama</li>
+          <li>Umeda</li>
+        </ul>
+        <h4>Third-Years</h4>
+        <ul> 
+          <li>Ushijima Wakatoshi - captain & ace; Oikawa's enemy; one of Japan's top 3 spikers</li>
+          <li>Tendo Satori - "Guess Blocker"; good friends / Ushijima</li>
+          <li>Soekawa Jin - vice captain</li>
+          <li>Semi Eita - pinch server</li>
+          <li>Ohira Reon - wing spiker; nicknamed "Benkei" by Hinata</li>
+          <li>Yamagata Hayato</li>
+        </ul>
+      </div>
+
+      <button type="button" class="season">Fukurodani</button>
+      <div class="description">
+        <h4>First-Years:</h4>
+        <ul> 
+          <li>Onaga Wataru</li>
+          <li>Anahori Shuichi</li>
+        </ul>
+        <h4>Second-Years:</h4>
+        <ul>
+          <li>Akaashi Keiji - great friends w/ Bokuto; assigned to take care of Bokuto's mood swings</li>
+        </ul>
+        <h4>Third-Years</h4>
+        <ul> 
+          <li>Bokuto Kotaro - taught Tsukishima volleyball tips w/ Kuroo; energetic & childish ace</li>
+          <li>Washio Tatsuki</li>
+          <li>Sarukui Yamato</li>
+          <li>Konoha Akinori</li>
+          <li>Komi Haruki</li>
+        </ul>
+      </div>
+      
+      <button type="button" class="season">Inarizaki</button>
+      <div class="description">
+        <h4>First-Years:</h4>
+        <ul> 
+          <li>Riseki Heisuke</li>
+        </ul>
+        <h4>Second-Years:</h4>
+        <ul>
+          <li>Miya Atsumu - invited to All-Japan Youth training camp w/ Kageyama; wants to set  for Hinata; childish & talented setter</li>
+          <li>Miya Osamu - Atsumu's more mature and coolheaded twin; sets up an onigiri shop in the manga timeskip</li>
+          <li>Suna Rintaro - flexible middle blocker who likes drama</li>
+          <li>Ginjima Hitoshi</li>
+          <li>Kosaku Yuuto</li>
+        </ul>
+        <h4>Third-Years</h4>
+        <ul> 
+          <li>Kita Shinsuke - Inarizaki's caring and smart team captain</li>
+          <li>Ojiro Aran - Inarizaki's ace; childhood friends w/ Miya twins</li>
+          <li>Omimi Ren</li>
+        </ul>
+      </div>
+      
+      <h2 id="bghistory">Background History</h2>
+      <div>
+        <button type="button" class="season">Anime History</button>
+        <div class="description">
+          <div class="image">
+            <img src="../haikyu_movie.jpg" width="180" height="254">
+          </div>
+          <div class="text">
+            <p>&emsp; Haikyu!! is a sports manga series that was written from February 2012 to July 2020 and was later adapted into an anime. It was written and illustrated by Haruichi Furudate, and serialized weekly in Shueisha’s magazine Weekly Shōnen Jump. Besides anime, Haikyu!! had also been adapted into stage plays and video games. Four OVAs and compilation films have also been released. An upcoming movie is set to be released next February this year (2024).</p>
+          </div>
+        </div>
+        <button type="button" class="season">Mangaka/Creator History</button>
+        <div class="description">
+          <div class="text">
+            <p>&emsp; Haruichi Furudate (古舘 春一) was born on March 7, 1983 in Iwate, Japan. Before writing Haikyu!!, he wrote King Kid, a one-shot that had an Honorable Mention in the 14th Treasure Newcomer Manga Award. He made his manga debut with the piece Playground and wrote A Ghost of Yotsuya-Senpai. Furudate played middle blocker in his high school volleyball club, and his favorite players were Aoyama Shigeru and Yoneyama Yuta. He wanted to pursue a volleyball career but decided to be a manga artist instead.</p>
+          </div>
+          <div class="image">
+            <img src="../Haruichi_Furudate.jpg" alt="Haruichi Furudate">
+        </div>
+      </div>
+      
+      <h2 id="quotes">Quotes</h2>
+      <ul>
+        <li><i>“A tall, tall wall looms in front of me. What’s the view on the other side? What does it look like? It's a view I could never see on my own.”</i> -Hinata Shōyō</li>
+        <li><i>“As long as I’m here, you’re invincible!”</i> -Hinata Shōyō & Kageyama Tobio</li>
+        <li><i>“No matter what other people may say, we are the protagonists of the world.”</i> -Akaashi Keiji</li>
+      </ul>
+      
+      <h2>Notable Clip</h2>
+      <div id="clip">
+        <video width="45%" height="25.31%" autoplay muted loop controls>
+          <source src="images/Webpage Images/haikyu_scene1.mp4" type="video/mp4">
+          <source src="images/Webpage Images/Haikyuu_scene1.ogg" type="video/ogg">
+          Your video is not loading.
+        </video>
+
+        <video width="45%" height="25.31%" autoplay muted loop controls>
+          <source src="images/Webpage Images/Haikyuu_scene2.mp4" type="video/mp4">
+          <source src="images/Webpage Images/Haikyuu_scene2.ogg" type="video/ogg">
+          Your video is not loading.
+        </video>
+      </div>
+
+    </content>
+    <li>sources: wikipedia</li>
+
+    <script>
+      var n = document.getElementsByClassName("season");
+      var i;
+      console.log(n.length);
+
+      for (i = 0; i < n.length; i++) {
+        n[i].addEventListener("click", function() {
+          this.classList.toggle("active");
+          var description = this.nextElementSibling;
+          if (description.style.display === "block") {
+            description.style.display = "none";
+          } else {
+            description.style.display = "block";
+          }
+        });
+      }
+    </script>
+  </body>
+
+  
+</html>

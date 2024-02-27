@@ -1,0 +1,102 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  font-family: monaco,Helvetica;
+  background-color: #00082e;
+  color: #b8ffba;
+  padding: 0;
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  padding-right: 2%;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #3145aa;
+}
+
+nav a {
+  display: inline-block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+
+nav a:hover {
+  background-color: #ffffff;
+  color: #1d078d;
+}
+
+#navHeader {
+  margin: 0% 1% 0% 1%;
+  border: 5px groove #b8ffba;
+  padding: 5px;
+}
+
+h1 {
+  text-align: center;
+  padding-top: 45px;
+  padding-left: 2%;
+}
+
+table {
+  border: 2px solid;
+}
+
+td {
+  border: 2px solid;
+  width: 85px;
+  height: 85px;
+}
+
+td * {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+td img {
+  width: 80px;
+  height: 80px;
+}
+
+#tableIndex td {
+  border: 2px solid;
+  width: 205px;
+  height: 205px;
+}
+
+#tableIndex td img {
+  width: 400px;
+  height: 400px;
+  padding: 5px;
+}
+
+#tableTTT td {
+  border: 2px solid;
+  width: 150px;
+  height: 150px;
+}
+
+#tableTTT td img {
+  width: 140px;
+  height: 140px;
+  padding: 5px;
+}
+
+footer {
+  margin-top: auto;
+  background-color: blue;
+  padding: 10px;
+}

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Wikianime</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <meta name="keywords" content="" />
+  <meta name="description" content="Wikianime" />
+  <meta name="author" content="<Corpuz, D'Asis, Siscar>" />
+  <meta name="revised" content="" />
+  <link rel="icon" href="images/favicon.jpg" type="image/ico" sizes="16x16">
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+<style>
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+</style>
+
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a class="logo" href="index.html">🏠WikiAnime</a></li>
+        <li><a class="next" href="pages/bungo_stray_dogs.html">Next Anime →</a></li>
+        <li><a class="calc" href="pages/calculator.html"> Episode Calculator 💅</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <content>
+  <h2>Description</h2>
+  <p>Our website will be a small wiki page about the favorite anime series of each member. It will include subpages with the plot/storyline of each anime, some of the anime’s characters, the anime’s history and creator, etc. </p>
+
+    <div class="anime-container">
+      
+      <div class="anime-card">
+        <h3>Bungo Stray Dogs</h3>
+        <a href="pages/bungo_stray_dogs.html"> <img src="images/Webpage Images/bsd_homepage.jpg" width="200px" height="150px"> </a>
+        <p>Bungo Stray Dogs (BSD) is an ongoing action, mystery, supernatural anime based on the manga created by Kafka Asagiri. The show focuses heavily on its characters. The special abilities and intellect that each of them has serve as the main driving force of the plot. Each season features a new enemy that the main characters face. As the series progresses, the viewers get to learn more about the past of certain characters as well as the secrets behind special abilities as a whole. </p>
+      </div>
+      
+      <div class="anime-card">
+        <h3>Haikyuu</h3>
+        <a href="pages/haikyuu.html"> <img src="images/Webpage Images/haikyu_homepage.jpg" width="210px" height="150px"> </a>
+        <p>Haikyuu!! (ハイキュー!!) is an ongoing sports anime series based on Haruichi Furudate’s manga series of the same name. It is centered around the volleyball journey of Hinata Shōyō, a boy who loves volleyball and dreams of becoming the next “Little Giant”, and the other volleyball players and enthusiasts he meets throughout his life. </p>
+      </div>
+
+      <div class="anime-card">
+        <h3>Kakegurui</h3>
+        <a href="pages/kakegurui.html"> <img src="images/Webpage Images/kakegurui_homepage.jpg" width="200px" height="150px"> </a>
+        <p> Yumeko Jabami, a sophomore, transfers to Hyakkaou Private Academy and challenges the established quo by taking on the student council and other influential students. How is she going to handle them?</p>
+      </div>
+
+      <div class="anime-card">
+        <h3>Ouran High School Host Club</h3>
+        <a href="pages/ohshc.html"> <img src="images/Webpage Images/ohshc.jpg" width="200px" height="150px"> </a>
+        <p>Bisco Hatori, Ouran High School Host Club (or OHSHC for short) is a shoujo anime that tells the story of Haruhi Fujioka, an androgynous, poor girl who enters Ouran Academy, a prestigious school filled with rich and powerful students, on a scholarship. Due to an accident, she is forced to become a host in the academy’s host club where she meets and befriends many people— both within and outside the club. </p>
+      </div>
+
+      <div class="anime-card">
+        <h3>Attack on Titan</h3>
+        <a href="pages/attack_on_titan.html"> <img src="images/Webpage Images/aot_homepage.jpg" width="210px" height="150px"> </a>
+        <p>Attack on Titan (AOT) is an action, dark fantasy, post-apocalyptic anime based on Hajime Isayama's manga of the same name. It tells the story of three childhood friends and their lives within three walls that guard them from the mysterious titans. Due to a break-in through the walls that have protected them all those years, humanity is forced to face the true terror of the titans they have so carefully avoided.</p>
+      </div>
+
+      <div class="anime-card">
+        <h3>Spy X Family</h3>
+        <a href="pages/spy_x_family.html"> <img src="images/Webpage Images/spyxfamily_homepage.jpg" width="200px" height="150px"> </a>
+        <p> A spy who has an undercover mission to make 2 nations be at peace decides to marry and adopt for the sake of world peace, little did he know that all 3 of them have secrets of their own. An action and comedy anime that revolves around a spy, a telepath, and an assassin.</p>
+      </div>
+    </div>
+  </content>
+
+  <div id="Footer">
+    <footer class="footer">
+      <div>
+        <a href="https://facebook.com">
+          <div class="icon facebook" id="facebook"></div>
+        </a>
+        <a href="https://twitter.com">
+          <div class="icon twitter" id="twitter"></div>
+        </a>
+        <a href="https://github.com">
+          <div class="icon github" id="github"></div>
+        </a>
+      </div>
+    </footer>
+  </div>
+
+
+  <script>
+    function calculateTime() {
+    // Get user's input
+    const numberOfEpisodes = parseInt(document.getElementById('episodes').value);
+    const episodeDuration = parseInt(document.getElementById('duration').value);
+    // Calculate total time
+    const totalTimeMinutes = numberOfEpisodes * episodeDuration;
+
+    // Convert total time to hours and minutes
+    const hours = parseInt(totalTimeMinutes / 60);
+    const minutes = totalTimeMinutes % 60;
+
+    // Display the result
+    const resultElement = document.getElementById('result');
+    resultElement.innerHTML = 'Total time needed: ' + hours + ' hours and ' + minutes + ' minutes.';
+    }
+  </script>
+  sources: wikipedia
+</body>
+
+</html>

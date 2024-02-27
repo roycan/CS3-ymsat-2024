@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Moodbright Website</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <meta name="keywords" content="self, care, bright, mental health" />
+  <meta name="description" content="a site to spread good vibes and to learn more about yourself while knowing how to practice self care!" />
+  <meta name="authors" content="<Senen, Cyrene Amaryllis A. - Uy, Zion Skye Earl Carmelo" />
+  <meta name="revised" content="2/16/24"" />
+  <link href="../style.css" rel="stylesheet" type="text/css" /> <!-- to add an external css file -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Send+Flowers&display=swap"
+    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300&display=swap" rel="stylesheet">
+  <link rel="icon" href="images/sun.png" type="image/png">
+</head>
+
+<body>
+  <header>
+    <!-- for the site names and openers -->
+    <div>
+      <h1 class="main" id="banner">Moodbright Website</h1>
+      <h2 class="main" id="page">FEEDBACK</h2>
+      <h4 class="main" id="opener">Welcome to the Feedback page! In this page, you can leave feedback, critiques, and thoughts about the website. It's a feedback page, not much happens...</h4>
+    </div>
+    <!-- for the nav bar -->
+    <nav>
+      <a href="/index.html">HOME</a>
+      <a href="self.html">SELF</a>
+      <a href="care.html">CARE</a>
+      <a href="references.html">REFERENCES</a>
+      <a href="feedback.html">FEEDBACK</a>
+    </nav>
+  </header>
+  <!-- top button -->
+  <button id="top" onclick="topFunc()">Back to Top</button>
+  <!-- main content -->
+  <section class="main" id="content">
+    <form id="feedback">
+      <p>What's your name? (optional but if we know you then hello!)</p>
+      <input type="text" id="name" name="name">
+
+      <p>What did you like?</p>
+      <input type="checkbox" id="relevant" name="like" value="relevant">
+      <label for="relevant">Relevant Information</label>
+
+      <input type="checkbox" id="graphicsGood" name="like" value="graphicsGood">
+      <label for="graphicsGood">Good Graphics</label>
+
+      <input type="checkbox" id="formatGood" name="like" value="formatGood">
+      <label for="formatGood">Nice Format</label>
+
+      <input type="checkbox" id="colorGood" name="like" value="colorGood">
+      <label for="colorGood">Colors are Good</label>
+
+      <input type="checkbox" id="otherGood" name="like" value="otherGood">
+      <label for="otherGood">Others! (say below)</label>
+
+
+      
+      <p>What did you dislike?</p>
+      <input type="checkbox" id="irrelevant" name="dislike" value="irrelevant">
+      <label for="irrelevant">Irrelevant Information/Implementations</label>
+
+      <input type="checkbox" id="infoShort" name="dislike" value="infoShort">
+      <label for="infoShort">Not Enough Info</label>
+
+      <input type="checkbox" id="formatBad" name="dislike" value="formatBad">
+      <label for="formatBad">Not as Good Format</label>
+
+      <input type="checkbox" id="colorBad" name="dislike" value="colorBad">
+      <label for="colorBad">Colors Aren't the Best</label>
+
+      <input type="checkbox" id="otherGood" name="dislike" value="otherBad">
+      <label for="otherBad">Others! (say below)</label>
+
+      <p>Others (type here)</p>
+      <textarea id="tArea" name="other" rows="5" cols="100"> </textarea>
+      
+      
+      <p>Overall, Did you like the website?</p> <br>
+      <input type="radio" id="yes" name="okay?" value="yes">
+      <label for="yes">Yes</label> <br>
+      <input type="radio" id="no" name="okay?" value="no">
+      <label for="no">No</label> <br>
+
+      <button onclick="getFormData()">Submit!</button>
+
+      
+    </form>
+    
+    
+  </section>
+  <!-- footer -->
+  <footer>
+    &copy; B2027 Strontium 27 - 29
+  </footer>
+  <script src="../script.js"></script>
+</body>
+
+</html>

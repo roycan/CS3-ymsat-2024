@@ -1,0 +1,38 @@
+html {
+  background-color: mintcream;
+}
+
+h1 {
+  border-width: 5px;
+  border-style: solid;
+  border-color: maroon;
+  background-color: maroon;
+  color: gold;
+  padding: 20px;
+}
+/*The code above is for the "FLAMES TEST" part*/
+
+h4 {
+  border-width: 5px;
+  border-style: solid;
+  border-color: maroon;
+  background-color: maroon;
+  color: gold;
+  padding: 20px;
+  font-style: italic;
+}
+/*The code above is for short intro message*/
+
+button {
+  font-family: monospace;
+  font-style: bold;
+  font-size: 50px;
+}
+/*The code above is for the button layout*/
+
+#color, #time {
+  font-weight: bold;
+  text-align: center;
+}
+
+/*The code above is for the color questions, the pop-outs*/

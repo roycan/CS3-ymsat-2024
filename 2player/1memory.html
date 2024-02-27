@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Memory</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <meta name="revised" content="12/7/2023" />
+  <link rel="icon" href="images/pshslogo.ico" type="image/ico" sizes="16x16">
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+<body onload="memoryNewGame()">
+  <header>
+    <nav>
+      <b id="navHeader">TWO-PLAYER GAMES</b>
+      <a href="index.html">Home</a>
+      <a style="background-color: #ccffd6; color: #140462; font-weight: bold;">Memory</a>
+      <a href='3tictactoe.html'>Tic Tac Toe</a>
+      <a href='2pong.html'>Pong</a>
+    </nav>
+    <h1>Memory</h1>
+  </header>
+
+  <section>
+    <center>
+      <h2 id="memoryPlayerTurn">-</h2>
+      <p>Player 1: <span id="memoryScoreOne">0</span></p>
+      <p>Player 2: <span id="memoryScoreTwo">0</span></p>
+      <table border=2px>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+      </table>
+      <br>
+      <button onclick="memoryNewGame()">Start Game?</button>
+    </center>
+  </section>
+
+  <br>
+
+  <footer>
+    &copy; 2024 Rugayan-Sze
+    <br>
+    <h4>About Us</h4>
+    <p>In our busy lives, we sometimes forget to treat ourselves to all the tasks & worries we endure. So, the dynamic duo of Chael & Rex created “Two-Player Games.” Use this website whenever you’re tired from a long day or want to spend quality time with your loved ones. It now includes the Memory Game featuring all your favorite NBA teams and good old tic-tac-toe. That’s not all; stay tuned because the all-time classic Pong will join this lineup of fantastic games! So what are you waiting for? Strategize and join in on the fun competition!</p>
+  </footer>
+  
+  <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+
+<!-- Start of Metadata -->
+  <head>
+    <title>PomoPulse</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name="keywords" content="timer, productivity, time management" />
+    <meta name="description" content="PomoPulse works wonders when it comes to managing your time. Ever feel like you don't know when to take breaks or when to start working? This timer has got you secured. PomoPulse is a tool to help and guide you with its built-in pomodoro timer. This aids in organizing a your time through a series of 25-minute working and, 5-minute and 15-minute break cycles. To ensure efficiency, the timer 'dings' once a cycle is accomplished, whilst listing down accomplished cycles on an activity log. Additionally, the timer can be paused/resumed and reset by users." />
+    <meta name="author" content="Eshan Samson, PJ Sichon" />
+    <meta name="revised" content="01/24/2024" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon_pp.png"> <!-- To add a site tab icon -->
+    <script defer src="../script.js"></script>
+    <!-- Start of Bootstrap Setup -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <!-- End of Bootstrap Setup -->
+  
+    <link href="../style.css" rel="stylesheet" type="text/css" /> <!-- To add an external css file -->
+    <script src="../jquery-3.7.1.min.js"></script> <!-- jQuery setup -->
+  </head>
+<!-- End of Metadata -->
+
+<!-- Start of Content -->  
+  <body>
+    <!-- Start of Navigation Bar -->
+    <header>
+      <nav class="navbar navbar-inverse navbar-fixed-top" id="navbar">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <!-- Produces NavBar with buttons -->
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#fullNavbar">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="javascript:void(0)" id="pp"></a>
+          </div>
+          <!-- Adds text to the buttons in the NavBar -->
+          <div class="collapse navbar-collapse" id="fullNavbar">
+            <ul class="nav navbar-nav">
+              <li><a href="../index.html"><span class="glyphicon glyphicon-home"></span>&nbsp; Home</a></li>
+              <li class="active"><a href="pomopulse.html" style="background-color: #060109"><span class="glyphicon glyphicon-time"></span>&nbsp; PomoPulse</a></li> <!-- Matches the background color of the webpage to the color of the button area when you are on that webpage -->
+              <li><a href="tasktracker.html"><span class="glyphicon glyphicon-list-alt"></span>&nbsp; TaskTracker</a></li>
+            </ul>
+            <!-- NavBar Dropdown Bonus Pages -->
+            <ul class="nav navbar-nav navbar-right">
+              <li class="dropdown">
+                <a class="dropdown-toggle" data-toggle="dropdown" href="#"><span class="glyphicon glyphicon-plus"></span>&nbsp; Bonus Pages <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="about-us.html">About Us</a></li>
+                  <li><a href="rcg.html">Random Color Generator</a></li>
+                  <li><a href="htdocs/uff.html">User Feedback Form</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- End of Navigation Bar -->
+
+    <!-- Start of Main Content -->
+    <section class="pomopulse-BG container-fluid" id="title">
+      <!-- Title and Subtitle -->
+      <h1 class="color-pp-header"><span class="glyphicon glyphicon-time"></span>&nbsp;PomoPulse</h1>
+      <p>Having a hard time managing your time? This page is just the perfect fit for you! It's a timer with a cycle system!</p>
+    </section>
+  
+    <section class="row" id="content" style="background-color: #060109;">
+      <!-- Divide the content into two columns -->
+      <div class="col-sm-4" id="timerLog">
+        <!-- Start of Timer Cycle Log -->
+        <h3>Activity Log</h3>
+        <div id="paddington">
+          <p>
+            <ul id="activityLog" style="text-align: left;"></ul>
+          </p>
+        </div>
+        <!-- End of Timer Cycle Log -->
+      </div>
+      <div class="col-sm-8" id="timer">
+      <!-- Start of Timer -->
+        <h3>PomoPulse Timer</h3>
+        <p>Note: The start button can only start the cycle, resuming can only be done with the Pause/resume button.</p>
+        <div id="paddington">
+        <div>
+          <!-- Start of Timer UI -->
+          <div id="timer-outside">
+            <!-- Start of Timer Input Boxes -->
+            <h4>Input your time values or use the default!</h4>
+            <div class="input-group">
+              <!-- Work Mode Length Input -->
+              <span class="inputBoxSpan input-group-addon">Work Length (s)</span>
+              <input id="workInput" type="number" class="inside-input-box-color form-control" value="1500">
+            </div>
+            <div class="input-group">
+              <!-- Short Break Length Input -->
+              <span class="inputBoxSpan input-group-addon">Short Break Length (s)</span>
+              <input id="shortBreakInput" type="number" class="inside-input-box-color form-control" value="300">
+            </div>
+            <div class="input-group">
+              <!-- Long Break Length Input -->
+              <span class="inputBoxSpan input-group-addon">Long Break Length (s)</span>
+              <input id="longBreakInput" type="number" class="inside-input-box-color form-control" value="900">
+            </div>
+            <!-- End of Timer Input Boxes -->
+            <!-- Time Display -->
+            <h1 id="timeLeft">25m 0s</h1>
+            <p id="timerStatus">Work Mode</p>
+            <div id="timerBar">
+              <div id="timeRemaining"></div>
+            </div>
+            <button type="button" onclick="startTimer()" id="startButton">Start</button>
+            <button type="button" onclick="pause()" id="pause">Pause</button>
+            <button type="button" onclick="reset()">Reset</button>
+          </div>
+          <!-- End of Timer UI -->
+        </div>
+      </div>
+      <!-- End of Timer -->
+    </section>
+
+    
+    <audio controls preload="auto" id="ping" class="hide_audio">
+      <source src="../ping_fixed.mp3" type="audio/mpeg">
+    </audio> <!-- Ping audio when a cycle ends -->
+
+    <!-- Start of Footer -->
+    <footer class="container-fluid">
+      <p>&copy; 2024 Samson & Sichon</p>
+      <!-- Links to other webpages of the project -->
+      <a href="about-us.html">About Us</a> | <a href="../index.html">Home</a> | <a href="tasktracker.html">TaskTracker</a> | <a href="rcg.html">Random Color Generator</a>
+      <!-- Contact Hyperlinks -->
+      <p>Contact us: <a href="https://twitter.com/chessfan24">Eshan Samson</a> | <a href="https://twitter.com/pj_ballindruid
+      ">Prince Jasper Allen Sichon</a> <small>(names are clickable)</small></p>
+      <p><small>References and Appendices in Console and About Us Page</small></p>
+    </footer>
+    <!-- End of Footer -->
+
+    <!-- Replit Share button -->
+    <!-- When clicked, allows user to view and edit the Replit repository or Repl -->
+    <script
+      src="https://replit.com/public/js/replit-badge-v2.js"
+      theme="dark"
+      position="bottom-right"
+    ></script>
+  </body>
+<!-- End of Content -->
+
+  <!-- References -->
+    <!-- Martabystron. (2020, December 14). Shrimp Aquarium Underwater - Free photo on Pixabay. Pixabay. https://pixabay.com/photos/shrimp-aquarium-underwater-prawns-5686804/ -->
+    <!-- Pixabay. (n.d.). Free Ping Sound Effects download - Pixabay. https://pixabay.com/sound-effects/search/ping/ -->
+    <!-- Pngtree. (n.d.). The common shrimps are red and are called orange shrimp background. https://pngtree.com/freebackground/the-common-shrimps-are-red-and-are-called-orange-shrimp_2574170.html -->
+
+  <!-- Appendices -->
+    <!-- Bootstrap -->
+    <!-- Canva -->
+    <!-- jQuery -->
+    <!-- Pixabay -->
+    <!-- Pngtree -->
+    <!-- Replit -->
+    <!-- Sprite Cow -->
+    <!-- w3schools -->
+    <!-- Wireframe.cc -->
+
+</html>

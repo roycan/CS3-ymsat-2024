@@ -1,0 +1,42 @@
+html {
+  height: 100vh;
+  width: 100vw;
+  background-image: url(images/bg.jpg);
+  background-attachment: fixed;
+  background-size: 100vw auto;
+  color: white;
+}
+
+div#header {
+  background-image: url(images/website.png);
+  background-position: center center;
+  padding: 40px 40px 20px 40px;
+  background-size: cover;
+  filter: brightness(85%);
+  border-bottom: solid teal 1px;
+}
+
+h1.h1nav, p.pnav, li a.mainnav {
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}
+
+ul.navbar > li.listnav {
+  list-style-type: none;
+  display:inline-block;
+}
+
+li a.mainnav {
+  padding: 10px 12px;
+  display: block;
+  text-decoration: none;
+  text-align: center;
+  border-radius: 2px;
+  transition: 0.5s;
+}
+
+a.mainnav:hover {
+  background-color: #b40404;
+}
+

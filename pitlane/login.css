@@ -1,0 +1,39 @@
+.cont-title {
+  margin: 0px 0px 0px 75px;
+  position: relative;
+  top: 60px;
+}
+
+div.cont-form {
+  vertical-align: middle;
+  margin: 0px 0px 0px 75px;
+  padding: 50px 0px 50px 20px;
+  width: 18vw;
+  height: 50vh;
+  position: relative;
+  top: 65px;
+  border-radius: 10px;
+}
+
+.cont {
+  display: inline-block;
+}
+
+input[type=text], input[type=password] {
+  padding: 12px;
+  border-radius: 5px;
+  font-size: 15px;
+}
+
+input[type=text]:hover, input[type=password]:hover {
+  border: 2px solid lightblue;
+}
+
+input[type=submit] {
+  padding: 10px;
+  background-color: red;
+  color: white;
+  font-weight: bold;
+  border-radius: 3px;
+  border: none;
+}

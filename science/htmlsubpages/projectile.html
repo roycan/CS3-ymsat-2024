@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+  
+<head>
+  <title>Projectile Simulator</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <meta name="author" content="Magnus Navarro and Phia Libunao" />
+  <meta name="revised" content="" />
+  <link rel="icon" href="images/pshslogo.ico" type="image/ico" sizes="16x16"> <!-- to add a site tab icon -->
+  <link href="../cssstylesheets/projectile.css" rel="stylesheet" type="text/css" /> <!-- to add an external css file -->
+</head>
+
+<body>
+  <div id="plane"> <!-- Plane of the projectile -->
+    <center>Each tick is 100 meters away from each other.</center>
+    <div id="y0" class="axis"></div> <!-- X-axis where y = 0 -->
+    
+    <div id="y100" class="yHundredMark"></div> 
+    <div id="y200" class="yHundredMark"></div>
+    <div id="y300" class="yHundredMark"></div>
+    <div id="y400" class="yHundredMark"></div>
+    <div id="y500" class="yHundredMark"></div>
+    <!-- ^ Marks for y at each hundred ^ -->
+
+    
+    <div id="x0" class="axis"></div> <!-- X-axis where y = 0 -->
+    
+    <div id="x100" class="xHundredMark"></div>
+    <div id="x200" class="xHundredMark"></div>
+    <div id="x300" class="xHundredMark"></div>
+    <div id="x400" class="xHundredMark"></div>
+    <div id="x500" class="xHundredMark"></div>
+    <div id="x600" class="xHundredMark"></div>
+    <div id="x700" class="xHundredMark"></div>
+    <div id="x800" class="xHundredMark"></div>
+    <div id="x900" class="xHundredMark"></div>
+    <div id="x1000" class="xHundredMark"></div>
+    <!-- ^ Marks for x at each hundred ^ -->
+
+    <div id="target"></div>
+
+  </div>
+
+  <div>
+    Initial velocity: <input type="number" min="10" max="100" value="40" id="velInit-textbox"> <!-- Initial velocity textbox -->
+    <input type="range" min="10" max="100" value="40" id="velInit-slider"> <!-- Initial velocity slider -->
+
+    <br>
+
+    Angle: <input type="number" min="0" max="90" value="40" id="angle-textbox"> <!-- Angle textbox -->
+    <input type="range" min="0" max="90" value="40" id="angle-slider"> <!-- Angle slider -->
+
+    <br>
+
+    <button id="launch">Launch!</button> <!-- Launch button -->
+
+    <p id="distance">Distance: 0 meters</p>
+    <p id="count">Number of throws: 0</p>
+  </div>
+
+
+
+  <script>
+
+    let velInit_textbox = document.getElementById("velInit-textbox"); // Variable declaration of initial velocity textbox
+    let velInit_slider = document.getElementById("velInit-slider"); // Variable declaration of initial velocity slider
+
+    velInit_textbox.value = velInit_slider.value; // Have textbox and slider be equal
+
+    velInit_slider.oninput = function() {
+      velInit_textbox.value = this.value; // Change textbox value when slider is changed
+    }
+
+    velInit_textbox.oninput = function() {
+      if (this.value > 100) { 
+        this.value = 100; // Change textbox value back to 100 if above 100
+      }
+      else if (this.value < 10) {
+        this.value = 10; // Change textbox value back to 10 if below 10
+      }
+      
+      velInit_slider.value = this.value; // Change slider value when textbox value is changed
+    }
+
+    let angle_textbox = document.getElementById("angle-textbox"); // Variable declaration of angle textbox
+    let angle_slider = document.getElementById("angle-slider"); // Variable declaration of angle slider
+
+    angle_textbox.value = velInit_slider.value; // Have textbox and slider be equal
+
+    angle_slider.oninput = function() {
+      angle_textbox.value = this.value; // Change textbox value when slider is changed
+    }
+
+    angle_textbox.oninput = function() {
+      if (this.value > 90) {
+        this.value = 90; // Change textbox value back to 90 if above 90
+      }
+      else if (this.value < 0) {
+        this.value = 0; // Change textbox value back to 0 if below 0
+      }
+
+      angle_slider.value = this.value; //Change slider value when textbox value is changed
+    }
+
+    let vel_x = 0;
+    let vel_y = 0;
+    let time = 0;
+    let dy = 0;
+    let distance = 0; 
+    // Declaration for time, distance, height from ground, and xy velocities
+
+    var plot = function(vx, t, y) { // Function declaration for plotting points using parameters vx, t, and y
+    var point = document.createElement("div"); // Declare point to be a div element
+    point.className = "point"; // Assign point to class with name "point"
+    point.style.left = (vx * t + 50 - 4) + "px"; // Distance from left wall of plane = x-velocity * time + dist. of y-axis from left - point width / 2
+    point.style.bottom = (y + 50 - 4) + "px"; // Distance from bottom wall of plane = y value + dist. of x-axis from bottomeft - point height / 2
+    document.getElementById('plane').appendChild(point); // Add point to plane div
+    }
+
+    var target = document.getElementById("target");
+    let targetDis = Math.round(Math.random() * 900 * 100) / 100 + 100;
+    target.style.left = (targetDis + 50 - 25) + "px";
+
+    var graph = function() {
+      let velInit = velInit_textbox.value;
+      let angle = angle_textbox.value;
+      // Get values from respective textboxes
+
+      vel_x = velInit * Math.cos(angle * Math.PI / 180);
+      vel_y = velInit * Math.sin(angle * Math.PI / 180);
+      // Assign value for xy velocities
+
+      plot(vel_x, time, dy); // Use plot function with arguments vel_x as vx, time as t, and dy as y
+
+      time += 1/30; // Plot a point 30 times per second
+      dy = -4.9 * time * time + vel_y * time; // Assign height from ground with formula
+
+      distance = Math.round((vel_x * time) * 100) / 100; // Calculate distance of projectile rounded to 2 decimal places
+      document.getElementById("distance").innerHTML = `Distance: ${distance} meters` // Have the innerHTML display distance
+    }
+
+    let launchCount = 0;
+    let launch = document.getElementById("launch"); // Variable declaration of launch button
+    launch.onclick = function() { // Have the website do the following when button is clicked
+      launchCount++;
+      document.getElementById("count").innerHTML = `Number of throws: ${launchCount}`
+      
+      time = 0;
+      dy = 0;
+      // ^ reset variables time and dy
+      
+      velInit_textbox.disabled = true;
+      velInit_slider.disabled = true;
+      angle_textbox.disabled = true;
+      angle_slider.disabled = true;
+      launch.disabled = true;
+      // ^ disable input stuff when launching
+
+
+      var interval = setInterval(function() { // Declare an interval
+        if (dy < 0) { // When projectile hits the ground...
+          clearInterval(interval); // Stop graphing
+          
+          if (Math.abs(distance - targetDis) > 25) {
+            velInit_textbox.disabled = false;
+            velInit_slider.disabled = false;
+            angle_textbox.disabled = false;
+            angle_slider.disabled = false;
+            launch.disabled = false;
+            // ^ enable input stuff again
+          }
+          else {
+            target.style.backgroundColor = "green";
+
+            document.getElementById("count").innerHTML = `Congratulations! It took you ${launchCount} throws to hit the target, which was ${distance} meters away!`;
+          }
+        }
+
+        graph(); // Graph the projectile motion
+      }, 33) // Repeat interval every 33ms
+    }
+  </script>
+</body>
+
+  <button onclick="goToHomePage()">Go Back to Home</button>
+
+  <script>
+    function goToHomePage() {
+        window.location.href = "../index.html"; 
+    }
+  </script>
+</html>

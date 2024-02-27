@@ -1,0 +1,214 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+body {
+  background-color: #EFEEE2; 
+  font-family: "Bebas Neue", sans-serif;
+}
+.logo img {
+  margin: 2px 2px 2px 2px;
+  width: 130px;
+  position: sticky;
+  padding: 5px;
+}
+
+ul {
+  padding: 0;
+  list-style: none;
+}
+li {
+  float: left;
+}
+nav {
+  background-color: #5D869D;
+  display: inline-block;
+  overflow: hidden;
+  top: 0;
+  right: 0;
+  left: 0;
+  position: fixed;
+  align-items: center;
+}
+nav a {
+  text-decoration: none;
+  display: block;
+  width: 160px;
+  padding: 20px;
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: bold;
+  color: black;
+  text-align: center;
+  font-size: 20px;
+}
+
+nav a:hover {
+  background-color: #FFBD59;
+  border-radius: 10px;
+  text-decoration: underline;
+}
+/*Start of CSS for home page*/
+#newsparagraph {
+  font-weight: bold;
+  font-size: 15px;
+  text-align: center;
+  background-color: #B6E5FF;
+}
+#news {
+  margin-top: 5%;
+  background-color: #5D869D;
+}
+#imagenews {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+#newsheader {
+  color: #401935;
+  font-weight: bold;
+  font-size: 40px;
+  text-align: center;
+}
+#mainhomeheader {
+  color: #401935;
+  margin-top: 5%;
+  font-size: 60px;
+  font-weight: bold;
+  text-align: center;
+}
+#homespotify {
+  margin-top: 100px;
+  margin-left: auto;
+  margin-right: auto;
+}
+#homeheaders {
+  color: #401935;
+  text-align: center;
+  font-size: 25px;
+  font-weight: bold;
+}
+/*Start of CSS for events page*/
+
+h1.events {
+  margin-top: 150px;
+  font-size: 60px;
+  text-align: center;
+  color: #401935;
+}
+
+h2.topTextEvents {
+  text-align: center;
+}
+
+table {
+  margin-top: 100px;
+  margin-left: 18%;
+  margin-right: 15%;
+}
+
+.eventPics img {
+  width: 300px;
+  padding-left: 80px;
+}
+
+.eventText {
+  margin-top: 30px;
+  text-align: center;
+  padding-left: 20%;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.eventInfo {
+  margin-top: 15px;
+  text-align: center;
+  padding-left: 20%;
+  margin-bottom: 100px;
+}
+
+#international {
+  padding-top: 5px;
+  background-color: #5D869D;
+  right: 0;
+  left: 0;
+  position: absolute;
+}
+/*Start of CSS for playlist page*/
+#playlistheader {
+  color: #401935;
+  margin-top: 150px;
+  text-align: center;
+  font-size: 60px;
+  font-weight: bold;
+}
+#playlistdesc  {
+  font-weight: bold;
+  font-size: 25px;
+  text-align: center;
+}
+#playlist {
+  font-weight: bold;
+  text-align: center;
+  margin-left: 18%;
+  margin-right: 15%;
+}
+#spotifyheader {
+  color: #401935;
+}
+#underrated {
+  background-color: #5D869D;
+  margin-top: 10%;
+  height: 1080px;
+}
+
+
+/*Start of CSS for toptracks page*/
+
+.topsong {
+  width: 100px;
+  height: 300px;
+  line-height: 300px;
+  border: 5px;
+  background-color: black;
+  text-align: center;
+  font-size: 80px;
+  color: white;
+  margin-left: 300px;
+}
+
+#missMiss {
+  width: 300px;
+  align-content: right;
+}
+
+.title {
+  margin-left: 10px;
+}
+
+.nextsongs {
+  width: 100px;
+  height: 150px;
+  line-height: 150px;
+  border: 5px;
+  background-color: black;
+  text-align: center;
+  font-size: 40px;
+  color: white;
+  margin-left: 300px;
+}
+
+#othersongs {
+  width: 150px;
+}
+
+.othertitle {
+  margin-left:2px;
+}
+
+h3 {
+  margin-top: 200px;
+}
+
+h3.sendoff {
+  text-align: right;
+}

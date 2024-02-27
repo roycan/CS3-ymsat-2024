@@ -1,0 +1,160 @@
+* {
+  font-family: 'Neue Montreal', sans-serif;
+}
+
+body {
+  background-color: #1E1F22;
+}
+
+header, footer {
+  position: fixed;
+  background-color: #383c48;
+  padding: 10px;
+  padding-left: 15px;
+  color: white;
+  width: 100%;
+  left: 0;
+  font-family: 'Calistoga', serif;
+}
+
+header {
+  top: 0;
+  font-size: 30px;
+}
+
+footer {
+  bottom: 0;
+  font-size: 25px;
+}
+
+header span {
+  cursor: pointer;
+}
+
+#navlogo {
+  filter: invert(100%);
+}
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+  white-space: nowrap;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+#closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+#thumb1,#thumb2,#thumb3,#thumb4 {
+  width: 35%;
+  height: 35%;
+}
+
+.frost {
+   position: absolute;
+    width: 34.6%;
+    height: 34%;
+    background-image: linear-gradient(black,grey);    
+    opacity:0.3;
+  transition: 0.25s;
+}
+
+.frost:hover {
+  opacity: 0.5;
+}
+
+#frost1, #frost2, #g1, #g2 {
+  position: absolute;
+}
+
+#g1, #g2 {
+  top: 20%;
+}
+
+#g3, #g4 {
+  top: 60.28%;
+}
+
+#frost1, #frost2 {
+  top: 12.4%;
+}
+
+#frost3, #frost4 {
+  top: 52.68%;
+}
+
+#frost3, #frost4, #g3, #g4 {
+  position: absolute;
+}
+
+#frost1 {
+  left: 13.75%;
+}
+
+#g1 {
+  left: 15%;
+} 
+
+#frost2 {
+  left: 51.68%;
+}
+
+#g2 {
+  left: 52.94%;
+}
+
+#frost3 {
+  left: 13.75%;
+}
+
+#g3 {
+  left: 15%;
+}
+
+#frost4  {
+  left: 51.68%;
+}
+
+#g4 {
+  left: 52.94%;
+}
+
+.tile {
+  color: white;
+  opacity: 0;
+  transition: 0.25s;
+}
+
+.tile:hover {
+  opacity:  0.7;
+}

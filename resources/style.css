@@ -1,0 +1,70 @@
+
+html {
+  height: 100%;
+  width: 100%;
+  background-color: lightgray;
+}
+
+header img {
+  float: right;
+  transform: rotate(45deg);
+  transition: all 0.5s;
+  opacity: 0.6;
+}
+header img:hover {
+  transform: rotate(0deg);
+  opacity: 1;
+}
+#pHolder img {
+  opacity: 0.60;
+  border: 1px solid black;
+  transition: all 0.5s;
+}
+
+#pHolder img:hover {
+  opacity: 1;
+}
+
+.w3-half {
+  max-height: 250px;
+  overflow: auto;
+}
+.w3-half h3 {
+  margin-top: 0;
+  color: navy;
+}
+.w3-half p {
+  text-align: justify;
+  font-size: 0.75em;
+}
+
+#shuffle {
+  -ms-transform: rotate(90deg); /* IE 9 */
+  -webkit-transform: rotate(90deg); /* Safari */
+  transform: rotate(90deg);
+  background-color: black;
+  color: white;
+  font-weight: bold;
+  font-size: 0.75em;
+  position: fixed;
+  bottom:50px;
+  right: -45px;
+  padding: 10px;
+  cursor: pointer;
+  letter-spacing:2px;
+  border-radius: 0px 0px 15px 15px; 
+  opacity: 0.5;
+  transition: all 0.5s
+}
+
+#shuffle:hover {
+  color: red;
+  opacity: 1;
+}
+
+footer{
+  /*width: 100%;
+  position: fixed;
+  bottom: 0;*/
+  z-index:-1;
+}

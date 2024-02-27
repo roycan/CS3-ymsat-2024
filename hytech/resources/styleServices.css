@@ -1,0 +1,162 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* style for the header */
+header {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+header img {
+  background-color: #162539;
+  padding: 10px;
+  box-sizing: border-box;
+  height: 100px;
+  width: 30%;
+  float: left;
+}
+
+header nav {
+  background-color: #162539;
+  box-sizing: border-box;
+  height: 100px;
+  width: 70%;
+  float: left;
+}
+
+header nav a {
+  color: #ffffff;
+  font: 22px 'Courier New', monospace;
+  text-align: center;
+  text-decoration: none;
+  padding: 40px 10px;
+  box-sizing: border-box;
+  height: 100px;
+  width: calc(100%/5);
+  float: left;
+}
+
+header nav a:hover {
+  background-color: #243447;
+  font-size: 24px;
+}
+
+#signIn {
+  background-color: #00C3D5;
+  color: #162539;
+  position: relative;
+  top: 15px;
+  left: 15px;
+  font-weight: bold;
+  padding: 22px 10px;
+  border-radius: 20px;
+  box-sizing: border-box;
+  height: 70px;
+  width: 14%;
+}
+
+#signIn:hover {
+  font-size: 24px;
+}
+
+/* style for the general description */
+#services1 {
+  background-color: #1c1c1c;
+  color: #ffffff;
+  text-align: center;
+  position: absolute;
+  top: 100px;
+  left: 0px;
+  box-sizing: border-box;
+  height: 80px;
+  width: 100%;
+}
+
+#services1 h2 {
+  margin: 0px;
+  padding: 10px;
+}
+
+#services1 p {
+  margin: 0px;
+}
+
+/* style for the repair services */
+#services2 {
+  position: absolute;
+  top: 180px;
+  left: 0px;
+  background-image: url("../images/botwLinkRidingMasterCycleZeroArtwork.png");
+  background-size: 100%;
+  box-sizing: border-box;
+  height: 480px;
+  width: 100%;
+}
+
+#masterCycleZero, #camera {
+  background-color: #1c1c1c;
+  opacity: 0.8;
+  margin: 40px 0px 40px 40px;
+  box-sizing: border-box;
+  height: 400px;
+  width: 45.5%;
+  float: left;
+}
+
+#masterCycleZero:hover {
+  opacity: 1;
+  border: 2px solid #ffa300;
+}
+
+ #camera:hover {
+  opacity: 1;
+  border: 2px solid #a8d100;
+}
+  
+#masterCycleZero img, #camera img {
+  box-sizing: border-box;
+  height: 200px;
+  width: 200px;
+  float: left;
+}
+
+#masterCycleZero h2 {
+  font-size: 50px;
+  color: #ffa300;
+}
+
+#masterCycleZero p {
+  font-size: 26px;
+  text-align: justify;
+  color: #ffa300;
+  padding: 10px 40px;
+}
+
+#camera h2 {
+  font-size: 50px;
+  color: #a8d100;
+}
+
+#camera p {
+  font-size: 20px;
+  text-align: justify;
+  color: #a8d100;
+  padding: 10px 40px;
+}
+
+/* style for the copyright */
+footer {
+  color: #ffffff;
+  position: fixed;
+  bottom: 5px;
+  right: 5px;
+}

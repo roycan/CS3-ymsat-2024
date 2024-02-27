@@ -1,0 +1,468 @@
+Introduction of Formula 1
+
+The Basics
+
+Grand Prix Weekend
+
+Each Grand Prix is 3 days. For those 3 days, events like Practice, Qualifying, and Race are scheduled evenly. For instances where Sprints are added, it goes in between Practice and Qualifying.  
+
+Weekend: w/out a sprint shootout
+
+Day 1 - FP1 and FP2 are scheduled to give drivers 2 hours to learn the track and certain adjustments regarding the cars setup. Also, reserve drivers or driver academies of that certain team are allowed to take part in FP1, allowing them to showcase their capabilities inside an F1 car. The FIA has mandated that 2 FP1 sessions are required for each team’s rookie to take part. 
+
+Day 2 - Qualifying: Q1 - 18 minutes each, Q2 - 15 minutes each, Q3 - 12 minutes each. Drivers will have short qualifyings where they will show their one lap pace to determine the starting grid for Sunday’s race. 
+
+*Parc Ferme is also applied - where you can’t change a drivers set up for the rest of the weekend, only allowing to change the Front Wing angle after Q1.
+
+Day 3 - Race: After everything has been sorted, The race is finally here! Drivers and Race Engineers have discussed their strategies for the race, and it’s lights out and away we go!  
+
+Weekend: w/ sprint shootout
+
+Day 1 - FP1: Scheduled to give drivers 1 hour to learn the track and certain adjustments regarding the cars setup.
+
+Qualifying: same format as w/out sprint shootout, 5 slowest cars in each qualifying eliminations are out. 
+
+Day 2 - Sprint Shootout: Just like qualifying but shortened, and drivers have to be in the Medium tyre for both Sprint Qualifying 1 and 2, and Soft for 3.
+
+Sprint - ⅓ race length of the race will be conducted, for instance if the Belgian Grand Prix has 44 racing laps, the sprint will have 14. Points are 8 points for 1st place, 7 points for 2nd… 6th for 3rd, and consecutively going down.
+
+Day 3 - Race: Yep, finally the qualifying grid will be used, and fight it out for the actual racing. 
+
+
+Flags
+
+
+
+Source: Road, R. (2023, March 15). Formula 1 Flag Types. https://www.rookieroad.com/formula-1/flag-types-5530535/
+
+Green Flag - started/resuming normal racing.
+
+Yellow Flag - someone has had damage and caused debris on track, be cautious. 
+Red Flag - stops the race entirely, the car that crashed made severe damage and caused other drivers to not be allowed to cross at that certain part of the track.
+
+Black Flag - Disqualified! Too many penalties or stewards have seen enough unsportsmanlike racing. 
+
+Blue Flag - A faster car is lapping a backmarker and they are forced to move away from the racing line to avoid blockage from the faster driver. ‘
+
+White Flag - Car moving in front is slow, you can pass.
+
+Yellow and Red Flag - on stripes and shows a change in conditions, noticed by race control and the drivers. 
+
+Black and White Flag - penalty given by race control, either of track limits, collisions, speeding in pit lane, or other unsportsmanlike behavior. 
+
+Black and Orange Flag - damaged or has a severe mechanical problem which is forced to retire and go back to their respective pit box. 
+
+Checkered Flag - Drivers who cross the finish line after finishing the amount of laps given or within 2 hours. Once the race leader has finished the race, lapped cars are not required to finish the race. Instead, it shows “+n lap” (n = how many times was the slower driver lapped) in the timing screens. 
+
+
+Tyre Compounds
+
+In a race weekend, there’s 3 available dry tyre compounds and 2 wet compounds in a race given by Pirelli, F1’s official tyre sponsor, it ranges from C1 being the hardest to C5 being the softest, and Pirelli decides what type of tyre they will bring on to a race weekend.
+
+Teams will make different strategies based on their track performance engineers, they make different plans to know which strategies suit them while in the race. 
+
+Laps
+
+The amount of laps determined in a race has to be a minimum 190 miles or 305 kilometers. However, Monaco is to be an exception capped at 78, as they do have time limits of 2 hours in terms of race time. 
+
+Race UI
+
+
+
+Source: Wood, W. (2022, June 8). Information overload? Which motorsport series has the most effective TV graphics package? RaceFans. https://www.racefans.net/2022/06/05/information-overload-which-motorsport-series-has-the-most-effective-tv-graphics-package/
+
+Race leaderboard telemetry (Qualifying): 
+
+Currently, we are on board Fernando Alonso’s qualifying Q1 lap at the 2022 Miami Grand Prix. We can see valuable race data while watching him do his flier.
+
+We can see the drivers leaderboard and it shows who has crossed the checkered flag with a checkered flag, and drivers who are in the pit with the letter P.
+
+And the gap is currently shown between the Polesitter (the driver who has set the fastest lap so far) and the driver next to it.
+
+You can also see the drivers currently fitted tyre compound (S for Soft, M for Medium, H for Hard)
+
+DRIVER AT RISK - shows which current driver is at risk of getting eliminated, if any of the drivers below him improved and has a faster time than the driver. 
+
+TIME - shows current time remaining left, depending on which part of Qualifying. After time has gone to 0:00, drivers have a 3-minute time countdown to finish their unfinished laps.
+
+Race leaderboard telemetry (Race):
+
+Car telemetry: (also seen at the Fernando Alonso onboard)
+
+Current Speed - shown at the driver’s TV Pod Camera above its Halo. It is digital and has speeds in kilometers and miles per hour. 
+
+Throttle, Brake - obviously not calibrated at the photo, but it does show the current power the driver is setting on the pedals.
+
+DRS (Active/Inactive) - shown in the middle of the Halo, gives extra speed because of the less drag by the rear wing. 
+
+Top 3 leaderboard - the driver we are watching with the person who has a better time than him, and the driver with a worse time than him.  
+
+
+
+
+
+
+
+
+Leaderboard telemetry: 
+
+
+
+Seen is the race leaderboard of Lap 3 out of 57 for the 2022 Miami Grand Prix. Indicated information below are:
+
+Current race leaderboard - shows who is leading the race (first 3 letters of last name = your driver abbreviation, except Schumacher which is MSC), and which driver is racing which. It also shows the gap within the leader.
+
+Tyres - shows which tyres are currently fitted for the driver, again S for Soft, M for Medium, H for Hard.
+
+Constructor Logo - which team/constructor is the driver racing for. 
+
+2023 (tracks and grid w/race data)
+
+Driver Profiles:
+
+Key moment of the season
+
+Max Verstappen  
+Points: 575
+Wins: 19
+Sprint Wins: 4
+Podiums: 21 
+Pole Positions: 12
+Fastest Laps: 9 
+DNFs: 0
+
+Sergio Perez
+Points: 285
+Wins: 2 
+Sprint Wins: 1
+Podiums: 9 
+Pole Positions: 2
+Fastest Laps: 2  
+DNFs: 2
+
+Lewis Hamilton 
+Points: 234
+Wins: 0
+Sprint Wins: 0
+Podiums: 6 
+Pole Positions: 1
+Fastest Laps: 4  
+DNFs: 1
+
+Fernando Alonso
+Points: 206
+Wins: 0
+Sprint Wins: 0 
+Podiums: 8 
+Pole Positions: 0
+Fastest Laps: 1  
+DNFs: 2
+
+Charles Leclerc
+Points: 206
+Wins: 0
+Sprint Wins: 0 
+Podiums: 6 
+Pole Positions: 5
+Fastest Laps: 0  
+DNFs: 4
+
+Lando Norris
+Points: 205
+Wins: 0
+Sprint Wins: 0 
+Podiums: 6 
+Pole Positions: 0
+Fastest Laps: 1  
+DNFs: 1
+
+Carlos Sainz
+Points: 200
+Wins: 1
+Sprint Wins: 0
+Podiums: 3 
+Pole Positions: 2
+Fastest Laps: 0 
+DNFs: 3
+
+George Russell
+Points: 175
+Wins: 0
+Podiums: 2
+Pole Positions: 0
+Fastest Laps: 1  
+DNFs: 4
+
+Oscar Piastri
+Points: 97
+Wins: 0
+Sprint Wins: 1
+Podiums: 2
+Pole Positions: 0
+Fastest Laps: 2  
+DNFs: 3
+
+Lance Stroll 
+Points: 74
+Wins: 0
+Sprint Wins: 0
+Podiums: 0 
+Pole Positions: 0
+Fastest Laps: 0
+DNFs: 5
+
+Pierre Gasly
+Points: 62
+Wins: 0
+Sprint Wins:
+Podiums: 1
+Pole Positions: 0
+Fastest Laps: 0  
+DNFs: 2
+
+Esteban Ocon
+Points: 58
+Wins: 0
+Sprint Wins: 0
+Podiums: 1
+Pole Positions: 0
+Fastest Laps: 0  
+DNFs: 7
+
+Alexander Albon
+Points: 27
+Wins: 0
+Sprint Wins: 0
+Podiums: 0
+Pole Positions: 0
+Fastest Laps: 0 
+DNFs: 4
+
+Yuki Tsunoda
+Points: 17
+Wins: 0
+Sprint Wins: 0
+Podiums: 0
+Pole Positions: 0
+Fastest Laps: 1
+DNFs: 3
+
+Valtteri Bottas
+Points: 10
+Wins: 0
+Sprint Wins: 0
+Podiums: 0
+Pole Positions: 0
+Fastest Laps: 0
+DNFs: 3
+
+Nico Hulkenberg
+Points: 9
+Wins: 0
+Sprint Wins: 0
+Podiums: 0
+Pole Positions: 0
+Fastest Laps: 0  
+DNFs: 1
+
+Daniel Ricciardo
+Points: 6
+Wins: 0
+Sprint Wins: 0
+Podiums: 0
+Pole Positions: 0
+Fastest Laps: 0 
+DNFs: 0
+
+Zhou Guanyu
+Points: 6
+Wins: 0
+Sprint Wins: 0
+Podiums: 0
+Pole Positions: 0
+Fastest Laps: 1  
+DNFs: 3
+
+Kevin Magnussen
+Points: 3
+Wins: 0
+Sprint Wins: 0
+Podiums: 0
+Pole Positions: 0
+Fastest Laps: 0  
+DNFs: 5
+
+Liam Lawson
+Points: 2
+Wins: 0
+Sprint Wins: 0
+Podiums: 0
+Pole Positions: 0
+Fastest Laps: 0  
+DNFs: 0
+
+Logan Sargeant 
+Points: 1
+Wins: 0
+Sprint Wins: 0
+Podiums: 0
+Pole Positions: 0
+Fastest Laps: 0  
+DNFs: 7
+
+Nyck De Vries
+Points: 0
+Sprint Wins: 0 
+Wins: 0
+Podiums: 0
+Pole Positions: 0
+Fastest Laps: 0 
+DNFs: 2
+
+Constructors:
+Red Bull Racing 
+Points: 860
+Wins: 21
+Sprint Wins: 5
+Podiums: 30
+Pole Positions: 14
+Fastest Laps: 11  
+DNFs: 2
+
+Mercedes AMG-Petronas Formula 1 Team
+Points: 409
+Wins: 0
+Sprint Wins: 0
+Podiums: 8
+Pole Positions: 1
+Fastest Laps: 5  
+DNFs: 5
+
+Scuderia Ferrari
+Points: 406
+Wins: 1 
+Sprint Wins: 0
+Podiums: 9
+Pole Positions: 7
+Fastest Laps: 0 
+DNFs: 7
+
+McLaren Formula 1 Team
+  Points: 302 
+Wins: 0
+Sprint Wins: 1
+Podiums: 9
+Pole Positions: 0
+Fastest Laps: 3 
+DNFs: 4
+
+Aston Martin Aramco Cognizant F1 Team
+Points: 280
+Wins: 0
+Sprint Wins: 0
+Podiums: 8
+Pole Positions: 0 
+Fastest Laps: 1
+DNFs: 7 
+
+BWT Alpine F1 Team
+Points: 120
+Wins: 0
+Sprint Wins: 0
+Podiums: 2
+Pole Positions: 0 
+Fastest Laps: 0 
+DNFs: 9
+
+Williams Racing
+Points: 28 
+Wins: 0
+Sprint Wins: 0
+Podiums: 0
+Pole Positions: 0
+Fastest Laps: 0 
+DNFs: 11
+
+Scuderia AlphaTauri
+Points: 25
+Wins: 0
+Sprint Wins: 0
+Podiums: 0
+Pole Positions: 0 
+Fastest Laps: 1 
+DNFs: 5
+
+Alfa Romeo F1 Team Stake
+Points: 16
+Wins: 0
+Sprint Wins: 0
+Podiums: 0
+Pole Positions: 0
+Fastest Laps: 1  
+DNFs: 6
+
+Moneygram Haas F1 Team
+Points: 12
+Wins: 0
+Sprint Wins: 0
+Podiums: 0
+Pole Positions: 0 
+Fastest Laps: 0   
+DNFs: 7
+
+Tracks:
+
+Gulf Air Bahrain Grand Prix (March 03-05, 2023) 
+STC Saudi Arabian Grand Prix (March 18-20, 2023)
+Rolex Australian Grand Prix (March 31-April 2, 2023)
+Azerbaijan Grand Prix (April 28-30, 2023)
+Crypto.com Miami Grand Prix (May 6-8, 2023)
+Grand Prix de Monaco (May 26-28, 2023)
+AWS Gran Premio De España (June 2-4. 2023)
+Pirelli Grand Prix du Canada
+Rolex Grosser Preis Von Österreich
+Aramco British Grand Prix 
+Qatar Airways Hungarian Grand Prix
+MSC Cruises Belgian Grand Prix
+Heineken Dutch Grand Prix 
+Pirelli Gran Premio D’italia 
+Singapore Airlines Singapore Grand Prix
+Lenovo Japanese Grand Prix
+Qatar Airways Qatar Grand Prix
+Lenovo United States Grand Prix
+Gran Premio De La Ciudad De México
+Rolex Grande Prêmio De São Paulo
+Heineken Silver Las Vegas Grand Prix 
+Etihad Airways Abu Dhabi Grand Prix
+
+Inside an F1 car:
+
+Power Unit (Powertrains) 
+MGU-H
+MGU-K
+ICE
+TC 
+Energy Store
+Energy Recovery System
+Control Electronics
+
+Aerodynamics 
+Front Wing
+Rear Wing
+Sidepods
+Underfloor
+Suspension
+Chassis
+
+Miscellaneous	(steering, fuel loads)
+Parts of a steering wheel
+Halo
+Brake Ducts
+
+
+https://www.autosport.com/f1/news/how-does-a-formula-1-car-work-wings-diffusers-and-more-explained-4982275/4982275/
+https://f1worldwide.com/the-anatomy-of-a-formula-one-car/
+https://www.fortloc.com/pages/articles/motorsportgen2/F1Car/
+https://www.formula1.com/en/latest/article.the-beginners-guide-to-formula-1-engine-and-gearbox-penalties.2TSy7BFgEvdNLojGLWS3F1.html#:~:text=Current%20F1%20power%20units%20feature,electronics%20(CE)%20and%20exhaust.
+https://www.mercedesamgf1.com/news/insight-what-are-engine-modes
+https://racingnews365.com/aerodynamics-f1#:~:text=Front%20wing%20and%20rear%20wing,optimal%20airflow%20to%20generate%20downforce.

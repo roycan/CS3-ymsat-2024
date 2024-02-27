@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>HY-TECH Products</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <meta name="keywords" content="products, Amiibos" />
+  <meta name="description" content="Browse through our wide collection of Amiibos, gadgets, and many more. Whether you’re a devoted Legend of Zelda fan, or just a starter, looking to up their playing experience, HY-TECH is the right go to place." />
+  <meta name="author" content="Lakan C. Paler and Sean Vincent A. Sevilla" />
+  <meta name="revised" content="2/25/2024" />
+  <link rel="icon" href="../images/icons/HY-TECH_Logo.png" type="image/ico" sizes="16x16">
+  <link href="../resources/styleProducts.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <audio autoplay loop>
+    <source src="../audio/products.mp3">
+  </audio>
+
+  <!-- Containing the website icon, name, and navigation bar, this topmost part of the website follows the user. -->
+  <header>
+    <img id="hyTech" src="../images/icons/HY-TECH_Text.png" alt="HY-TECH" onclick="playAudio(1)">
+    <nav>
+      <a href="../index.html" onmouseenter="playAudio(2)">Home</a>
+      <a href="../htmldocs/aboutUs.html" onmouseenter="playAudio(2)">About Us</a>
+      <a href="../htmldocs/products.html" onmouseenter="playAudio(2)">Products</a>
+      <a href="../htmldocs/services.html" onmouseenter="playAudio(2)">Services</a> 
+      <a href="../htmldocs/references.html" onmouseenter="playAudio(2)">References</a>
+      <!-- <a href="htmldocs/signIn.html" id="signIn">Sign In</a> -->
+    </nav>
+  </header>
+  
+  <!-- This gives a short commentary on the amiibos. -->
+  <article id="products1">
+    <h2>Products</h2>
+    <p>Enter the enchanted realm of Hyrule and peruse our vast assortment of finely created amiibos based on individuals from our legendary tales.</p>
+  </article>
+  
+  <!-- This provides a detailed diagram of the various amiibos, including their in-game drops. -->
+  <section id="products2">
+    <img id="amiiboPicture" src="../images/amiiboGuides/amiiboGuide1.png">
+    <article id="controls">
+      <button onclick="back()">Back</button>
+      <h3 id="amiiboNumber"> 1 </h3>
+      <button onclick="next()">Next</button>
+    </article>
+  </section>
+
+  <!-- Copyright -->
+  <footer>
+    &copy; Lakan C. Paler and Sean Vincent A. Sevilla
+  </footer>
+
+  <script src="../resources/script.js"></script>
+</body>
+
+</html>

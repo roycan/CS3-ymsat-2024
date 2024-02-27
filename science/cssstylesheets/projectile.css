@@ -1,0 +1,114 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+
+body{
+  font-family: monospace;
+  font-weight: bold;
+}
+
+#plane {
+    position: relative;
+    height: 750px;
+    width: 1500px;
+    border: 1px solid black;
+}
+
+.point {
+  position: absolute;
+  height: 8px;
+  width: 8px;
+  background-color: #000;
+  border-radius: 50%;
+}
+
+.axis {
+    position: absolute;
+    background-color: black;
+}
+
+.yHundredMark {
+  position: absolute;
+  background-color: black;
+  left: 45px;
+  width: 10px;
+  height: 1px;
+}
+
+.xHundredMark {
+  position: absolute;
+  background-color: black;
+  bottom: 45px;
+  width: 1px;
+  height: 10px;
+}
+
+#y0 {
+    left: 0;
+    bottom: 50px;
+    width: 100%;
+    height: 1px;
+}
+
+#y100 {
+    bottom: 150px;
+}
+#y200 {
+    bottom: 250px;
+}
+#y300 {
+    bottom: 350px;
+}
+#y400 {
+    bottom: 450px;
+}
+#y500 {
+    bottom: 550px;
+}
+
+#x0 {
+    left: 50px;
+    bottom: 0;
+    width: 1px;
+    height: 100%;
+}
+
+#x100 {
+    left: 150px;
+}
+#x200 {
+    left: 250px;
+}
+#x300 {
+    left: 350px;
+}
+#x400 {
+    left: 450px;
+}
+#x500 {
+    left: 550px;
+}
+#x600 {
+    left: 650px;
+}
+#x700 {
+    left: 750px;
+}
+#x800 {
+    left: 850px;
+}
+#x900 {
+    left: 950px;
+}
+#x1000 {
+    left: 1050px;
+}
+
+#target {
+  position: absolute;
+  background-color: red;
+  bottom: 47px;
+  width: 50px;
+  height: 6px;
+}

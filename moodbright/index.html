@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Moodbright Website</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <meta name="keywords" content="self, care, bright, mental health" />
+  <meta name="description" content="a site to spread good vibes and to learn more about yourself while knowing how to practice self care!" />
+  <meta name="authors" content="<Senen, Cyrene Amaryllis A. - Uy, Zion Skye Earl Carmelo" />
+  <meta name="revised" content="1/24/24"" />
+  <link href="style.css" rel="stylesheet" type="text/css" /> <!-- to add an external css file -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Send+Flowers&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300&display=swap" rel="stylesheet">
+  <link rel="icon" href="images/sun.png" type="image/png">
+</head>
+<body>
+  <header>
+    <!-- for the site names and openers -->
+    <div>
+      <h1 class="main" id="banner">Moodbright Website</h1>
+      <h2 class="main" id="page">HOME</h2>
+      <h4 class="main" id="opener">Welcome to the Moodbright Website! This site aims to help those who struggle with mental health issues and educate people who want to learn more about these issues. <br> This home page serves as the landing/navigation page, so go on ahead and explore the site!</h4>
+    </div>
+    <!-- for the nav bar -->
+    <nav>
+      <a href = "index.html">HOME</a>
+      <a href = "htdocs/self.html">SELF</a>
+      <a href = "htdocs/care.html">CARE</a>
+      <a href = "htdocs/references.html">REFERENCES</a>
+      <a href = "htdocs/feedback.html">FEEDBACK</a>
+    </nav>
+  </header>
+  <!-- top button -->
+  <button id="top" onclick="topFunc()">Back to Top</button>
+  <!-- main content -->
+  <section>
+    <div class="main" id="content">
+    <h2>Why We Made This Website</h2>
+    <p>
+      The quick answer is that mental health is one of the more prevalent problems in this generation, especially with the rise of social media and other beliefs. We wanted to make this website look friendly but also take a look at the human condition and see that many of us are struggling. We want to make this website accessible and not too drawn out like other websites, while also being easy to navigate. We also had no time to think of another topic for the website so...
+    <br>
+    <br>
+      Though, don't let this distract from the fact that we really do want to help in educating, so let this simple website be a simple guide to a complex concept!
+    </p>
+    </div>
+  </section>
+  
+  <section class="main" id="quote">
+    <h2>RQG (Random Quote Generator)!</h2>
+    <button id="quoteButton" onclick="quote()">Click Me!</button>
+    <p id="quoteText"></p>
+  </section>
+  <!-- footer -->
+  <footer>
+    &copy; B2027 Strontium 27 - 29
+  </footer>
+  <script src="script.js"></script>
+</body>
+
+</html>

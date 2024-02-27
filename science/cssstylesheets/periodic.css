@@ -1,0 +1,36 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  font-family: monospace;
+  font-weight: semibold;
+  font-size: 20px;
+  background-color: black;
+  color: white;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(18, 100px);
+  gap: 5px;
+}
+/* for the periodic boxes and their width*/
+
+.grid-item {
+  background-color: black;
+  border: 1px solid white;
+  text-align: center;
+  padding: 25px 0;
+}
+/*for the content in the periodic table*/
+
+.invis {
+  text-align: center;
+  padding: 25px 0;
+}
+
+#element, #time, #score {
+  text-align: center;
+}

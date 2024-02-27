@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>The Pitlane</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <meta name="keywords" content="" />
+  <meta name="description" content="Q2 Project Proposal" />
+  <meta name="author" content="Trevor Hans Pagulayan, Ralph Benedict Bolanos" />
+  <meta name="revised" content="November 27 2023" />
+  <link rel="icon" href="images/favicon.png" type="image/ico" sizes="16x16"> <!-- to add a site tab icon -->
+  <link href="nav.css" rel="stylesheet" type="text/css" /> <!-- to add an external css file -->
+</head>
+<body style="margin: 0px;">
+  <div id="header">
+    <img id="f1logo" src="images/F1.svg.png" style="height: auto; width: 200px;">
+    <h1 style="margin: 0px; display:inline;" class="h1nav">The Pitlane.</h1>
+    <p style="margin: 0px; width: 375px; text-align: right;" class="pnav">Everything about the world's top motorsport</p>
+    <br>
+    <nav style="margin: 0px;">
+      <ul class="navbar" style="margin: 0px">
+        <li class="listnav"><a class="mainnav" href="#">Paddock</a></li>
+        <li class="listnav"><a class="mainnav" href="htdocs/basics_home.html">The Basics</a></li>
+        <li class="listnav"><a class="mainnav" href="htdocs/drivers-constructors.html">Driver Profiles</a></li>
+        <li class="listnav"><a class="mainnav" href="under_construction.html">History</a></li>
+        <li class="listnav"><a class="mainnav" href="under_construction.html">Race Tracks</a></li>
+        <li class="listnav"><a class="mainnav" href="under_construction.html">The Formula 1 Car</a></li>
+      </ul>
+    </nav>
+  </div>
+  <br> <br>
+  <h1 style="text-align: center; margin: 0; font-family: Arial, Helvetica, sans-serif;">What even is Formula 1?</h1> <br>
+  <div id="f1ask">
+    <div class="f1ask-container" id="container1" style="background:url(images/cards/card1.jpg) no-repeat; background-position: 85% 50%;">
+      <span class="f1ask-gentext" id="gentext1">...is one of the most popular sports in the world. It is the </span><span class="f1ask-highlight" id="highlight1">highest class of international racing</span><span class="f1ask-gentext" id="gentext1"> for single-seater formula racing cars.</span>
+      
+    </div>
+    <div class="f1ask-container" id="container2" style="background:url(images/cards/card2.jpg) no-repeat center right;">
+      <span class="f1ask-gentext" id="gentext2">...also called F1 in short, is an international auto racing sport. F1 is the highest level of </span><span class="f1ask-highlight" id="highlight2">single-seat, open-wheel and open-cockpit</span><span class="f1ask-gentext" id="gentext2"> professional motor racing contest.</span>
+    </div>
+    <div class="f1ask-container" id="container3" style="background:url(images/cards/card3.jpg) no-repeat 15% 70%;">
+      <span class="f1ask-gentext" id="gentext3">...is also the highest level of motorsport </span><span class="f1ask-highlight" id="highlight3">sanctioned by the FIA</span><span class="f1ask-gentext" id="gentext3">. The Fédération Internationale de l’Automobile, more commonly known as the FIA, is an association representing the interests of motor organizations and motor car users.</span>
+    </div>
+    <div class="f1ask-container" id="container4" style="background:url(images/cards/card4.jpg) no-repeat 60% 70%;"><span class="f1ask-gentext" id="gentext4">...is</span> <span class="f1ask-highlight" id="highlight4">one of the most dangerous sports</span><span class="f1ask-gentext" id="gentext4"> in the world. Since these cars are being driven at such high speeds, crashes and reliability issues are life-threatening.</span></div>
+  </div>
+  <audio autoplay loop>
+    <source src=videoplayback.mp3 type="audio/mpeg">
+  </audio>
+</body>
+</html>
+<style>
+  #f1ask {
+    /*text-align: center;*/
+    display: flex;
+    width: 85vw; 
+    margin: auto;
+  }
+
+  div.f1ask-container {
+    /*display: inline-block;*/
+    padding: 65px 20px 0px 10px;
+    margin: 5px;
+    width: 250px;
+    height: 275px;
+    overflow: auto;
+    background-image: linear-gradient(to bottom right, #232323, #00072d);
+    border-radius: 15px;
+    font-size: 17px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    transition: 0.5s;
+    border-left: 2px solid white;
+  }
+
+  div.f1ask-container:hover {
+    width: 400px;
+  }
+
+  span.f1ask-gentext {
+    visibility: hidden;
+  }
+
+  span.f1ask-highlight {
+    color: #c11f1f;
+    font-size: 30px;
+  }
+
+  body:has(div.f1ask-container#container1:hover) span.f1ask-highlight#highlight1 {
+    font-size: 22px;
+  }
+  body:has(div.f1ask-container#container2:hover) span.f1ask-highlight#highlight2{
+    font-size: 22px;
+  }
+  body:has(div.f1ask-container#container3:hover) span.f1ask-highlight#highlight3 {
+    font-size: 22px;
+  }
+  body:has(div.f1ask-container#container4:hover) span.f1ask-highlight#highlight4 {
+    font-size: 22px;
+  }
+
+
+  body:has(div.f1ask-container#container1:hover) span.f1ask-gentext#gentext1 {
+    visibility: visible
+  }
+  body:has(div.f1ask-container#container2:hover) span.f1ask-gentext#gentext2 {
+    visibility: visible
+  }
+  body:has(div.f1ask-container#container3:hover) span.f1ask-gentext#gentext3 {
+    visibility: visible
+  }
+  body:has(div.f1ask-container#container4:hover) span.f1ask-gentext#gentext4 {
+    visibility: visible
+  }
+</style>

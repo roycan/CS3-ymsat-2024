@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+
+<head>
+  <title>Periodic Table Guessing Game</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <meta name="author" content="Magnus Navarro and Phia Libunao" />
+  <meta name="revised" content="" />
+  <link rel="icon" href="images/pshslogo.ico" type="image/ico" sizes="16x16"> <!-- to add a site tab icon -->
+  <link href="../cssstylesheets/periodic.css" rel="stylesheet" type="text/css" /> <!-- to add an external css file -->
+</head>
+
+<body onload="randomize();">
+  <div class="grid-container">
+    <div class="grid-item" id="elem-1" onclick="button(1)">H</div>
+    <div class="invis"></div>
+    <div class="invis"></div>
+    <div class="invis"></div>
+    <div class="invis"></div>
+    <div class="invis"></div>
+    <div class="invis"></div>
+    <div class="invis"></div>
+    <div class="invis"></div>
+    <div class="invis"></div>
+    <div class="invis"></div>
+    <div class="invis"></div>
+    <div class="invis"></div>
+    <div class="invis"></div>
+    <div class="invis"></div>
+    <div class="invis"></div>
+    <div class="invis"></div>
+    <div class="grid-item" id="elem-2" onclick="button(2)">He</div>
+
+    <div class="grid-item" id="elem-3" onclick="button(3)">Li</div>
+    <div class="grid-item" id="elem-4" onclick="button(4)">Be</div>
+    <div class="invis"></div>
+    <div class="invis"></div>
+    <div class="invis"></div>
+    <div class="invis"></div>
+    <div class="invis"></div>
+    <div class="invis"></div>
+    <div class="invis"></div>
+    <div class="invis"></div>
+    <div class="invis"></div>
+    <div class="invis"></div>
+    <div class="grid-item" id="elem-5" onclick="button(5)">B</div>
+    <div class="grid-item" id="elem-6" onclick="button(6)">C</div>
+    <div class="grid-item" id="elem-7" onclick="button(7)">N</div>
+    <div class="grid-item" id="elem-8" onclick="button(8)">O</div>
+    <div class="grid-item" id="elem-9" onclick="button(9)">F</div>
+    <div class="grid-item" id="elem-10" onclick="button(10)">Ne</div>
+
+    <div class="grid-item" id="elem-11" onclick="button(11)">Na</div>
+    <div class="grid-item" id="elem-12" onclick="button(12)">Mg</div>
+    <div class="invis"></div>
+    <div class="invis"></div>
+    <div class="invis"></div>
+    <div class="invis"></div>
+    <div class="invis"></div>
+    <div class="invis"></div>
+    <div class="invis"></div>
+    <div class="invis"></div>
+    <div class="invis"></div>
+    <div class="invis"></div>
+    <div class="grid-item" id="elem-13" onclick="button(13)">Al</div>
+    <div class="grid-item" id="elem-14" onclick="button(14)">Si</div>
+    <div class="grid-item" id="elem-15" onclick="button(15)">P</div>
+    <div class="grid-item" id="elem-16" onclick="button(16)">S</div>
+    <div class="grid-item" id="elem-17" onclick="button(17)">Cl</div>
+    <div class="grid-item" id="elem-18" onclick="button(18)">Ar</div>
+
+    <div class="grid-item" id="elem-19" onclick="button(19)">K</div>
+    <div class="grid-item" id="elem-20" onclick="button(20)">Ca</div>
+    <div class="grid-item" id="elem-21" onclick="button(21)">Sc</div>
+    <div class="grid-item" id="elem-22" onclick="button(22)">Ti</div>
+    <div class="grid-item" id="elem-23" onclick="button(23)">V</div>
+    <div class="grid-item" id="elem-24" onclick="button(24)">Cr</div>
+    <div class="grid-item" id="elem-25" onclick="button(25)">Mn</div>
+    <div class="grid-item" id="elem-26" onclick="button(26)">Fe</div>
+    <div class="grid-item" id="elem-27" onclick="button(27)">Co</div>
+    <div class="grid-item" id="elem-28" onclick="button(28)">Ni</div>
+    <div class="grid-item" id="elem-29" onclick="button(29)">Cu</div>
+    <div class="grid-item" id="elem-30" onclick="button(30)">Zn</div>
+    <div class="grid-item" id="elem-31" onclick="button(31)">Ga</div>
+    <div class="grid-item" id="elem-32" onclick="button(32)">Ge</div>
+    <div class="grid-item" id="elem-33" onclick="button(33)">As</div>
+    <div class="grid-item" id="elem-34" onclick="button(34)">Se</div>
+    <div class="grid-item" id="elem-35" onclick="button(35)">Br</div>
+    <div class="grid-item" id="elem-36" onclick="button(36)">Kr</div>
+
+    <div class="grid-item" id="elem-37" onclick="button(37)">Rb</div>
+    <div class="grid-item" id="elem-38" onclick="button(38)">Sr</div>
+    <div class="grid-item" id="elem-39" onclick="button(39)">Y</div>
+    <div class="grid-item" id="elem-40" onclick="button(40)">Zr</div>
+    <div class="grid-item" id="elem-41" onclick="button(41)">Nb</div>
+    <div class="grid-item" id="elem-42" onclick="button(42)">Mo</div>
+    <div class="grid-item" id="elem-43" onclick="button(43)">Tc</div>
+    <div class="grid-item" id="elem-44" onclick="button(44)">Ru</div>
+    <div class="grid-item" id="elem-45" onclick="button(45)">Rh</div>
+    <div class="grid-item" id="elem-46" onclick="button(46)">Pd</div>
+    <div class="grid-item" id="elem-47" onclick="button(47)">Ag</div>
+    <div class="grid-item" id="elem-48" onclick="button(48)">Cd</div>
+    <div class="grid-item" id="elem-49" onclick="button(49)">In</div>
+    <div class="grid-item" id="elem-50" onclick="button(50)">Sn</div>
+    <div class="grid-item" id="elem-51" onclick="button(51)">Sb</div>
+    <div class="grid-item" id="elem-52" onclick="button(52)">Te</div>
+    <div class="grid-item" id="elem-53" onclick="button(53)">I</div>
+    <div class="grid-item" id="elem-54" onclick="button(54)">Xe</div>
+
+    <div class="grid-item" id="elem-55" onclick="button(55)">Cs</div>
+    <div class="grid-item" id="elem-56" onclick="button(56)">Ba</div>
+    <div class="invis">*</div>
+    <div class="grid-item" id="elem-72" onclick="button(72)">Hf</div>
+    <div class="grid-item" id="elem-73" onclick="button(73)">Ta</div>
+    <div class="grid-item" id="elem-74" onclick="button(74)">W</div>
+    <div class="grid-item" id="elem-75" onclick="button(75)">Re</div>
+    <div class="grid-item" id="elem-76" onclick="button(76)">Os</div>
+    <div class="grid-item" id="elem-77" onclick="button(77)">Ir</div>
+    <div class="grid-item" id="elem-78" onclick="button(78)">Pt</div>
+    <div class="grid-item" id="elem-79" onclick="button(79)">Au</div>
+    <div class="grid-item" id="elem-80" onclick="button(80)">Hg</div>
+    <div class="grid-item" id="elem-81" onclick="button(81)">Tl</div>
+    <div class="grid-item" id="elem-82" onclick="button(82)">Pb</div>
+    <div class="grid-item" id="elem-83" onclick="button(83)">Bi</div>
+    <div class="grid-item" id="elem-84" onclick="button(84)">Po</div>
+    <div class="grid-item" id="elem-85" onclick="button(85)">At</div>
+    <div class="grid-item" id="elem-86" onclick="button(86)">Rn</div>
+
+    <div class="grid-item" id="elem-87" onclick="button(87)">Fr</div>
+    <div class="grid-item" id="elem-88" onclick="button(88)">Ra</div>
+    <div class="invis">**</div>
+    <div class="grid-item" id="elem-104" onclick="button(104)">Rf</div>
+    <div class="grid-item" id="elem-105" onclick="button(105)">Db</div>
+    <div class="grid-item" id="elem-106" onclick="button(106)">Sg</div>
+    <div class="grid-item" id="elem-107" onclick="button(107)">Bh</div>
+    <div class="grid-item" id="elem-108" onclick="button(108)">Hs</div>
+    <div class="grid-item" id="elem-109" onclick="button(109)">Mt</div>
+    <div class="grid-item" id="elem-110" onclick="button(110)">Ds</div>
+    <div class="grid-item" id="elem-111" onclick="button(111)">Rg</div>
+    <div class="grid-item" id="elem-112" onclick="button(112)">Cn</div>
+    <div class="grid-item" id="elem-113" onclick="button(113)">Nh</div>
+    <div class="grid-item" id="elem-114" onclick="button(114)">Fl</div>
+    <div class="grid-item" id="elem-115" onclick="button(115)">Mc</div>
+    <div class="grid-item" id="elem-116" onclick="button(116)">Lv</div>
+    <div class="grid-item" id="elem-117" onclick="button(117)">Ts</div>
+    <div class="grid-item" id="elem-118" onclick="button(118)">Og</div>
+
+    <div class="invis"></div>
+    <div class="invis"></div>
+    <div class="invis"></div>
+    <div class="invis"></div>
+    <div class="invis"></div>
+    <div class="invis"></div>
+    <div class="invis"></div>
+    <div class="invis"></div>
+    <div class="invis"></div>
+    <div class="invis"></div>
+    <div class="invis"></div>
+    <div class="invis"></div>
+    <div class="invis"></div>
+    <div class="invis"></div>
+    <div class="invis"></div>
+    <div class="invis"></div>
+    <div class="invis"></div>
+    <div class="invis"></div>
+
+    <div class="invis"></div>
+    <div class="invis"></div>
+    <div class="invis">*</div>
+    <div class="grid-item" id="elem-57" onclick="button(57)">La</div>
+    <div class="grid-item" id="elem-58" onclick="button(58)">Ce</div>
+    <div class="grid-item" id="elem-59" onclick="button(59)">Pr</div>
+    <div class="grid-item" id="elem-60" onclick="button(60)">Nd</div>
+    <div class="grid-item" id="elem-61" onclick="button(61)">Pm</div>
+    <div class="grid-item" id="elem-62" onclick="button(62)">Sm</div>
+    <div class="grid-item" id="elem-63" onclick="button(63)">Eu</div>
+    <div class="grid-item" id="elem-64" onclick="button(64)">Gd</div>
+    <div class="grid-item" id="elem-65" onclick="button(65)">Tb</div>
+    <div class="grid-item" id="elem-66" onclick="button(66)">Dy</div>
+    <div class="grid-item" id="elem-67" onclick="button(67)">Ho</div>
+    <div class="grid-item" id="elem-68" onclick="button(68)">Er</div>
+    <div class="grid-item" id="elem-69" onclick="button(69)">Tm</div>
+    <div class="grid-item" id="elem-70" onclick="button(70)">Yb</div>
+    <div class="grid-item" id="elem-71" onclick="button(71)">Lu</div>
+
+    <div class="invis"></div>
+    <div class="invis"></div>
+    <div class="invis">**</div>
+    <div class="grid-item" id="elem-89" onclick="button(89)">Ac</div>
+    <div class="grid-item" id="elem-90" onclick="button(90)">Th</div>
+    <div class="grid-item" id="elem-91" onclick="button(91)">Pa</div>
+    <div class="grid-item" id="elem-92" onclick="button(92)">U</div>
+    <div class="grid-item" id="elem-93" onclick="button(93)">Np</div>
+    <div class="grid-item" id="elem-94" onclick="button(94)">Pu</div>
+    <div class="grid-item" id="elem-95" onclick="button(95)">Am</div>
+    <div class="grid-item" id="elem-96" onclick="button(96)">Cm</div>
+    <div class="grid-item" id="elem-97" onclick="button(97)">Bk</div>
+    <div class="grid-item" id="elem-98" onclick="button(98)">Cf</div>
+    <div class="grid-item" id="elem-99" onclick="button(99)">Es</div>
+    <div class="grid-item" id="elem-100" onclick="button(100)">Fm</div>
+    <div class="grid-item" id="elem-101" onclick="button(101)">Md</div>
+    <div class="grid-item" id="elem-102" onclick="button(102)">No</div>
+    <div class="grid-item" id="elem-103" onclick="button(103)">Lr</div>
+  </div>
+
+  <br>
+
+  <div id="element">Look for Element 119</div>
+
+  <br>
+
+  <div id="time">Time: 0:00</div>
+  <div id="score">Score: 0</div>
+
+  <script>
+    let elemIndex = 0;
+    const elemArr = ["Hydrogen", "Helium", "Lithium", "Beryllium", "Boron", "Carbon", "Nitrogen", "Oxygen", "Fluorine", "Neon",
+      "Sodium", "Magneisum", "Aluminum", "Silicon", "Phosphorus", "Sulfur", "Chlorine", "Argon", "Potassium", "Calcium",
+      "Scandium", "Titanium", "Vanadium", "Chromium", "Manganese", "Iron", "Cobalt", "Nickel", "Copper", "Zinc",
+      "Gallium", "Germanium", "Arsenic", "Selenium", "Bromine", "Krypton", "Rubidium", "Strontium", "Yttrium", "Zirconium",
+      "Niobium", "Molybdenum", "Technetium", "Ruthenium", "Rhodium", "Palladium", "Silver", "Cadmium", "Indium", "Tin",
+      "Antimony", "Tellurium", "Iodine", "Xenon", "Cesium", "Barium", "Lanthanum", "Cerium", "Praseodymium", "Neodymium",
+      "Promethium", "Samarium", "Europium", "Gadolinium", "Terbium", "Dysprosium", "Holmium", "Erbium", "Thulium", "Ytterbium",
+      "Lutetium", "Hafnium", "Tantalum", "Tungsten", "Rhenium", "Osmium", "Iridium", "Platinum", "Gold", "Mercury",
+      "Thallium", "Lead", "Bismuth", "Polonium", "Astatine", "Radon", "Francium", "Radium", "Actinium", "Thorium",
+      "Protactinium", "Uranium", "Neptunium", "Plutonium", "Americium", "Curium", "Berkelium", "Californium", "Einsteinium", "Fermium",
+      "Mendelevium", "Nobelium", "Lawrencium", "Rutherfordium", "Dubnium", "Seaborgium", "Bohrium", "Hassium", "Meitnerium", "Darmstadtium",
+      "Roentgenium", "Copernicium", "Nihonium", "Flerovium", "Muscovium", "Livermorium", "Tennessine", "Oganesson"];
+    var correctArr = [];
+    for (let i = 0; i < 118; i++) {
+      correctArr[i] = 0;
+    }
+    let correctCount = 0;
+    let score = 0;
+
+    let element = document.getElementById("element");
+    let time = document.getElementById("time");
+    let count = 0;
+    const clock = setInterval(function() {
+      count++;
+      if (count % 60 < 10) {
+        time.innerHTML = "Time: " + Math.floor(count / 60) + ":0" + count % 60;
+      }
+      else {
+        time.innerHTML = "Time: " + Math.floor(count / 60) + ":" + count % 60;
+      }
+
+      if (correctCount == 118) {
+        if (score == 1180) {
+          if (count % 60 < 10) {
+            element.innerHTML = "PERFECT PLAY! You beat the game with " + score + " points in " + Math.floor(count / 60) + ":0" + count % 60 + "!";
+          }
+          else {
+            element.innerHTML = "PERFECT PLAY! You beat the game with " + score + " points in " + Math.floor(count / 60) + ":" + count % 60 + "!";
+          }
+        }
+        else {
+          if (count % 60 < 10) {
+            element.innerHTML = "Congratulations! You beat the game with " + score + " points in " + Math.floor(count / 60) + ":0" + count % 60 + "!";
+          }
+          else {
+            element.innerHTML = "Congratulations! You beat the game with " + score + " points in " + Math.floor(count / 60) + ":" + count % 60 + "!";
+          }
+        }
+
+        clearInterval(clock);
+      }
+    }, 1000)
+
+    var randomize = function() {
+      do {
+        elemIndex = Math.floor(Math.random() * 118);
+        element.innerHTML = elemArr[elemIndex];
+      } while (correctArr[elemIndex] == 1)
+    }
+
+    var button = function(x) {
+      if (x - 1 == elemIndex) {
+        document.getElementById(`elem-${x}`).style.backgroundColor = "#7fff7f";
+        document.getElementById(`elem-${x}`).style.color = "black";
+        document.getElementById(`elem-${x}`).onclick = null;
+
+        correctArr[elemIndex] = 1;
+        correctCount++;
+        score += 10;
+        document.getElementById("score").innerHTML = "Score: " + score;
+
+        if (correctCount < 118) {
+          randomize();
+        }
+      }
+      else {
+        document.getElementById(`elem-${x}`).style.backgroundColor = "#ff7f7f"
+        document.getElementById(`elem-${x}`).style.color = "black";
+
+        let stayRed = setTimeout(function () {
+          document.getElementById(`elem-${x}`).style.backgroundColor = "black";
+          document.getElementById(`elem-${x}`).style.color = "white"
+        }, 1000);
+
+        score -= 5;
+        document.getElementById("score").innerHTML = "Score: " + score;
+      }
+    }
+  </script>
+
+  <button onclick="goToHomePage()">Go Back to Home</button>
+
+  <script>
+    function goToHomePage() {
+        window.location.href = "../index.html"; 
+    }
+  </script>
+</body>
+
+</html>

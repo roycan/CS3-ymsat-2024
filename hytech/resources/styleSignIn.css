@@ -1,0 +1,77 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+
+* {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Containing the website icon, name, and navigation bar, this topmost part of the website follows the user. */
+header {
+  width: 100%;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  z-index: 1;
+}
+
+header img {
+  background-color: #162539;
+  padding: 10px;
+  box-sizing: border-box;
+  height: 100px;
+  width: 30%;
+  float: left;
+}
+
+header nav {
+  background-color: #162539;
+  box-sizing: border-box;
+  height: 100px;
+  width: 70%;
+  float: left;
+}
+
+header nav a {
+  color: #ffffff;
+  font: 22px 'Courier New', monospace;
+  text-align: center;
+  text-decoration: none;
+  padding: 40px 10px;
+  box-sizing: border-box;
+  height: 100px;
+  width: 16.667%;
+  float: left;
+}
+
+header nav a:hover {
+  background-color: #243447;
+  font-size: 24px;
+}
+
+#signIn {
+  background-color: #00C3D5;
+  color: #162539;
+  position: relative;
+  top: 15px;
+  left: 15px;
+  font-weight: bold;
+  padding: 22px 10px;
+  border-radius: 20px;
+  box-sizing: border-box;
+  height: 70px;
+  width: 14%;
+}
+
+#signIn:hover {
+  font-size: 24px;
+}
+
+/* design for the copyright */
+footer {
+  color: #ffffff;
+  position: fixed;
+  bottom: 5px;
+  right: 5px;
+}

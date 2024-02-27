@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Tic Tac Toe</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <meta name="revised" content="12/7/2023" />
+  <link rel="icon" href="images/pshslogo.ico" type="image/ico" sizes="16x16">
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+  <header>
+    <nav>
+      <b id="navHeader">TWO-PLAYER GAMES</b>
+      <a href="index.html">Home</a>
+      <a href='1memory.html'>Memory</a>
+      <a style="background-color: #ccffd6; color: #140462; font-weight: bold;">Tic Tac Toe</a>
+      <a href='2pong.html'>Pong</a>
+    </nav>
+    <h1>Tic Tac Toe</h1>
+  </header>
+
+  <center>
+    <section>
+      <form id="ttt_form" onsubmit="tictactoeNewGame(); tictactoeDisplayNames();">
+        
+        <select id="tttdropdown1" name="tttSelectPlayer1">
+          <option value="">--Player 1--</option>
+        </select>
+        
+        <script>
+          var nbaWestAllStars1 = ["LeBron James", "Luka Doncic", "Kevin Durant", "Shai Gilgeous-Alexander", "Nikola Jokic", "Devin Booker", "Steph Curry", "Anthony Davis", "Anthony Edwards", "Paul George", "Kawhi Leonard", "Karl-Anthony Towns"];
+
+          var tttdropdown1 = document.getElementById("tttdropdown1");
+          nbaWestAllStars1.forEach(function(choice) {
+            var option = document.createElement("option");
+            option.text = choice;
+            option.value = choice;
+            tttdropdown1.add(option);
+          });
+        </script>
+
+        <select id="tttdropdown2" name="tttSelectPlayer2">
+          <option value="">--Player 2--</option>
+        </select>
+
+        <script>
+          var nbaWestAllStars2 = ["LeBron James", "Luka Doncic", "Kevin Durant", "Shai Gilgeous-Alexander", "Nikola Jokic", "Devin Booker", "Steph Curry", "Anthony Davis", "Anthony Edwards", "Paul George", "Kawhi Leonard", "Karl-Anthony Towns"];
+
+          var tttdropdown2 = document.getElementById("tttdropdown2");
+          nbaWestAllStars2.forEach(function(choice) {
+            var option = document.createElement("option");
+            option.text = choice;
+            option.value = choice;
+            tttdropdown2.add(option);
+          });
+        </script>
+        
+        <br>
+
+        <input type="submit" value="Set Usernames and New Game">
+      </form>
+
+      <script>
+          var form = document.getElementById("ttt_form");
+          function submitForm(event) {
+             event.preventDefault();
+          }
+          form.addEventListener('submit', submitForm);
+       </script>
+    </section>
+
+    <section>
+      <h3 id="tttPlayer1Name"></h3> <h3 id="tttPlayer2Name"></h3>
+    </section>
+
+    <section>
+      <table id="tableTTT">
+        <tr>
+          <td onclick="tictactoePress(0)"></td>
+          <td onclick="tictactoePress(1)"></td>
+          <td onclick="tictactoePress(2)"></td>
+        </tr>
+        <tr>
+          <td onclick="tictactoePress(3)"></td>
+          <td onclick="tictactoePress(4)"></td>
+          <td onclick="tictactoePress(5)"></td>
+        </tr>
+        <tr>
+          <td onclick="tictactoePress(6)"></td>
+          <td onclick="tictactoePress(7)"></td>
+          <td onclick="tictactoePress(8)"></td>
+        </tr>
+      </table>
+      
+      <br>
+      
+    </section>
+  </center>
+  
+  <br>
+
+  <footer>
+    &copy; 2024 Rugayan-Sze
+    <br>
+    <h4>About Us</h4>
+    <p>In our busy lives, we sometimes forget to treat ourselves to all the tasks & worries we endure. So, the dynamic duo of Chael & Rex created “Two-Player Games.” Use this website whenever you’re tired from a long day or want to spend quality time with your loved ones. It now includes the Memory Game featuring all your favorite NBA teams and good old tic-tac-toe. That’s not all; stay tuned because the all-time classic Pong will join this lineup of fantastic games! So what are you waiting for? Strategize and join in on the fun competition!</p>
+  </footer>
+  
+  <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,61 @@
+@import url(https://db.onlinewebfonts.com/c/629ed6829f706958b9bdf4f6300dfca0?family=Sharp+Grotesk+SmBold+20+Regular);
+@font-face {
+  font-family: "Sharp Grotesk SmBold 20 Regular";
+  src: url("https://db.onlinewebfonts.com/t/629ed6829f706958b9bdf4f6300dfca0.eot");
+  src: url("https://db.onlinewebfonts.com/t/629ed6829f706958b9bdf4f6300dfca0.eot?#iefix")format("embedded-opentype"),
+    url("https://db.onlinewebfonts.com/t/629ed6829f706958b9bdf4f6300dfca0.woff2")format("woff2"),
+    url("https://db.onlinewebfonts.com/t/629ed6829f706958b9bdf4f6300dfca0.woff")format("woff"),
+    url("https://db.onlinewebfonts.com/t/629ed6829f706958b9bdf4f6300dfca0.ttf")format("truetype"),
+    url("https://db.onlinewebfonts.com/t/629ed6829f706958b9bdf4f6300dfca0.svg#Sharp Grotesk SmBold 20 Regular")format("svg");
+}
+
+html {
+  background-color: #14191f;
+}
+
+/* main login box style */
+.login-container {
+  width: 600px;
+  height: 800px;
+  border: solid 3px #ffffff;
+  border-radius: 25px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #9798af;
+}
+
+.login-form {
+  height: 400px;
+  width: 100%;
+  text-align: center;
+}
+
+.login-container > h2 {
+  font-family: 'Sharp Grotesk SmBold 20 Regular';
+  text-align: left;
+  font-size: 50px;
+  margin: 25px 25px;
+  color: #ffffff;
+}
+
+input {
+  margin: 20px 25px ;
+  width: 90%;
+  height: 30px;
+}
+
+#signUp {
+  width: 200px;
+  height: 40px;
+}
+
+/* homepage link style */
+.indexlink {
+  opacity: 50%;
+  position: fixed;
+  width: 75px;
+  bottom: 15px;
+  right: 15px;
+}

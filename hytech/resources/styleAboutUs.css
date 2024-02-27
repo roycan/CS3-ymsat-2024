@@ -1,0 +1,242 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* style for the header */
+header {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+header img {
+  background-color: #162539;
+  padding: 10px;
+  box-sizing: border-box;
+  height: 100px;
+  width: 30%;
+  float: left;
+}
+
+header nav {
+  background-color: #162539;
+  box-sizing: border-box;
+  height: 100px;
+  width: 70%;
+  float: left;
+}
+
+header nav a {
+  color: #ffffff;
+  font: 22px 'Courier New', monospace;
+  text-align: center;
+  text-decoration: none;
+  padding: 40px 10px;
+  box-sizing: border-box;
+  height: 100px;
+  width: calc(100%/5);
+  float: left;
+}
+
+header nav a:hover {
+  background-color: #243447;
+  font-size: 24px;
+}
+
+#signIn {
+  background-color: #00C3D5;
+  color: #162539;
+  position: relative;
+  top: 15px;
+  left: 15px;
+  font-weight: bold;
+  padding: 22px 10px;
+  border-radius: 20px;
+  box-sizing: border-box;
+  height: 70px;
+  width: 14%;
+}
+
+#signIn:hover {
+  font-size: 24px;
+}
+
+/* style for the general description */
+#aboutUs1 {
+  background-color: #1c1c1c;
+  color: #ffffff;
+  text-align: center;
+  position: absolute;
+  top: 100px;
+  left: 0;
+  box-sizing: border-box;
+  height: 100px;
+  width: 100%;
+}
+
+#aboutUs1 h2 {
+  margin: 0;
+  padding: 10px;
+}
+
+#aboutUs1 p {
+  margin: 0;
+}
+
+/* style for the knowledge hubs */
+#aboutUs2 {
+  background-color: #A2BDD2;
+  color: #162539;
+  position: absolute;
+  top: 200px;
+  left: 0;
+  height: 715px;
+  width: 100%;
+}
+
+#aboutUs2 h2 {
+  font-size: 40px;
+  text-align: center;
+  margin: 0;
+  padding: 30px;
+}
+
+p.hateno {
+  font-size: 26px;
+  text-align: justify;
+  margin: 0;
+  padding: 45px 15px 0 30px;
+  box-sizing: border-box;
+  width: 50%;
+  float: left;
+}
+
+img.hateno {
+  background-color: #A2BDD2;
+  margin: 0;
+  padding: 0 30px 45px 15px;
+  box-sizing: border-box;
+  height: 300px;
+  width: 50%;
+  float: left;
+}
+
+img.akkala {
+  background-color:  #A2BDD2;
+  margin: 0;
+  padding: 0 15px 30px 30px;
+  box-sizing: border-box;
+  height: 300px;
+  width: 50%;
+  float: left;
+}
+
+p.akkala {
+  font-size: 26px;
+  text-align: justify;
+  margin: 0;
+  padding: 30px 30px 0 15px;
+  box-sizing: border-box;
+  width: 50%;
+  float: left;
+}
+
+/* style for the prominent contributors */
+#aboutUs3 {
+  background-color: #1c1c1c;
+  position: absolute;
+  top: 915px; 
+  left: 0;
+  height: 1675px;
+  width: 100%;
+}
+
+#aboutUs3 h2 {
+  color: #ffffff;
+  font-size: 40px;
+  text-align: center;
+  margin: 0;
+  padding: 30px;
+}
+
+#aboutUs3 article {
+  width: calc(100%/3);
+  float: left;
+}
+
+#aboutUs3 article img {
+  background-color: #ffffff;
+  margin: 0;
+  height: 375px;
+  width: 100%;
+}
+
+#link img:hover {
+  background-color: #262A4A;
+}
+
+#zelda img:hover {
+  background-color: #2EBC93;
+}
+
+#purah img:hover {
+  background-color: #CE4900;
+}
+
+#robbie img:hover {
+  background-color: #84837A;
+}
+
+#impa img:hover {
+  background-color: #9282BD;
+}
+
+#teba img:hover {
+  background-color: #719865;
+}
+
+#sidon img:hover {
+  background-color: #278EBC;
+}
+
+#yunobo img:hover {
+  background-color: #C9493A;
+}
+
+#riju img:hover {
+  background-color: #F9EF52;
+}
+
+#aboutUs3 article h3 {
+  color: #ffffff;
+  font-size: 40px;
+  text-align: center;
+  margin: 0;
+  padding: 10px 10px 0 10px;
+}
+
+#aboutUs3 article p {
+  background-color: #1c1c1c;
+  color: #ffffff;
+  font-size: 20px;
+  text-align: center;
+  margin: 0 0 20px 0;
+  padding: 10px;
+  height: 50px;
+  overflow: auto;
+}
+
+/* style for the copyright */
+footer {
+  color: #ffffff;
+  position: fixed;
+  bottom: 5px;
+  right: 5px;
+}

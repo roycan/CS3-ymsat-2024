@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Flames Test</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <meta name="author" content="Magnus NavcolorArro and Phia Libunao" />
+  <meta name="revised" content="" />
+  <link rel="icon" href="images/pshslogo.ico" type="image/ico" sizes="16x16"> <!-- to add a site tab icon -->
+  <link href="../cssstylesheets/flames.css" rel="stylesheet" type="text/css" /> <!-- to add an external css file -->
+  <link rel="icon" type="image/x-icon" href="/images/favicon.jpg">
+  <!--to add favicon -->
+</head>
+<body>
+
+  <h1 style="font-size:20 px;">
+    <center>
+      <bold>🔥FLAMES TEST 🔥</bold>
+    </center>
+  </h1>
+  <h4>
+    <center>
+      Guess which of the 6 elements gives the indicated flame color in 15 seconds! Each color starts at 5 points when you guess it correctly, but a wrong guess decreases its worth by 1, with a minimum of 1 point.
+    </center>
+  </h4>
+
+  <hr>
+  
+  <center><button id="start", font->Start!</button></center>
+   <!-- The player will click this button to start the game -->
+  <br>
+
+  <p id="color"></p>
+  <!-- This will show the flame color of the element the player needs to find -->
+
+  <br>
+  <br>
+  <br>
+  
+  <center>
+    <button id="button0" onclick="button(0)" disabled="disabled">Barium</button>
+    <button id="button1" onclick="button(1)" disabled="disabled">Calcium</button>
+    <button id="button2" onclick="button(2)" disabled="disabled">Copper</button>
+    <button id="button3" onclick="button(3)" disabled="disabled">Magnesium</button>
+    <button id="button4" onclick="button(4)" disabled="disabled">Sodium</button>
+    <button id="button5" onclick="button(5)" disabled="disabled">Strontium</button>
+  </center>
+  <!-- These are the buttons of the choices, which are placed at the center of the screen -->
+  
+  <br>
+
+  <p id="time"></p>
+  <!-- This is the timer -->
+  
+  <script>
+    let colorIndex = 0; 
+    const colorArr = ["🟢 Green 🟢", " 🟠 Orange 🟠", "🔵 Blue 🔵", "⚪ White ⚪", "🟡 Gold 🟡","🔴 Red 🔴"];
+    const correctArr = [0, 0, 0, 0, 0, 0];
+    let correctCount = 0;
+    let worth = [5, 5, 5, 5, 5, 5]
+    let score = 0;
+
+    let start = document.getElementById("start");
+    let color = document.getElementById("color");
+    let time = document.getElementById("time");
+
+    start.onclick = function() {
+      document.getElementById("button0").disabled = false;
+      document.getElementById("button1").disabled = false;
+      document.getElementById("button2").disabled = false;
+      document.getElementById("button3").disabled = false;
+      document.getElementById("button4").disabled = false;
+      document.getElementById("button5").disabled = false;
+      start.disabled = true;
+
+      randomize();
+
+      let count = 15;
+
+      const clock = setInterval(function() {
+        count -= 0.1;
+        count = Math.floor(count * 10) / 10;
+
+        time.innerHTML = count;
+
+        if (count === 0 || correctCount == 6) {
+          if (count === 0) {
+            time.innerHTML = `Time's up! You got ${score} out of 30 points!`;
+          }
+          else {
+            time.innerHTML = `Congratulations! You got ${score} out of 30 points in ${15 - count} seconds!`;
+          }
+
+          document.getElementById("button0").disabled = true;
+          document.getElementById("button1").disabled = true;
+          document.getElementById("button2").disabled = true;
+          document.getElementById("button3").disabled = true;
+          document.getElementById("button4").disabled = true;
+          document.getElementById("button5").disabled = true;
+
+          clearInterval(clock);
+        }
+      }, 100)
+    }
+
+    var randomize = function() {
+      do {
+          colorIndex = Math.floor(Math.random() * 6);
+        color.innerHTML = colorArr[colorIndex];
+      } while (correctArr[colorIndex] == 1)
+    }
+
+    var button = function(x) {
+      if (x == colorIndex) {
+        document.getElementById(`button${x}`).style.backgroundColor = "green";
+        document.getElementById(`button${x}`).disabled = true;
+        correctArr[colorIndex] = 1;
+        correctCount++;
+        score += worth[colorIndex];
+
+        if (correctCount < 6) {
+          randomize();
+        }
+      }
+      else {
+        document.getElementById(`button${x}`).style.backgroundColor = "red"
+        let stayRed = setTimeout(function () {
+          document.getElementById(`button${x}`).style.backgroundColor = null;
+        }, 1000);
+        if (worth[colorIndex] > 1) {
+          worth[colorIndex]--;
+        }
+      }
+    }
+  </script>
+
+<button onclick="goToHomePage()">Go Back to Home</button>
+
+  <script>
+    function goToHomePage() {
+        window.location.href = "../index.html"; 
+    }
+  </script>
+</body>

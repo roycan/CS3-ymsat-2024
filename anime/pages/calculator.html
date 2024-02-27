@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Wikianime</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name="keywords" content="" />
+    <meta name="description" content="Wikianime" />
+    <meta name="author" content="<Corpuz, D'Asis, Siscar>" />
+    <meta name="revised" content="" />
+    <link rel="icon" href="../images/favicon.jpg" type="image/ico" sizes="16x16">
+    <link href="../style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <style>
+    nav ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+    }
+    html {
+      font-family: Trebuchet MS;
+      font-color: white;
+    }
+    p {
+      font-family: Trebuchet MS;
+      font-size: 20px;
+      font-color: white;
+    }
+    ul {
+      margin: 0;
+      padding: 0;
+      font-size: 20px;
+    }
+    body {
+      background-color: #C7C8CC;
+      background-image: url("../crusty.jpg");
+      font-color: white;
+    }
+    #output {
+      border: 1px solid #F7CAC9;
+      padding: 100px;
+      overflow: scroll;
+      background-image: url("../bg.jpg");
+      color: white;
+    }
+  </style>
+  
+  <body>
+  <header>
+    <nav>
+      <ul>
+        <li><a class="logo" href="../index.html">🏠WikiAnime</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <content>
+    <div class="calculator">
+      <label for="episodes">Enter the number of episodes:</label>
+      <input type="number" id="episodes" min="1" value="1">
+      <br>
+      <label for="duration">Enter the duration of each episode (in minutes):</label>
+      <input type="number" id="duration" min="1" value="24">
+      <br>
+      <button onclick="calculateTime()">Calculate Total Time</button>
+
+      
+    </div>
+    
+    <section id="output" >
+    <h2> Output </h2>  
+    </section>
+    
+  </content>
+    
+    
+    <script>
+      function calculateTime() {
+      // Get user's input
+      const numberOfEpisodes = parseInt(document.getElementById('episodes').value);
+      const episodeDuration = parseInt(document.getElementById('duration').value);
+      // Calculate total time
+      const totalTimeMinutes = numberOfEpisodes * episodeDuration;
+      // Convert total time to hours and minutes
+      const hours = parseInt(totalTimeMinutes / 60);
+      const minutes = totalTimeMinutes % 60;
+      // Display the result
+      const resultElement = document.getElementById('output');
+      resultElement.innerHTML = 'Total time needed: ' + hours + ' hours and ' + minutes + ' minutes.';
+      }
+      
+    </script>
+    
+  </body>
