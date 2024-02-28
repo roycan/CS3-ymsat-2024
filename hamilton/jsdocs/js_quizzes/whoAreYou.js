@@ -62,7 +62,7 @@ function storeResults(result) {
 function calculateResults(numOptions, resultTargetID) { //ongoing
   let optionValues = [];
   let optionValueCounter = [];
-  const pictureResult = ['images/quizzesGamesImageIcons/elizaWhoAreYou.gif', 'images/quizzesGamesImageIcons/burrWhoAreYou.gif', 'images/quizzesGamesImageIcons/washingtonWhoAreYou.gif', 'images/quizzesGamesImageIcons/hamiltonHey.gif'];
+
 
   for (let option = 0; option < numOptions; option++) { // initialize all values 
     optionValues[option] = answerValues[option];
@@ -102,16 +102,16 @@ function calculateResults(numOptions, resultTargetID) { //ongoing
   if (modeCounter == 1) {
     switch (greatestIndex) {
       case 0: 
-        document.getElementById(resultTargetID).innerHTML = resultArray[0] + "<br><img src='" + pictureResult[0];
+        document.getElementById(resultTargetID).innerHTML = resultArray[0];
         break;
       case 1: 
-        document.getElementById(resultTargetID).innerHTML = resultArray[1] + "<br><img src='" + pictureResult[1];
+        document.getElementById(resultTargetID).innerHTML = resultArray[1];
         break;
       case 2: 
-        document.getElementById(resultTargetID).innerHTML = resultArray[2] + "<br><img src='" + pictureResult[2];
+        document.getElementById(resultTargetID).innerHTML = resultArray[2];
         break;
       case 3: 
-        document.getElementById(resultTargetID).innerHTML = resultArray[3] + "<br><img src='" + pictureResult[3];
+        document.getElementById(resultTargetID).innerHTML = resultArray[3];
         break;
     }
   } else {

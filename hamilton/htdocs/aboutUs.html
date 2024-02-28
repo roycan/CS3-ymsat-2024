@@ -8,10 +8,10 @@
   <meta name="keywords" content="HTML, CSS, JavaScript, Hamilton, Website, World, Games">
   <meta name="description" content="This website is dedicated to the Hamilton Musical. It is composed of different games, descriptions, and facts that aim to bring fans more excitment and fun. ">
   <title> About It</title>
-  <link href="/cssdocs/aboutUs.css" rel="stylesheet" type="text/css" />
-  <link href="/cssdocs/navBars.css" rel="stylesheet" type="text/css" />
+  <link href="../cssdocs/aboutUs.css" rel="stylesheet" type="text/css" />
+  <link href="../cssdocs/navBars.css" rel="stylesheet" type="text/css" />
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Playfair Display|Trirong|Montserrat|Raleway">
-   <link rel="icon" type="image/x-icon" href="/images/Home_Images/Hamilton-Logo.png">
+   <link rel="icon" type="image/x-icon" href="../images/Home_Images/Hamilton-Logo.png">
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 </head>
@@ -20,7 +20,7 @@
   <div id="header">
     <div id="navBar">
       <div id="toggleMenu" onclick="toggleMenu('menuSelection','contentBody','outsideMenuSelection')">
-        <img src="/images/Home_Images/navIcon.png" alt="feather">
+        <img src="../images/Home_Images/navIcon.png" alt="feather">
         <p>Open Menu</p>
       </div>
       <h1 onclick="homePage()">Hamilton World</h1>
@@ -30,9 +30,9 @@
 
   <div id="menuSelection" class="menuOn">
     <div> <h1> Menu </h1> </div>
-    <a href="/index.html">Home</a>
+    <a href="../index.html">Home</a>
     <a href="">About It</a>
-    <a href="/htdocs/quizzesGames.html">Games & Quizzes</a>
+    <a href="quizzesGames.html">Games & Quizzes</a>
   </div>
 
   <div id="outsideMenuSelection" class="menuOn" onclick="toggleMenu('menuSelection','contentBody','outsideMenuSelection')"> </div>
@@ -41,7 +41,7 @@
     <!-- introductory block -->
     <div id="introductory-block">
       <div class="background-image"> 
-        <img src="/images/quizzesGamesImageIcons/home.jpg">
+        <img src="../images/quizzesGamesImageIcons/home.jpg">
       </div>
       <div class="content"> 
         <h1> Who Lives, Who Dies, Who Tells Your Story? </h1>
@@ -53,7 +53,7 @@
     <div class="feature-article-row">
       <h1 style="text-align: center;">Featured Article</h1>
       <div class="background-image"> 
-        <img src="/images/aboutUs_Photos/hamiltonRise.jpg"> 
+        <img src="../images/aboutUs_Photos/hamiltonRise.jpg"> 
       </div>
       <div class="article-label">
         <h1 class="article-title">Act 1: Alexander Hamilton Began To Climb</h1>
@@ -66,21 +66,21 @@
     <h1 style="text-align: center; margin: 50px 0px;"> More Articles </h1>
     <div class="article-row">
       <div class="article-block" onclick="redirectLink('actOne')"> 
-        <div class="background-image"><img src="/images/aboutUs_Photos/hamiltonRise.jpg"></div>
+        <div class="background-image"><img src="../images/aboutUs_Photos/hamiltonRise.jpg"></div>
         <div class="article-label">
           <h1 class="article-title">Act 1: Alexander Hamilton Began To Climb</h1>
           <p class="article-teaser">How to account for his rise to the top? Man, the man is non-stop!</p>
         </div>
       </div>
       <div class="article-block" onclick="redirectLink('actTwo')"> 
-        <div class="background-image"><img src="/images/aboutUs_Photos/hamilton-eliza-gasp.webp"> </div>
+        <div class="background-image"><img src="../images/aboutUs_Photos/hamilton-eliza-gasp.webp"> </div>
         <div class="article-label">
           <h1 class="article-title">Act 2: Beware; Pride Goeth Before The Fall</h1>
           <p class="article-teaser">I'll pull the trigger on him, someone load the gun and cock it</p>
         </div>
       </div>
       <div class="article-block" onclick="redirectLink('thatWouldBeEnough')"> 
-        <div class="background-image"> <img src="/images/aboutUs_Photos/hamilton-still.webp"></div>
+        <div class="background-image"> <img src="../images/aboutUs_Photos/hamilton-still.webp"></div>
         <div class="article-label">
           <h1 class="article-title"> That Would Be Enough </h1>
           <p class="article-teaser"> I don't pretend to know the challenges you're facing, the worlds you keep erasing and creating in your mind. </p>
@@ -100,8 +100,8 @@
     </footer>
     
   </div>
-  <script src="/script.js"></script>
-  <script src="/jsdocs\/aboutUs.js"></script>
+  <script src="../script.js"></script>
+  <script src="../jsdocs/aboutUs.js"></script>
   <script src="https://replit.com/public/js/replit-badge-v2.js" theme="dark" position="bottom-right"></script>
 </body>
 

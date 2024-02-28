@@ -124,6 +124,12 @@ function defineLinks() {
       url:"bard/index.html",
       icon:"bard/bard.png"
   }
+  links[20]={
+      title:"Playrific",
+      desc:" It is a website of a series of mini games for users to play, such as Guess The Number and Rock, Paper, Scissors.",
+      url:"playrific/index.html",
+      icon:"playrific/playrific.png"
+  }
   
     // to be used in script.js
     return links;

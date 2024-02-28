@@ -33,9 +33,9 @@ function showSlides(numberDot){
 }
 
 function redirectArticle(pageName) {
-  window.location.href = `/htdocs/aboutItArticlesandFeatures/${pageName}.html`; //redirects to new articles
+  window.location.href = `../../htdocs/aboutItArticlesandFeatures/${pageName}.html`; //redirects to new articles
 }
 
 function redirectQuiz(pageName){
-  window.location.href = `/htdocs/quizzes/${pageName}.html`   //redirects to new quizzes
+  window.location.href = `../../htdocs/quizzes/${pageName}.html`   //redirects to new quizzes
 }

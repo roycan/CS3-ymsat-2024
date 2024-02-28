@@ -15,8 +15,5 @@ function redirectPage(pageName) {
 }
 //Redirects users to another page based on teaser clicked on
 
-function homePage() {
-  window.location.href = "/index.html";
-}
 
-// Redirects user back to the home page upon the click of the Hamilton World
+

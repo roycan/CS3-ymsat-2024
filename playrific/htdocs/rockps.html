@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name="keywords" content="gaming, JS, CSS, HTML" />
+    <meta name="description" content="A dynamic website that shows a few mini-games that make use of arrays, prompts, and videos. This is a mini-game of rock, paper, scissors where the user has to beat a randomly generated answer." />
+    <meta name="author" content="Meredith Vitan and Cheska Vivares" />
+    <meta name="revised" content="Meredith Vitan and Cheska Vivares" />
+    <title>Playrific! | Rock, Paper, Scissors</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <link rel="icon" href="../images/favicon.ico" type="image/ico" sizes="16x16"> 
+    <link href="../style.css" rel="stylesheet" type="text/css" /> 
+  </head>
+<body>
+  <div id="progressbar"></div>
+  <div id="scrollPath"></div>
+  <figure>
+    <video  autoplay muted loop playsinline>
+      <source src="../images/purpbgvid.mp4" type="video/mp4">
+    </video>
+    <figcaption>Background Video</figcaption>
+  </figure>
+  <div id="title">
+    <p id="gameName">
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      Rock, Paper, Scissors!
+    </p>
+    <div id="glassbox">
+      <input type="checkbox" id="check">
+      <div class="btn1">
+        <label for="check">
+          <i class="fas fa-bars"></i>
+        </label>
+      </div>
+      <div id="sidebar">
+        <div id="name">
+          <h1>Menu</h1>
+        </div>
+        <div class="btn2">
+          <label for="check">
+            <i class="fas fa-times"></i>
+          </label>
+        </div>
+        <div id="choices">
+          <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="about us.html">About Us</a></li>
+          </ul>
+        </div>
+      </div>
+      <button id="btn1" onclick="rps()">Start!</button><br>
+    <figure>
+      <image id="rAnswer" src=../images/turtle.jpg width=200px height=200px>
+      <figcaption id="AI">AI's<br>Answer</figcaption>
+    </figure>
+    <figure>
+      <image id="pAnswer" src=../images/turtle.jpg width=200px height=200px>
+      <figcaption id="Player">Player's<br>Answer</figcaption>
+    </figure>
+      <br>
+      <p id="output"></p>
+    </div>
+  </div> 
+  <footer>
+    &copy; 2023 Computer Science 3
+  </footer>
+  <script src="../script.js"></script>
+</body>
+
+</html>

@@ -4,7 +4,7 @@ function redirectQuizPage(pageLink) {
 // Redirects quizHome to given quiz webpage
 
 function returnHome(homeLink) {
-  window.location.href = `/htdocs/${homeLink}.html`;
+  window.location.href = `../../htdocs/${homeLink}.html`;
 }
 
 // Redirects given quiz webpage back to quizHome

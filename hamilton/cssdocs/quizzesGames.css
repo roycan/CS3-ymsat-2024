@@ -37,7 +37,7 @@ div#introductoryBlock {
     height: 75vh;
     width: 150vw;
 
-    background-image: url(/images/quizzesGamesImageIcons/home.jpg);
+    background-image: url(../images/quizzesGamesImageIcons/home.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;

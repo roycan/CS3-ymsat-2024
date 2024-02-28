@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <meta name="keywords" content="gaming, JS, CSS, HTML" />
+  <meta name="description" content="A dynamic website that shows a few mini-games that make use of arrays, prompts, and videos. This shows the homepage and allows the user to go to the About Us page, choose a mini game, or read the website's description." />
+  <meta name="author" content="Meredith Vitan and Cheska Vivares" />
+  <meta name="revised" content="Meredith Vitan and Cheska Vivares" />
+  <title>Playrific! | Home</title>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+  <link rel="icon" href="images/favicon.ico" type="image/ico" sizes="16x16"> 
+  <link href="style.css" rel="stylesheet" type="text/css" /> 
+</head>
+<body>
+  <div id="progressbar"></div>
+  <div id="scrollPath"></div>
+  <figure>
+    <video  autoplay muted loop playsinline>
+      <source src="images/purpbgvid.mp4" type="video/mp4">
+    </video>
+    <figcaption>Background Video</figcaption>
+  </figure>
+  <div id="title">
+    <a href="#" id="gameName">
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      Playrific
+    </a>
+    <div id="glassbox">
+      <input type="checkbox" id="check">
+      <div class="btn1">
+        <label for="check">
+          <i class="fas fa-bars"></i>
+        </label>
+      </div>
+      <div id="sidebar">
+        <div id="name">
+          <h1>Menu</h1>
+        </div>
+        <div class="btn2">
+          <label for="check">
+            <i class="fas fa-times"></i>
+          </label>
+        </div>
+        <div id="choices">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="htdocs/about us.html">About Us</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div> 
+  <div id="gtn" class="games">
+    <a href="htdocs/guess the number.html" class="gamename">Guess the Number!</a>
+  </div>
+  <div id="rps" class="games">
+    <a href="htdocs/rockps.html" class="gamename">Rock, Paper, Scissors!</a>
+  </div>
+  <p id="p2p">Press to play</p>
+  <div id="BriefBackground">
+    <h1 id="WhatIs">What is</h1>
+    <h1 id="PlayrificName">Playrific?</h1>
+    <div id="FirstBox">
+      <p>Playrific is a mini-game website created by two of the most coquette people to exist. Here, you can play classic games like "Guss the Number!" and "Rock, Paper, Scissors!" to pass the time during school or work. Stay tuned for more additions to the games!</p>
+    </div>
+  </div>
+  <footer>
+    &copy; 2023 Computer Science 3
+  </footer>
+  <script src="script.js"></script>
+</body>
+
+</html>

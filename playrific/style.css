@@ -1,0 +1,515 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Black+Ops+One&display=swap');
+html {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  background-color: black;
+  animation: fadeInAnimation ease 10s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fadeInAnimation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+video{
+  object-fit: cover;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+#title{
+  width: 100%;
+  height:100%;
+  margin: 0;
+  padding: 0;
+}
+
+#gameName{
+  padding: 15px 30px;
+  text-transform: uppercase;
+  letter-spacing: 40px;
+  text-decoration: none;
+  display: flex;
+  text-align: center;
+  position:absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 5em;
+  color: #fff;
+  font-family: 'Black Ops One', sans-serif;
+  text-shadow: 0 0 20px #af4dff
+}
+
+#gameName:hover{
+  color: #000000;
+  background-color: #af4dff;
+  box-shadow: 0 0 10px #af4dff,0 0 60px #af4dff,0 0 120px #af4dff;
+  transition-delay: 1.4s;
+}
+#gameName span{
+  position: absolute;
+  display: block;
+}
+#gameName span:nth-child(1){
+  top: 0;
+  left: -30%;
+  width: 100%;
+  height: 5px;
+  background: linear-gradient(90deg,transparent,#af4dff)
+}
+#gameName:hover span:nth-child(1){
+  left: 30%;
+  transition: 3s;
+}
+#gameName span:nth-child(3){
+  bottom: 0;
+  right: -30%;
+  width: 100%;
+  height: 5px;
+  background: linear-gradient(270deg,transparent,#af4dff)
+}
+#gameName:hover span:nth-child(3){
+  right: 30%;
+  transition: 3s;
+}
+
+::-webkit-scrollbar
+{
+  width: 0px;
+}
+
+#scrollPath{
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 30px;
+  height: 100%;
+  background: rgba(255,255,255,0.05);
+  z-index: 10;
+}
+
+#progressbar{
+  position: fixed;
+  z-index: 10;
+  top: 0;
+  right: 0;
+  width: 30px;
+  background: linear-gradient(to top, #af4dff, #af4dff)
+    ;
+  animation: animate 5s linear infinite;
+}
+@keyframes animate{
+  0%,100%{
+    filter: hue-rotate(0deg);
+  }
+  50%{
+    filter: hue-rotate(360deg);
+  }
+}
+
+#progressbar:before{
+  z-index: 10;
+  content: "";
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to top, #00ffcc, #af4dff)
+    ;
+  filter: blur(10px)
+}
+
+#progressbar:after{
+  z-index: 10;
+  content: "";
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to top, #4dffea, #3d658f)
+    ;
+  filter: blur(10px)
+}
+
+#glassbox{
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+
+#sidebar{
+  position: fixed;
+  height: 100%;
+  width: 280px;
+  left: -280px;
+  background: rgba(255,255,255,0.2);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 0 6px rgba(255,255,255,0.5);
+  z-index: 9;
+}
+
+#name{
+  position: absolute;
+  height: 60px;
+  width: 100%;
+  box-shadow: 0 0 6px rgba(255,255,255,0.5);
+  color:#ffffff;
+  text-transform: uppercase;
+  font-size: 10px;
+  font-weight: 500;
+  line-height: 60px;
+  text-align: center;
+  letter-spacing: 9px;
+}
+
+#choices{
+  position: absolute;
+  top: 80px;
+  width: 100%;
+}
+
+li{
+  list-style-type: none;
+  margin-top: 6px;
+  padding: 14px 20px;
+}
+
+a{
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 20px;
+  text-transform: uppercase;
+  font-weight: 500;
+  letter-spacing: 5px;
+}
+
+li:hover{
+  border-left: 3px solid #ffffff;
+  box-shadow: 0 0 4px rgba(255,255,255,0.5);
+  background-color: #813db8;
+}
+
+#check{
+  display: none;
+}
+
+#glassbox > .btn1 i{
+  color: #ffffff;
+  font-size: 30px;
+  line-height: 60px;
+  position:relative;
+  top: 0;
+  left: 16px;
+  cursor: pointer;
+  opacity: 1;
+  transition: all 0.6s linear;
+}
+
+#sidebar > .btn2 i{
+  color: #ffffff;
+  font-size: 25px;
+  line-height: 60px;
+  position: relative;
+  left: 240px;
+  cursor: pointer;
+  opacity: 1;
+  transition: all 0.6s linear;
+}
+
+.btn1 i:hover{
+  font-size: 24px;
+  @keyframes fadeInRight {
+     0% {
+        opacity: 0;
+        transform: translateX(20px);
+     }
+     100% {
+        opacity: 1;
+        transform: translateX(0);
+     }
+  } 
+}
+
+#check:checked ~ #sidebar{
+  left: 0px;
+}
+
+.games {
+  position: absolute;
+  top: 600px;
+  background: rgba(255,255,255,0.2);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 0 6px rgba(255,255,255,0.5);
+  width: 200px;
+  height: 200px;
+  margin: 100px;
+  border: 5px dashed white;
+  border-radius: 50px;
+}
+
+#gtn {
+  transform: translate(300px,0);
+}
+
+#rps {
+  transform: translate(600px,0);
+}
+
+.games:hover{
+  transform: scale(1.15);
+}
+
+.gamename {
+  color: white;
+  font-family: 'Black Ops One', sans-serif;
+  position: relative;
+  top: 80px;
+  left: 20px;
+}
+
+#p2p {
+  position: relative;
+  top: 500px;
+  width: 100%;
+  height: 40px;
+  background: rgba(255,255,255,0.2);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 0 6px rgba(255,255,255,0.5);
+  text-align: center;
+  color: white;
+  font-family: 'Black Ops One', sans-serif;
+  font-size: 30px;
+  text-transform: uppercase;
+  letter-spacing: 40px;
+}
+
+#Start {
+  color: #722aac;
+  position:relative;
+  background-color: white;
+  width: 500px;
+  height: 60px;
+  top: 500px;
+  left: 350px;
+  font-size: 40px;
+  font-family: 'Black Ops One', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 40px;
+  text-align: center;
+  vertical-align: center;
+  transform: translate(40px,50px);
+}
+
+/* ABOUT US PAGE */
+
+#info {
+  position: relative;
+  padding: 20px;
+  transform: translate(0px, 600px);
+  background: rgba(255,255,255,0.2);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 0 6px rgba(255,255,255,0.5);
+  height: 20px;
+}
+
+#Meet {
+  font-family: 'Black Ops One', sans-serif;
+  color: white;
+  text-shadow: 0 0 20px #af4dff;
+  text-align: center;
+  font-size: 60px;
+  transform: translate(0, -95px);
+  text-transform: uppercase;
+  letter-spacing: 40px;
+}
+
+#Creators {
+  font-family: 'Dancing Script', cursive, 'Roboto', sans-serif;
+  color: white;
+  text-shadow: 0 0 20px #af4dff;
+  text-align: center;
+  font-size: 90px;
+  transform: translate(0, -190px);
+  letter-spacing: 10px;
+}
+
+#PicOfUs{
+  border: 50px solid white;
+  border-radius: 50%;
+  transform: scale(0.15) translate(-3000px,-7300px);
+}
+
+#quote1 {
+  color: white;
+  font-size: 30px;
+  transform: translate(30px, -2205px);
+}
+
+#quote2 {
+  color: white;
+  font-size: 30px;
+  transform: translate(900px, -2345px);
+}
+
+#RedName {
+  color: white;
+  font-size: 40px;
+  transform: translate(180px, -2300px);
+  font-family: 'Dancing Script', cursive, 'Roboto', sans-serif;
+}
+
+#CheskaName {
+  color: white;
+  font-size: 40px;
+  transform: translate(850px, -2400px);
+  font-family: 'Dancing Script', cursive, 'Roboto', sans-serif;
+}
+
+#BriefBackground{
+  background: rgba(255,255,255,0.2);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 0 6px rgba(255,255,255,0.5);
+  position: relative;
+  z-index: 2;
+  height: 40px;
+  transform: translate(0, 900px);
+}
+
+#WhatIs{
+  font-family: 'Black Ops One', sans-serif;
+  color: white;
+  text-shadow: 0 0 20px #af4dff;
+  text-align: center;
+  font-size: 60px;
+  transform: translate(0, -30px);
+  text-transform: uppercase;
+  letter-spacing: 40px;
+  position: relative;
+}
+
+#PlayrificName{
+  font-family: 'Dancing Script', cursive, 'Roboto', sans-serif;
+  color: white;
+  text-shadow: 0 0 20px #af4dff;
+  text-align: center;
+  font-size: 90px;
+  transform: translate(0, -130px);
+  letter-spacing: 10px;
+}
+
+#BriefBackground p {
+  color: white;
+  font-size: 20px;
+  width: 500px;
+  text-align: center;
+  transform: translate(45px,-7px);
+}
+
+#FirstBox {
+  background-color: #7639a7;
+  border: 5px dashed white;
+  border-radius: 30px;
+  width: 600px;
+  height: 150px;
+  transform: translate(0,-150px);
+  margin:auto;
+  text-align: justify;
+}
+
+#ListBox{
+  position: relative;
+  z-index: 5;
+  background-color: #592a79;
+  height: 50px;
+  transform: translate(0,-50px);
+}
+
+#ListTitle{
+  font-family: 'Black Ops One', sans-serif;
+  color: white;
+  text-shadow: 0 0 20px #af4dff;
+  text-transform: uppercase;
+  letter-spacing: 20px;
+  text-align: center;
+}
+
+#list {
+  font-family: 'Black Ops One', sans-serif;
+  color: white;
+  text-shadow: 0 0 20px #af4dff;
+  text-transform: uppercase;
+  letter-spacing: 20px;
+  text-align: center;
+  transform: translate(0,-35px);
+  font-size: 30px;
+}
+
+#btn1 {
+  color: #722aac;
+  position:relative;
+  background-color: white;
+  width: 500px;
+  height: 60px;
+  top: 500px;
+  left: 350px;
+  font-size: 40px;
+  font-family: 'Black Ops One', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 40px;
+  text-align: center;
+  vertical-align: center;
+  transform: translate(40px,50px);
+}
+
+#rAnswer {
+  transform: translate(300px,600px);
+}
+
+#pAnswer {
+  transform: translate(750px,330px);
+}
+
+#AI {
+  font-family: 'Black Ops One', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 20px;
+  color: white;
+  text-shadow: 0 0 20px #af4dff;
+  font-size: 20px;
+  transform: translate(70px, 450px);
+}
+
+#Player {
+  font-family: 'Black Ops One', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 20px;
+  color: white;
+  text-shadow: 0 0 20px #af4dff;
+  font-size: 20px;
+  transform: translate(970px, 160px);
+}
+
+#output {
+  font-family: 'Black Ops One', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 20px;
+  color: white;
+  text-shadow: 0 0 20px #af4dff;
+  font-size: 20px;
+  transform: translate(470px,-40px);
+}
