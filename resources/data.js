@@ -38,7 +38,7 @@ function defineLinks() {
         url: "moodbright/index.html",
         icon: "images/moodbright.png"
     }
-    /* for downloading from Mam Aline's classes */
+    /* from Mam Aline's classes */
     links[6] = {
         title: "MAPPA: The Animation Studio Behind the Hottest Anime",
         desc: "This website is a dedicated platform that unfolds the captivating world of MAPPA, one of Japan's most acclaimed and prolific animation studios, where you can explore their rich history, witness a gallery of their extraordinary works, and delve into their diverse animation styles.",
@@ -130,7 +130,7 @@ function defineLinks() {
       url:"playrific/index.html",
       icon:"playrific/playrific.png"
   }
-  
+
     // to be used in script.js
     return links;
 }
